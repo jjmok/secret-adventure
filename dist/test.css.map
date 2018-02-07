@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.scss"],"names":[],"mappings":"AAEA;EAEI,qBAAa;EAAb,qBAAa;EAAb,cAAa;EACb,mBAAkB;EAElB,uBAAsB;CACvB;;AAGH;EAEI,YAAW;CACZ","file":"test.css","sourcesContent":["@import \"ooh\";\n\n.red {\n  .yellow {\n    display: flex;\n    border-radius: 2px;\n    \n    background-color: blue;\n  } \n}\n\n.test {\n  & .livelong {\n    margin: 5px;\n  }\n}"]}
