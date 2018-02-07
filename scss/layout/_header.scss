@@ -1,0 +1,29 @@
+.bk-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.17);
+  position: relative;
+  z-index: 2;
+}
+
+.bk-header__section {
+  display: flex;
+  align-items: center;
+  .c-link {
+    margin-right: 50px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.bk-header__logo {
+  margin-right: 60px;
+}
+
+.bk-header__currency {
+  margin-right: 18px;
+}

@@ -1,0 +1,14 @@
+.c-link {
+  color: $black;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+
+  &:hover {
+    color: red;
+  }
+
+  &:active {
+    color: yellow;
+  }
+}

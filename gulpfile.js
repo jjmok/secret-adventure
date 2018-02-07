@@ -6,7 +6,7 @@ var sassdoc = require('sassdoc');
 var rename = require('gulp-rename');
 
 // var input = './stylesheets/**/*.scss';
-var input = './scss/*.scss';
+var input = './scss/**/*.scss';
 var output = './dist/';
 
 var sassOptions = {

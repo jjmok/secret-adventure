@@ -1,0 +1,6 @@
+.bk-carousel {
+  height: 535px;
+  background-color: red;
+  @include flexcenter;
+  position: relative;
+}

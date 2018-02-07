@@ -1,0 +1,48 @@
+.c-btn {
+  display: inline-flex;
+  white-space: nowrap;
+  border-radius: 4px;
+  padding: 0px 25px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  height: 38px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.c-btn-pink {
+  background-color: $rad-red;
+  color: white;
+
+  &:hover {
+    background-color: $cardinal;
+  }
+
+  &:active {
+    background-color: $cherry;
+  }
+}
+
+.c-btn--currency {
+  border-radius: 5px;
+  height: 30px;
+  padding: 0px 13px;
+  border: 1px solid #D3D3D3;
+  
+  > span {
+    color: #4A4A4A;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 11px;
+  }
+
+  &:hover {
+    background-color: $gallery;
+  }
+}
