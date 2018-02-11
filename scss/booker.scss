@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans');
+@import "chalkduster";
+
+@import "bootstrap/bootstrap";
 
 @import "normalize";
 @import "variables";
@@ -7,7 +10,10 @@
 
 @import "component/link";
 @import "component/button";
+@import "component/typo";
 
+@import "layout/carousel";
 @import "layout/general";
 @import "layout/header";
-@import "layout/main";
+@import "layout/footer";
+@import "layout/mainpage";

@@ -1,0 +1,25 @@
+.bk-carousel {
+  height: 535px;
+  background-color: red;
+}
+
+.bk-carousel-item {
+  height: 535px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.bk-carousel--review {
+  width: 900px;
+  height: 360px;
+  background-color: white;
+  margin: 0 auto;
+}
+.bk-carousel-item--review {
+  height: 360px;
+  flex-direction: column;
+}
+.bk-carousel-control--review {
+  background-color: red;
+}

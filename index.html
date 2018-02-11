@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Booker App</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="dist/booker.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 </head>
 <body>
   <div class="bk-container">
+
     <header class="bk-header bk-width-cont">
       <nav class="bk-header__section">
         <div class="bk-header__logo">logo</div>
@@ -21,87 +24,158 @@
           <span>USD</span>
         </button>
 
-        <button class="c-btn c-btn-pink"> Log In</button>
+        <button class="c-btn c-btn--pink"> Log In</button>
       </nav>
     </header>
     
-    <section class="bk-carousel ">
-      This is Carousel
-    </section>
-
-    <div class="bk-create-story ">
-      <h1>Create the perfect story</h1>
-      <p>Begin by entering a name</p>
-      <input type="text"/>
-      <button>Boy</button>
-      <button>Girl</button>
-      <button>Preview</button>
+    <div id="js-intro-carousel" class="carousel slide bk-carousel" data-ride="carousel" data-interval="90000">
+      <!--
+        <ol class="carousel-indicators">
+          <li data-target="#js-intro-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#js-intro-carousel" data-slide-to="1"></li>
+          <li data-target="#js-intro-carousel" data-slide-to="2"></li>
+        </ol>
+      -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="bk-carousel-item">100</div>
+        </div>
+        <div class="carousel-item">
+          <div class="bk-carousel-item">200</div>
+        </div>
+        <div class="carousel-item">
+          <div class="bk-carousel-item">300</div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#js-intro-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#js-intro-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
 
-    <section class="">
-      <h1>My Secret Adventure</h1>
-      <p>On a perfectly normal, perfectly pretty day, a journey to find a lost toy becomes a magical adventure of meeting new friends and collecting treasures. Here is a beautiful story that is personalised to its owner’s name, told with playful words, peppered with local elements, and brought to life with beautiful illustrations.</p>
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    <div class="bk-create-story">
+      <h1 class="bk-create-story__title">Create the perfect story</h1>
+      <p class="bk-create-story__desc">Begin by entering a name</p>
+      <div class="bk-create-story__options">
+        <input class="bk-create-story__name-input" type="text"/>
+        <button class="bk-create-story__gender">Boy</button>
+        <button class="bk-create-story__gender">Girl</button>
+        <button class="c-btn c-btn--froly c-btn--widepress bk-create-story__preview">Preview</button>
+      </div>
+
+    </div>
+
+    <section class="bk-video-section">
+      <div class="bk-width-cont">
+        <h1 class="c-title">My Secret Adventure</h1>
+        <p class="bk-video-section--desc">On a perfectly normal, perfectly pretty day, a journey to find a lost toy becomes a magical adventure of meeting new friends and collecting treasures. Here is a beautiful story that is personalised to its owner’s name, told with playful words, peppered with local elements, and brought to life with beautiful illustrations.</p>
+        <iframe class="bk-video-section__video" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      </div>
+
     </section>
 
-    <section class="">
-      <h1>How it Works</h1>
-      <span>Step 1</span>
-      <h2>My Secret Adventure</h2>
-      <p>For the child, the delight begins when they see the magical book cover. Wow, a story about my secret adventure? Wah! The excitement builds.</p>
+    <section class="bk-hiw">
+      <h1 class="c-title">How it Works</h1>
+      <div class="bk-hiw__content">
+        <span class="bk-hiw__step">Step 1</span>
+        <h2 class="bk-hiw__step-title">My Secret Adventure</h2>
+        <p class="bk-hiw__desc">For the child, the delight begins when they see the magical book cover. Wow, a story about my secret adventure? Wah! The excitement builds.</p>
+      </div>
+
     </section>
 
-    <section class="">
-      <span>Step 2</span>
-      <h2>Each name spells a different adventure</h2>
-      <p>The letters of every child’s unique name will determine how their adventure is shaped - will they meet some squabbling elephants in the woods, an old lady selling kuih in a clearing or apple-pie making kangaroo? No two stories are the same, and only the child’s name will determine their special journey.</p>
-    </section>
+    <section class="bk-hiw">
 
-    <section class="">
-      <span>Step 3</span>
-      <h2>Make the child a part of the story</h2>
-      <p>Choose from boy or girl - perfectly customising the book for its intended recipient..</p>
-    </section>
-
-    <section class="">
-      <span>Step 4</span>
-      <h2>Make it special</h2>
-      <p>Say something to mark an important milestone, or simply let them know how much you want them to sayang this customised adventure.</p>
-    </section>
-
-    <section class="">
-      <h1>Review</h1>
-      <p>Whether small or big kids, read about what these fans thought of their gift.</p>
-      <div>
-        <span>Arrow</span>
-        <span>Arrow</span>
-        <div>
-          Child Image
-        </div>
-        <strong> I love how awesome the book is bla love!  </strong>
-        <blockquote>
-          “My 6 year old daughter is autistic so has problems with her understanding of language. I bought her the book 'The Little Girl Who Lost Her Name' for Christmas, she was so enthralled”
-        </blockquote>
+      <div class="bk-hiw__content">
+        <span class="bk-hiw__step">Step 2</span>
+        <h2 class="bk-hiw__step-title">Each name spells a different adventure</h2>
+        <p class="bk-hiw__desc">The letters of every child’s unique name will determine how their adventure is shaped - will they meet some squabbling elephants in the woods, an old lady selling kuih in a clearing or apple-pie making kangaroo? No two stories are the same, and only the child’s name will determine their special journey.</p>
       </div>
     </section>
 
-    <section class="">
-      <p>Jom Adventure</p>
-      <button>Create Yours Now!</button>
+    <section class="bk-hiw">
+      <div class="bk-hiw__content">
+        <span class="bk-hiw__step">Step 3</span>
+        <h2 class="bk-hiw__step-title">Make the child a part of the story</h2>
+        <p class="bk-hiw__desc">Choose from boy or girl - perfectly customising the book for its intended recipient..</p>
+      </div>
+    </section>
+
+    <section class="bk-hiw">
+      <div class="bk-hiw__content">
+        <span class="bk-hiw__step">Step 4</span>
+        <h2 class="bk-hiw__step-title">Make it special</h2>
+        <p class="bk-hiw__desc">Say something to mark an important milestone, or simply let them know how much you want them to sayang this customised adventure.</p>
+      </div>
+    </section>
+
+    <section class="bk-review">
+      <h1 class="c-title bk-review__title">Review</h1>
+      <p class="bk-review__desc">Whether small or big kids, read about what these fans thought of their gift.</p>
+
+      <div id="js-review-carousel" class="carousel slide bk-carousel--review" data-ride="carousel" data-interval="90000">
+        <!--
+          <ol class="carousel-indicators">
+            <li data-target="#js-review-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#js-review-carousel" data-slide-to="1"></li>
+            <li data-target="#js-review-carousel" data-slide-to="2"></li>
+          </ol>
+        -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="bk-carousel-item bk-carousel-item--review">
+              <strong> I love how awesome the book is bla love!  </strong>
+              <blockquote>
+                “My 6 year old daughter is autistic so has problems with her understanding of language. I bought her the book 'The Little Girl Who Lost Her Name' for Christmas, she was so enthralled”
+              </blockquote>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="bk-carousel-item bk-carousel-item--review">200</div>
+          </div>
+          <div class="carousel-item ">
+            <div class="bk-carousel-item bk-carousel-item--review">300</div>
+          </div>
+        </div>
+        <a class="carousel-control-prev bk-carousel-control--review" href="#js-review-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next bk-carousel-control--review" href="#js-review-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="bk-jom">
+      <p class="bk-jom__title">
+        <em>Jom</em> Adventure
+      </p>
+      <button class="c-btn c-btn--froly c-btn--widepress">Create Yours Now!</button>
     </section>
     
-    <footer class="">
+    <footer class="bk-footer">
       <nav>
-        <a href="">About Us</a>
-        <a href="">Refer A friend</a>
-        <a href="">Terms and Conditions</a>
-        <a href="">Privacy Policy</a>
-        <a href="">Contact Us</a>
+        <a class="bk-footer__link href="">About Us</a>
+        <a class="bk-footer__link href="">Refer A friend</a>
+        <a class="bk-footer__link href="">Terms and Conditions</a>
+        <a class="bk-footer__link href="">Privacy Policy</a>
+        <a class="bk-footer__link href="">Contact Us</a>
       </nav>
       <p>© 2017 My Secret Adventure. All Rights Reserved. </p>
       
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/index.js"></script>
 
 </body>
 </html>

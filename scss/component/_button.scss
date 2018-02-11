@@ -8,7 +8,7 @@
   font-weight: 500;
   line-height: 14px;
   height: 38px;
-  cursor: pointer;
+  cursor: pointer; 
   transition: background-color 0.2s ease;
 
   &:focus {
@@ -16,7 +16,15 @@
   }
 }
 
-.c-btn-pink {
+.c-btn--froly {
+  background-color: $froly;
+
+  &:active {
+    background-color: darken($froly, 2%);
+  }
+}
+
+.c-btn--pink {
   background-color: $rad-red;
   color: white;
 
@@ -26,6 +34,30 @@
 
   &:active {
     background-color: $cherry;
+  }
+}
+
+.c-btn--widepress {
+  border-radius: 0px;
+  height: 46px;
+  padding: 0px 65px;
+  font-size: 16px;
+  border-bottom: 2px solid $brick-red;
+  position: relative;
+  bottom: 1px;
+  transition: bottom 0.2s ease, height 0.2s ease, border-width 0.2s ease;
+
+  &:hover {
+    bottom: 3px;
+    height: 52px;
+    border-bottom: 5px solid $brick-red;
+  }
+
+  &:active {
+    bottom: -2px;
+    height: 42px;
+    border-bottom: 0px;
+    box-shadow: inset 0px 2px 5px -2px rgba(0,0,0,0.5);
   }
 }
 

@@ -1,0 +1,17 @@
+.bk-footer {
+  @include flexcenter;
+  color: $white;
+  flex-direction: column;
+  height: 213px;
+  background-color: #3E3E58;
+}
+
+.bk-footer__link {
+  color: #B1B1BC;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $white;
+  }
+}
