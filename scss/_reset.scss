@@ -1,4 +1,12 @@
 //Resets
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: $madison;
   color: #4A4A4A;
@@ -7,6 +15,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $sub-font;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 ul {

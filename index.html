@@ -13,14 +13,16 @@
 
     <header class="bk-header bk-width-cont">
       <nav class="bk-header__section">
-        <div class="bk-header__logo">logo</div>
+        <div class="bk-header__logo">
+          <!-- <img src="assets/img/main_logo@2x.png" alt=""> -->
+        </div>
         <a class="c-link" href="">About the Book</a>
         <a class="c-link" href="">How It Works</a>
         <a class="c-link" href="">Help</a>
       </nav>
       <nav class="bk-header__section">
         <button class="bk-header__currency c-btn c-btn--currency">
-          <img src="assets/us.svg" alt="">
+          <img src="assets/img/us.svg" alt="">
           <span>USD</span>
         </button>
 
@@ -38,13 +40,25 @@
       -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="bk-carousel-item">100</div>
+          <div class="bk-carousel-item__text">
+            <h1 class="bk-carousel-item__title">My Secret Adventure</h1>
+            <p class="bk-carousel-item__desc">Customise an exciting adventure for that special little person</p>
+          </div>
+          <div class="bk-carousel-item bk-carousel-item--1"></div>
         </div>
         <div class="carousel-item">
-          <div class="bk-carousel-item">200</div>
+          <div class="bk-carousel-item__text bk-carousel-item--white">
+            <h1 class="bk-carousel-item__title">My Secret Adventure</h1>
+            <p class="bk-carousel-item__desc">Customise an exciting adventure for that special little person</p>
+          </div>
+          <div class="bk-carousel-item bk-carousel-item--2"></div>
         </div>
         <div class="carousel-item">
-          <div class="bk-carousel-item">300</div>
+          <div class="bk-carousel-item__text">
+            <h1 class="bk-carousel-item__title">My Secret Adventure</h1>
+            <p class="bk-carousel-item__desc">Customise an exciting adventure for that special little person</p>
+          </div>
+          <div class="bk-carousel-item bk-carousel-item--3"></div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#js-intro-carousel" role="button" data-slide="prev">
@@ -70,47 +84,60 @@
     </div>
 
     <section class="bk-video-section">
-      <div class="bk-width-cont">
-        <h1 class="c-title">My Secret Adventure</h1>
+      <div class="bk-width-cont bk-video-section__content">
+        <h1 class="bk-video-section__title c-title">My Secret Adventure</h1>
         <p class="bk-video-section--desc">On a perfectly normal, perfectly pretty day, a journey to find a lost toy becomes a magical adventure of meeting new friends and collecting treasures. Here is a beautiful story that is personalised to its owner’s name, told with playful words, peppered with local elements, and brought to life with beautiful illustrations.</p>
-        <iframe class="bk-video-section__video" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-      </div>
 
+        <div class="bk-video-section__video-container">
+          <div class="bk-video-section__confetti"></div>
+          <iframe class="bk-video-section__video" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+
+      </div>
+      <div class="bk-video-section__pangolin"></div>
+      <div class="bk-video-section__brush"></div>
+      <div class="bk-video-section__pencil"></div>
+      <div class="bk-video-section__pizza"></div>
     </section>
 
-    <section class="bk-hiw">
-      <h1 class="c-title">How it Works</h1>
-      <div class="bk-hiw__content">
+    <section class="bk-hiw bk-hiw--long">
+      <h1 class="c-title bk-hiw__title">How it Works</h1>
+      <div class="bk-hiw__content bk-hiw__content--left">
         <span class="bk-hiw__step">Step 1</span>
         <h2 class="bk-hiw__step-title">My Secret Adventure</h2>
         <p class="bk-hiw__desc">For the child, the delight begins when they see the magical book cover. Wow, a story about my secret adventure? Wah! The excitement builds.</p>
       </div>
-
+      <div class="bk-hiw__gasing"></div>
+      <div class="bk-hiw__pizza"></div>
+      <div class="bk-hiw__book bk-hiw__book--first"></div>
     </section>
 
-    <section class="bk-hiw">
-
-      <div class="bk-hiw__content">
+    <section class="bk-hiw bk-hiw--bordertop">
+      <div class="bk-hiw__content bk-hiw__content--right bk-hiw__content--long">
         <span class="bk-hiw__step">Step 2</span>
         <h2 class="bk-hiw__step-title">Each name spells a different adventure</h2>
         <p class="bk-hiw__desc">The letters of every child’s unique name will determine how their adventure is shaped - will they meet some squabbling elephants in the woods, an old lady selling kuih in a clearing or apple-pie making kangaroo? No two stories are the same, and only the child’s name will determine their special journey.</p>
       </div>
+      <div class="bk-hiw__standingbook"></div>
+      <div class="bk-hiw__pencil"></div>
     </section>
-
-    <section class="bk-hiw">
-      <div class="bk-hiw__content">
+    
+    <section class="bk-hiw bk-hiw--short bk-hiw--bordertop">
+      <div class="bk-hiw__content bk-hiw__content--left">
         <span class="bk-hiw__step">Step 3</span>
         <h2 class="bk-hiw__step-title">Make the child a part of the story</h2>
         <p class="bk-hiw__desc">Choose from boy or girl - perfectly customising the book for its intended recipient..</p>
       </div>
+      <div class="bk-hiw__bng"></div>
     </section>
 
     <section class="bk-hiw">
-      <div class="bk-hiw__content">
+      <div class="bk-hiw__content bk-hiw__content--right bk-hiw__content--long">
         <span class="bk-hiw__step">Step 4</span>
         <h2 class="bk-hiw__step-title">Make it special</h2>
         <p class="bk-hiw__desc">Say something to mark an important milestone, or simply let them know how much you want them to sayang this customised adventure.</p>
       </div>
+      <div class="bk-hiw__book bk-hiw__book--last"></div>
     </section>
 
     <section class="bk-review">
@@ -175,7 +202,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="js/index.js"></script>
+  <!-- <script type="text/javascript" src="js/lib/retina.min.js"></script> -->
 
 </body>
 </html>

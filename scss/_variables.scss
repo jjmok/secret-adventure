@@ -19,3 +19,16 @@ $cherry: #ae1730;
 //dark red series
 $froly: #F16078;
 $brick-red: #BA2740;
+
+
+//Carousel
+$main-carousel-height: 535px;
+
+//https://css-tricks.com/snippets/css/retina-display-media-query/
+$retina: "
+  only screen and (-webkit-min-device-pixel-ratio: 2), 
+  only screen and (-moz-min-device-pixel-ratio: 2), 
+  only screen and (-o-min-device-pixel-ratio: 2/1), 
+  only screen and (min-device-pixel-ratio: 2), 
+  only screen and (min-resolution: 192dpi), 
+  only screen and (min-resolution: 2dppx)";

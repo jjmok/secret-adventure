@@ -1,13 +1,50 @@
 .bk-carousel {
-  height: 535px;
+  height: $main-carousel-height;
   background-color: red;
 }
 
 .bk-carousel-item {
-  height: 535px;
+  height: $main-carousel-height;
+  background-position: center;
   display: flex !important;
   align-items: center;
   justify-content: center;
+}
+
+.bk-carousel-item--white {
+  color: $white;
+}
+
+.bk-carousel-item__text {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bk-carousel-item__title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bk-carousel-item__desc {
+  font-size: 28px;
+}
+
+.bk-carousel-item--1 {
+  @include image("../assets/img/banner_1", "png", 100%, $main-carousel-height, cover);
+}
+
+.bk-carousel-item--2 {
+  @include image("../assets/img/banner_2", "png", 100%, $main-carousel-height, cover);
+}
+
+.bk-carousel-item--3 {
+  @include image("../assets/img/banner_3", "png", 100%, $main-carousel-height, cover);
 }
 
 .bk-carousel--review {

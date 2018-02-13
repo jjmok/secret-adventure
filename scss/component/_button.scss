@@ -44,7 +44,7 @@
   font-size: 16px;
   border-bottom: 2px solid $brick-red;
   position: relative;
-  bottom: 1px;
+  bottom: 0px;
   transition: bottom 0.2s ease, height 0.2s ease, border-width 0.2s ease;
 
   &:hover {
@@ -57,7 +57,7 @@
     bottom: -2px;
     height: 42px;
     border-bottom: 0px;
-    box-shadow: inset 0px 2px 5px -2px rgba(0,0,0,0.5);
+    // box-shadow: inset 0px 2px 5px -2px rgba(0,0,0,0.5);
   }
 }
 
