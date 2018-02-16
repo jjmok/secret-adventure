@@ -697,6 +697,76 @@ button {
   color: yellow;
 }
 
+.c-logo--black {
+  background-image: url("../assets/img/main_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 164px;
+  height: 43px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .c-logo--black {
+    background-image: url("../assets/img/main_logo@2x.png");
+  }
+}
+
+.c-logo--white {
+  background-image: url("../assets/img/main_logo_white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 164px;
+  height: 43px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .c-logo--white {
+    background-image: url("../assets/img/main_logo_white@2x.png");
+  }
+}
+
+.c-social-fb {
+  background-image: url("../assets/img/social-facebook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .c-social-fb {
+    background-image: url("../assets/img/social-facebook@2x.png");
+  }
+}
+
+.c-social-twit {
+  background-image: url("../assets/img/social-twitter.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .c-social-twit {
+    background-image: url("../assets/img/social-twitter@2x.png");
+  }
+}
+
+.c-social-insta {
+  background-image: url("../assets/img/social-instagram.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .c-social-insta {
+    background-image: url("../assets/img/social-instagram@2x.png");
+  }
+}
+
 .c-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -930,6 +1000,11 @@ button {
           flex-direction: row;
 }
 
+.bk-carousel-control-prev--banner,
+.bk-carousel-control-next--banner {
+  display: none;
+}
+
 .bk-carousel-control-prev--review,
 .bk-carousel-control-next--review {
   color: initial;
@@ -990,17 +1065,6 @@ button {
 
 .bk-header__logo {
   margin-right: 60px;
-  background-image: url("../assets/img/main_logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 164px;
-  height: 43px;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .bk-header__logo {
-    background-image: url("../assets/img/main_logo@2x.png");
-  }
 }
 
 .bk-header__currency {
@@ -1031,10 +1095,53 @@ button {
   cursor: pointer;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  font-size: 12px;
+  margin-right: 35px;
 }
 
 .bk-footer__link:hover {
   color: #FFFFFF;
+}
+
+.bk-footer__link:last-of-type {
+  margin: 0;
+}
+
+.bk-footer__logo {
+  margin-bottom: 12px;
+}
+
+.bk-footer__nav-links {
+  margin-bottom: 10px;
+}
+
+.bk-footer__copyright {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.bk-footer__social-links-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bk-footer__social-link {
+  margin-right: 15px;
+}
+
+.bk-footer__social-link:last-of-type {
+  margin-right: 0;
 }
 
 .bk-create-story {
@@ -1506,6 +1613,7 @@ button {
 }
 
 .bk-review__quoteEmphasis {
+  font-size: 18px;
   margin-bottom: 10px;
   display: inline-block;
 }

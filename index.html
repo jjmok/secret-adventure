@@ -12,9 +12,7 @@
   <div class="bk-container">
     <header class="bk-header bk-width-cont">
       <nav class="bk-header__section">
-        <div class="bk-header__logo">
-          <!-- <img src="assets/img/main_logo@2x.png" alt=""> -->
-        </div>
+        <div class="c-logo--black bk-header__logo"></div>
         <a class="c-link" href="">About the Book</a>
         <a class="c-link" href="">How It Works</a>
         <a class="c-link" href="">Help</a>
@@ -60,11 +58,11 @@
           <div class="bk-carousel-item bk-carousel-item--3"></div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#js-intro-carousel" role="button" data-slide="prev">
+      <a class="carousel-control-prev bk-carousel-control-prev--banner" href="#js-intro-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon " aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#js-intro-carousel" role="button" data-slide="next">
+      <a class="carousel-control-next bk-carousel-control-next--banner" href="#js-intro-carousel" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
@@ -207,15 +205,26 @@
     </section>
     
     <footer class="bk-footer">
-      <nav>
+      <div class="c-logo--white bk-footer__logo"></div>
+      <nav class="bk-footer__nav-links">
         <a class="bk-footer__link href="">About Us</a>
         <a class="bk-footer__link href="">Refer A friend</a>
         <a class="bk-footer__link href="">Terms and Conditions</a>
         <a class="bk-footer__link href="">Privacy Policy</a>
         <a class="bk-footer__link href="">Contact Us</a>
       </nav>
-      <p>© 2017 My Secret Adventure. All Rights Reserved. </p>
-      
+      <p class="bk-footer__copyright">© 2017 My Secret Adventure. All Rights Reserved. </p>
+      <nav class="bk-footer__social-links-set">
+        <a class="bk-footer__social-link" href="">
+          <div class="c-social-fb"></div>
+        </a>
+        <a class="bk-footer__social-link" href="">
+          <div class="c-social-twit"></div>
+        </a>
+        <a class="bk-footer__social-link" href="">
+          <div class="c-social-insta"></div>
+        </a>
+      </nav>
     </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

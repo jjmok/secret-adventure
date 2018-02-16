@@ -1,0 +1,19 @@
+.c-logo--black {
+  @include image("../assets/img/main_logo", "png", 164px, 43px, contain);
+}
+
+.c-logo--white {
+  @include image("../assets/img/main_logo_white", "png", 164px, 43px, contain);
+}
+
+.c-social-fb {
+  @include image("../assets/img/social-facebook", "png", 24px, 24px, contain);
+}
+
+.c-social-twit {
+  @include image("../assets/img/social-twitter", "png", 24px, 24px, contain);
+}
+
+.c-social-insta {
+  @include image("../assets/img/social-instagram", "png", 24px, 24px, contain);
+}

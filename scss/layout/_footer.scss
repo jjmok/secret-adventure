@@ -10,8 +10,40 @@
   color: #B1B1BC;
   cursor: pointer;
   transition: color 0.3s ease;
+  font-size: 12px;
+  margin-right: 35px;
 
   &:hover {
     color: $white;
+  }
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.bk-footer__logo {
+  margin-bottom: 12px;
+}
+
+.bk-footer__nav-links {
+  margin-bottom: 10px;
+}
+
+.bk-footer__copyright {
+  font-size: 12px;
+  margin-bottom: 15px; 
+}
+
+.bk-footer__social-links-set {
+  @include flexcenter;
+  flex-direction: row;
+}
+
+.bk-footer__social-link {
+  margin-right: 15px;
+
+  &:last-of-type {
+    margin-right: 0;
   }
 }

@@ -59,6 +59,11 @@
   flex-direction: row;
 }
 
+.bk-carousel-control-prev--banner,
+.bk-carousel-control-next--banner {
+  display: none;
+}
+
 .bk-carousel-control-prev--review,
 .bk-carousel-control-next--review {
   color: initial;
