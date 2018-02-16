@@ -125,6 +125,7 @@
 }
 
 .bk-video-section__brush {
+  z-index: 2;
   position: absolute;
   left: 0px;
   top: 400px;
@@ -132,6 +133,7 @@
 }
 
 .bk-video-section__pencil {
+  z-index: 2;
   position: absolute;
   left: 0px;
   bottom: 200px;

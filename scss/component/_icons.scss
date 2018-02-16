@@ -17,3 +17,18 @@
 .c-social-insta {
   @include image("../assets/img/social-instagram", "png", 24px, 24px, contain);
 }
+
+.c-hamburger {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.c-hamburger__inner {
+  border-radius: 4px;
+  background-color: $black;
+  width: 30px;
+  height: 4px;
+  display: inline-block;
+}
