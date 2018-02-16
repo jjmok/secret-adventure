@@ -1108,7 +1108,7 @@ button {
 }
 
 .bk-footer__logo {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .bk-footer__nav-links {
@@ -1600,26 +1600,28 @@ button {
 
 .bk-review__desc {
   color: #FFFFFF;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 31px;
+  line-height: 30px;
   text-align: center;
   margin-bottom: 45px;
+  width: 600px;
+  margin: 0 auto 30px;
 }
 
 .bk-review__quote {
   display: inline-block;
-  width: 400px;
+  width: 410px;
 }
 
 .bk-review__quoteEmphasis {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
   display: inline-block;
 }
 
 .bk-review__quoteText {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 28px;
 }
 
