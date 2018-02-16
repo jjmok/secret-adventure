@@ -260,11 +260,26 @@
 
 .bk-review {
   height: 795px;
+  padding-top: 60px;
   background: linear-gradient(45deg, #ffa262 0%,#da6614 100%); 
+  position: relative;
+}
+
+.bk-review__trumpet {
+  top: 20px;
+  right: 30px;
+  position: absolute;
+  @include image("../assets/img/trumpet", "png", 362px, 362px, contain);
+}
+
+.bk-review__img {
+  margin-right: 25px;
+  @include image("../assets/img/review-img-1", "png", 139px, 139px, contain);
 }
 
 .bk-review__title {
   color: $white;
+  margin-bottom: 20px;
 }
 
 .bk-review__desc {
@@ -273,6 +288,22 @@
   font-weight: 500;
   line-height: 31px;
   text-align: center;
+  margin-bottom: 45px;
+}
+
+.bk-review__quote {
+  display: inline-block;
+  width: 400px;
+}
+
+.bk-review__quoteEmphasis {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.bk-review__quoteText {
+  font-size: 13px;
+  line-height: 28px;
 }
 
 .bk-jom {

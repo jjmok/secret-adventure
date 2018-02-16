@@ -1,12 +1,12 @@
 .bk-carousel {
   height: $main-carousel-height;
-  background-color: red;
+  background-color: $white;
 }
 
 .bk-carousel-item {
   height: $main-carousel-height;
   background-position: center;
-  display: flex !important;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -53,10 +53,20 @@
   background-color: white;
   margin: 0 auto;
 }
+
 .bk-carousel-item--review {
   height: 360px;
-  flex-direction: column;
+  flex-direction: row;
 }
-.bk-carousel-control--review {
-  background-color: red;
+
+.bk-carousel-control-prev--review,
+.bk-carousel-control-next--review {
+  color: initial;
+
+  &:hover,
+  &:focus {
+    .c-chevron {
+      color: black;
+    }
+  }
 }

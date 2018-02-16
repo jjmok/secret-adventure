@@ -1,0 +1,30 @@
+//https://codepen.io/jonneal/pen/kptBs?editors=1100
+
+.c-chevron::before {
+  border-style: solid;
+  border-width: 4px 4px 0 0;
+  content: '';
+  display: inline-block;
+  height: 15px;
+  left: 3px;
+  position: relative;
+  top: 3px;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 15px;
+}
+
+.c-chevron--right:before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.c-chevron--bottom:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.c-chevron--left:before {
+  left: 0.25em;
+  transform: rotate(-135deg);
+}
