@@ -7,9 +7,11 @@
 @import "variables";
 @import "mixins";
 @import "reset";
+@import "utilities";
 
 @import "component/link";
 @import "component/icons";
+@import "component/input";
 @import "component/button";
 @import "component/chevron";
 @import "component/typo";

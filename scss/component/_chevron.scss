@@ -2,16 +2,11 @@
 
 .c-chevron::before {
   border-style: solid;
-  border-width: 4px 4px 0 0;
   content: '';
   display: inline-block;
-  height: 15px;
-  left: 3px;
   position: relative;
-  top: 3px;
   transform: rotate(-45deg);
   vertical-align: top;
-  width: 15px;
 }
 
 .c-chevron--right:before {
@@ -27,4 +22,16 @@
 .c-chevron--left:before {
   left: 0.25em;
   transform: rotate(-135deg);
+}
+
+.c-chevron--sm:before {
+  width: 10px;
+  height: 10px;
+  border-width: 3px 3px 0 0;
+}
+
+.c-chevron--md:before {
+  width: 15px;
+  height: 15px;
+  border-width: 4px 4px 0 0;
 }

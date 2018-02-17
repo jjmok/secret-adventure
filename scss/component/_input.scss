@@ -1,0 +1,11 @@
+.c-input {
+  padding-left: 20px;
+  border: 1px solid #D3D3D3;
+  background-color: #F8F8F8;
+
+  &:active,
+  &:focus {
+    border: 1px solid $teal;
+    box-shadow: 0 0 4px 0 rgba($teal, 0.5);
+  }
+}

@@ -35,3 +35,8 @@ button {
   padding: 0px;
 }
 
+button, input {
+  &:focus {
+    outline: none;
+  }
+}
