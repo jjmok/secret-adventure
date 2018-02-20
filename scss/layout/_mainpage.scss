@@ -140,13 +140,17 @@
 
 // Video Section 
 .bk-video-section {
-  padding: 250px 0px 200px;
+  padding: 70px 0px;
   background: linear-gradient(134.72deg, #ECCC8A 2.4%, #EEE7D0 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
   position: relative;
+
+  @include for-tablet-landscape-up {
+    padding: 250px 0px 200px;
+  }
 }
 
 .bk-video-section__content {
@@ -155,17 +159,30 @@
 }
 
 .bk-video-section__title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  font-size: var(--section-title);
+
+  @include for-tablet-landscape-up {
+    margin-bottom: 50px;
+  }
 }
 
 .bk-video-section--desc {
   line-height: 36px;
   color: #423817;
-  font-size: 19px;
-  width: 75%;
-  margin: 0 auto 120px;
+  margin: 0 auto 50px;
+  font-size: var(--section-desc);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 30px;
+  position: relative;
+  z-index: 2;
+  @include for-desktop-up {
+    width: 75%;
+    margin: 0 auto 120px;
+    margin-bottom: 50px;
+    background-color: transparent;
+  }
 }
-
 
 .bk-video-section__video-container {
   position: relative;
@@ -196,7 +213,9 @@
   position: absolute;
   right: -62px;
   top: 170px;
-  @include image("../assets/img/pangolin_mascot", "png", 417px, 417px, cover);
+  max-height: 418px;
+  max-width: 418px;
+  @include image("../assets/img/pangolin_mascot", "png", 60%, 60%, contain);
 }
 
 .bk-video-section__brush {
@@ -204,7 +223,9 @@
   position: absolute;
   left: 0px;
   top: 400px;
-  @include image("../assets/img/brush", "png", 240px, 240px, contain);
+  max-height: 240px;
+  max-width: 240px;
+  @include image("../assets/img/brush", "png", 25%, 17%, contain);
 }
 
 .bk-video-section__pencil {
@@ -212,7 +233,9 @@
   position: absolute;
   left: 0px;
   bottom: 200px;
-  @include image("../assets/img/pencil", "png", 240px, 240px, contain);
+  max-height: 240px;
+  max-width: 240px;
+  @include image("../assets/img/pencil", "png", 15%, 15%, contain);
 }
 
 .bk-video-section__pizza {

@@ -652,14 +652,17 @@ template {
   --carousel-title-font: calc((18 / var(--font-base)) * 1rem);
   --carousel-desc-font: calc((16 / var(--font-base)) * 1rem);
   --story-title-font: calc((20 / var(--font-base)) * 1rem);
+  --section-title: calc((18 / var(--font-base)) * 1rem);
+  --section-desc: calc((16 / var(--font-base)) * 1rem);
 }
 
 @media (min-width: 600px) {
   :root {
     --base-font: calc((14 / var(--font-base)) * 1rem);
     --carousel-height: 350px;
-    --carousel-title-font: calc((25 / var(--font-base)) * 1rem);
+    --carousel-title-font: calc((30 / var(--font-base)) * 1rem);
     --carousel-desc-font: calc((16 / var(--font-base)) * 1rem);
+    --section-title: calc((25 / var(--font-base)) * 1rem);
   }
 }
 
@@ -669,6 +672,8 @@ template {
     --carousel-height: 535px;
     --carousel-title-font: calc((45 / var(--font-base)) * 1rem);
     --carousel-desc-font: calc((28 / var(--font-base)) * 1rem);
+    --section-title: calc((38 / var(--font-base)) * 1rem);
+    --section-desc: calc((18 / var(--font-base)) * 1rem);
   }
 }
 
@@ -991,7 +996,6 @@ button:focus, input:focus {
 
 .c-title {
   color: #003B49;
-  font-size: 38px;
   font-weight: bold;
   text-align: center;
 }
@@ -1634,7 +1638,7 @@ button:focus, input:focus {
 }
 
 .bk-video-section {
-  padding: 250px 0px 200px;
+  padding: 70px 0px;
   background: linear-gradient(134.72deg, #ECCC8A 2.4%, #EEE7D0 100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1650,21 +1654,46 @@ button:focus, input:focus {
   position: relative;
 }
 
+@media (min-width: 900px) {
+  .bk-video-section {
+    padding: 250px 0px 200px;
+  }
+}
+
 .bk-video-section__content {
   position: relative;
   z-index: 2;
 }
 
 .bk-video-section__title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  font-size: var(--section-title);
+}
+
+@media (min-width: 900px) {
+  .bk-video-section__title {
+    margin-bottom: 50px;
+  }
 }
 
 .bk-video-section--desc {
   line-height: 36px;
   color: #423817;
-  font-size: 19px;
-  width: 75%;
-  margin: 0 auto 120px;
+  margin: 0 auto 50px;
+  font-size: var(--section-desc);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 30px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1200px) {
+  .bk-video-section--desc {
+    width: 75%;
+    margin: 0 auto 120px;
+    margin-bottom: 50px;
+    background-color: transparent;
+  }
 }
 
 .bk-video-section__video-container {
@@ -1708,11 +1737,13 @@ button:focus, input:focus {
   position: absolute;
   right: -62px;
   top: 170px;
+  max-height: 418px;
+  max-width: 418px;
   background-image: url("../assets/img/pangolin_mascot.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 417px;
-  height: 417px;
+  background-size: contain;
+  width: 60%;
+  height: 60%;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1726,11 +1757,13 @@ button:focus, input:focus {
   position: absolute;
   left: 0px;
   top: 400px;
+  max-height: 240px;
+  max-width: 240px;
   background-image: url("../assets/img/brush.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 240px;
-  height: 240px;
+  width: 25%;
+  height: 17%;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1744,11 +1777,13 @@ button:focus, input:focus {
   position: absolute;
   left: 0px;
   bottom: 200px;
+  max-height: 240px;
+  max-width: 240px;
   background-image: url("../assets/img/pencil.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 240px;
-  height: 240px;
+  width: 15%;
+  height: 15%;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
