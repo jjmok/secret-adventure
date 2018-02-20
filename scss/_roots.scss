@@ -1,0 +1,24 @@
+:root {
+  font-size: calc(var(--font-base) * 1px);
+
+  --font-base: 16;
+  --base-font: calc((12 / var(--font-base)) * 1rem);
+  --carousel-height: 300px;
+  --carousel-title-font: calc((18 / var(--font-base)) * 1rem);
+  --carousel-desc-font: calc((16 / var(--font-base)) * 1rem);
+  --story-title-font: calc((20 / var(--font-base)) * 1rem);
+
+  @include for-tablet-portrait-up {
+    --base-font: calc((14 / var(--font-base)) * 1rem);
+    --carousel-height: 350px;
+    --carousel-title-font: calc((25 / var(--font-base)) * 1rem);
+    --carousel-desc-font: calc((16 / var(--font-base)) * 1rem);
+  }
+
+  @include for-tablet-landscape-up {
+    --base-font: calc((16 / var(--font-base)) * 1rem);
+    --carousel-height: 535px;
+    --carousel-title-font: calc((45 / var(--font-base)) * 1rem);
+    --carousel-desc-font: calc((28 / var(--font-base)) * 1rem);
+  }
+}

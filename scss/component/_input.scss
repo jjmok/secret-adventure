@@ -1,11 +1,16 @@
 .c-input {
   padding-left: 20px;
-  border: 1px solid #D3D3D3;
+  border: 2px solid #D3D3D3;
   background-color: #F8F8F8;
 
   &:active,
   &:focus {
-    border: 1px solid $teal;
+    border: 2px solid $teal;
     box-shadow: 0 0 4px 0 rgba($teal, 0.5);
   }
+}
+
+.c-input--error {
+  border: 2px solid #F5A623;
+  box-shadow: 0 0 4px 0 rgba(#F5A623, 0.5);
 }

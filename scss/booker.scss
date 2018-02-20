@@ -2,16 +2,17 @@
 @import "chalkduster";
 
 @import "bootstrap/bootstrap";
-
 @import "normalize";
 @import "variables";
 @import "mixins";
+@import "roots";
 @import "reset";
 @import "utilities";
 
 @import "component/link";
 @import "component/icons";
 @import "component/input";
+@import "component/errormsg";
 @import "component/button";
 @import "component/chevron";
 @import "component/typo";

@@ -70,7 +70,10 @@
 }
 
 .bk-header__logo {
-  margin-right: 60px;
+  
+  @include for-desktop-up {
+    margin-right: 60px;
+  }
 }
 
 .bk-header__logo--1 {
@@ -117,12 +120,13 @@
   justify-content: space-between;
   width: 85px;
   cursor: pointer;
-  
+
   @include for-desktop-up {
     display: none;
   }
 
-  &:focus {
+  &:focus,
+  &:hover {
     ~.bk-header__container {
       display: inline-flex;
     }

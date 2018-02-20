@@ -38,7 +38,7 @@
 
     </header>
     
-    <div id="js-intro-carousel" class="carousel slide bk-carousel" data-ride="carousel" data-interval="3000">
+    <div id="js-intro-carousel" class="carousel slide bk-carousel" data-ride="carousel" data-interval="99999">
       <!--
         <ol class="carousel-indicators">
           <li data-target="#js-intro-carousel" data-slide-to="0" class="active"></li>
@@ -48,21 +48,21 @@
       -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="bk-carousel-item__text">
+          <div class="bk-carousel-item__text bk-width-cont">
             <h1 class="bk-carousel-item__title">My Secret Adventure</h1>
             <p class="bk-carousel-item__desc">Customise an exciting adventure for that special little person</p>
           </div>
           <div class="bk-carousel-item bk-carousel-item--1"></div>
         </div>
         <div class="carousel-item">
-          <div class="bk-carousel-item__text bk-carousel-item--white">
+          <div class="bk-carousel-item__text bk-width-cont bk-carousel-item--white">
             <h1 class="bk-carousel-item__title">My Secret Adventure</h1>
             <p class="bk-carousel-item__desc">Customise an exciting adventure for that special little person</p>
           </div>
           <div class="bk-carousel-item bk-carousel-item--2"></div>
         </div>
         <div class="carousel-item">
-          <div class="bk-carousel-item__text">
+          <div class="bk-carousel-item__text bk-width-cont">
             <h1 class="bk-carousel-item__title">My Secret Adventure</h1>
             <p class="bk-carousel-item__desc">Customise an exciting adventure for that special little person</p>
           </div>
@@ -79,22 +79,33 @@
       </a>
     </div>
 
-    <div class="bk-create-story">
-      <h1 class="bk-create-story__title">Create the perfect story</h1>
-      <p class="bk-create-story__desc">Begin by entering a name</p>
-      <div class="bk-create-story__options">
-        <input id="js-enter-name" class="c-input bk-create-story__name-input" type="text"/>
-        <div class="bk-create-story__gender">
-          <input class="bk-create-story__radio u-hide" type="radio" name="bk_gender" id="gender_boy" value="boy"> 
-          <label class="bk-create-story__gender-btn" for="gender_boy">Boy</label>
+    <div class="bk-story">
+      <h1 class="bk-story__title">Create the perfect story</h1>
+      <p class="bk-story__desc">Begin by entering a name</p>
+      <div class="bk-story__options">
+        <div class="bk-story__name-input-container">
+          <input id="js-enter-name" class="c-input bk-story__name-input" type="text" name="user-name"/>
+          <div id="js-name-blank-error" class="c-error bk-story__error u-hide">
+            Name Must not be blank
+          </div>
+          <div id="js-name-invalid-error" class="c-error bk-story__error u-hide">
+            Name must not contain numerical
+          </div>
         </div>
-        <div class="bk-create-story__gender">
-          <input class="bk-create-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
-          <label class="bk-create-story__gender-btn" for="gender_girl">Girl</label>
-        </div>
-        <button class="c-btn c-btn--froly c-btn--widepress bk-create-story__preview">Preview</button>
-      </div>
 
+        <div class="bk-story__gender">
+          <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_boy" value="boy"> 
+          <label class="bk-story__gender-btn" for="gender_boy">Boy</label>
+        </div>
+        <div class="bk-story__gender">
+          <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
+          <label class="bk-story__gender-btn" for="gender_girl">Girl</label>
+        </div>
+        <div class="bk-story__preview-cont">
+          <button id="js-preview-btn" class="c-btn c-btn--froly c-btn--widepress bk-story__preview">Preview</button>
+        </div>
+
+      </div>
     </div>
 
     <section class="bk-video-section">
