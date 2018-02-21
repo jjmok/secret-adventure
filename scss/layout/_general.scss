@@ -9,7 +9,7 @@
 .bk-width-cont {
   padding: 0px 20px;
 
-  @include min-screen(400px) {
+  @include min-screen(500px) {
     padding: 0px 12%;
   }
 }
