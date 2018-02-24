@@ -7,30 +7,37 @@
   position: relative;
   transform: rotate(-45deg);
   vertical-align: top;
+  box-sizing: content-box;
 }
 
-.c-chevron--right:before {
+.c-chevron--right::before {
   left: 0;
   transform: rotate(45deg);
 }
 
-.c-chevron--bottom:before {
+.c-chevron--bottom::before {
   top: 0;
   transform: rotate(135deg);
 }
 
-.c-chevron--left:before {
+.c-chevron--left::before {
   left: 0.25em;
   transform: rotate(-135deg);
 }
 
-.c-chevron--sm:before {
-  width: 10px;
-  height: 10px;
+.c-chevron--xs::before {
+  width: 4px;
+  height: 4px;
+  border-width: 2px 2px 0 0;
+}
+
+.c-chevron--sm::before {
+  width: 8px;
+  height: 8px;
   border-width: 3px 3px 0 0;
 }
 
-.c-chevron--md:before {
+.c-chevron--md::before {
   width: 15px;
   height: 15px;
   border-width: 4px 4px 0 0;

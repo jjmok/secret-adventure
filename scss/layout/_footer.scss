@@ -5,8 +5,8 @@
   min-height: 215px;
   background-color: #3E3E58;
   height: var(--footer-height);
-
-
+  position: relative;
+  z-index: 2;
 }
 
 .bk-footer__link {

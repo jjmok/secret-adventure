@@ -77,7 +77,7 @@
   width: 100%;
   position: relative;
   margin-bottom: 15px;
-
+  
   @include for-tablet-landscape-up {
     margin-right: 30px;
     width: initial;
@@ -85,7 +85,7 @@
   }
 }
 
-.bk-story__gender {
+.bk-gender {
   width: 50%;
   margin-bottom: 15px;
 
@@ -104,13 +104,13 @@
 }
 
 .bk-story__radio {
-  &:checked ~ .bk-story__gender-btn {
+  &:checked ~ .bk-gender-btn {
     background-color: $teal;
     color: white;
   }
 }
 
-.bk-story__gender-btn {
+.bk-gender-btn {
   display: inline-block;
   width: 107px;
   width: 100%;
@@ -134,7 +134,7 @@
 }
 
 .bk-story__name-input,
-.bk-story__gender-btn {
+.bk-gender-btn {
   height: 46px;
 }
 

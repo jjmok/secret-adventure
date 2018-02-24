@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const previewBtn = document.querySelector('#js-preview-btn')
   const blankNameError = document.querySelector('#js-name-blank-error')
   const invalidNameError = document.querySelector('#js-name-invalid-error')
+  const previewSteps = document.querySelectorAll('.bk-preview__step')
+  const previewStep_1 = document.querySelector('#js-preview-step-1')
+  const previewChangeName = document.querySelector('#js-preview-change-name')
+  const previewOverlay = document.querySelector('#js-preview-overlay')
+
 
   function addError (elem) {
     elem.classList.add('c-input--error')
@@ -12,6 +17,17 @@ document.addEventListener('DOMContentLoaded', function (event) {
     blankNameError.classList.add('u-hide')
     invalidNameError.classList.add('u-hide')
     enterName.classList.remove('c-input--error')
+  }
+
+  function resetPreviewSteps () {
+    [...previewSteps].forEach(function(elem){
+      elem.classList.remove('bk-preview__step--active');
+    });
+  }
+
+  function closeChangeName () {
+    previewChangeName.classList.remove('bk-preview__change-name--active');
+    previewOverlay.classList.remove('bk-preview__overlay--active');
   }
 
   previewBtn.addEventListener('mousedown', function (e) {
@@ -45,4 +61,18 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     // console.log(targetValue)
   })
+
+  previewStep_1.addEventListener('mousedown', function (e){
+    previewChangeName.classList.add('bk-preview__change-name--active');
+    previewOverlay.classList.add('bk-preview__overlay--active');
+  });
+
+  [...previewSteps].forEach(function(elem){
+    elem.addEventListener('mousedown', function (e){
+      resetPreviewSteps()
+      e.currentTarget.classList.add('bk-preview__step--active')
+    });
+  });
+
+
 })

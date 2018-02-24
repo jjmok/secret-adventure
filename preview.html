@@ -42,9 +42,7 @@
         <h1 class="bk-preview__title">An adventure is in the making for</h1>
         <p class="bk-preview__name">SHANE</p>
         <div class="bk-preview__frame">
-          <div class="bk-dummy-cover">
-            123
-          </div>
+          
           <div class="bk-preview__loader-cont">
             <div class="c-loader bk-preview__loader">
             </div>
@@ -54,25 +52,89 @@
             </div>
           </div>
 
-        </div>
+          <div class="bk-preview__tap-cont">
+            <p>Tap to open the book</p>
+            <div class="bk-preview__tap-to-open"></div>
+          </div>
 
+          <div class="bk-dummy-cover"></div>
+        </div>
+        <ul class="bk-preview__letter-set">
+          <li class="bk-preview__letter-cont">
+            <span class="bk-preview__letter">S</span>
+            <div class="bk-preview__letter-icons"></div>
+          </li>
+          <li class="bk-preview__letter-cont">
+            <span class="bk-preview__letter">H</span>
+            <div class="bk-preview__letter-icons"></div>
+          </li>
+          <li class="bk-preview__letter-cont">
+            <span class="bk-preview__letter">A</span>
+            <div class="bk-preview__letter-icons"></div>
+          </li>
+          <li class="bk-preview__letter-cont">
+            <span class="bk-preview__letter">N</span>
+            <div class="bk-preview__letter-icons"></div>
+          </li>
+          <li class="bk-preview__letter-cont">
+            <span class="bk-preview__letter">E</span>
+            <div class="bk-preview__letter-icons"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="js-preview-overlay" class="bk-preview__overlay"></div>
+      
+      <div id="js-preview-change-name" class="bk-preview__change-name">
+        <div class="bk-preview__change-name-cont">
+          <div class="bk-preview__name-input-container">
+            <label class="bk-preview__name-label" for="js-enter-name">Name</label>
+            <input id="js-enter-name" class="c-input bk-preview__name-input" type="text" name="user-name"/>
+            <div id="js-name-blank-error" class="c-error bk-story__error u-hide">
+              Name Must not be blank
+            </div>
+            <div id="js-name-invalid-error" class="c-error bk-story__error u-hide">
+              Name must not contain numerical
+            </div>
+          </div>
+          <div class="bk-gender">
+            <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_boy" value="boy"> 
+            <label class="bk-gender-btn" for="gender_boy">Boy</label>
+          </div>
+          <div class="bk-gender">
+            <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
+            <label class="bk-gender-btn" for="gender_girl">Girl</label>
+          </div>
+          <div class="bk-preview__done-btn c-btn--widepress-cont">
+            <button id="js-preview-btn" class="c-btn c-btn--froly c-btn--widepress">Preview</button>
+          </div>
+        </div>
       </div>
 
       <ul class="bk-preview__step-set">
-        <li class="bk-preview__step">
-          <div class="bk-preview_step-check"></div>
-          <p>Step 1</p>
-          <p>Shane</p>
+        <li id="js-preview-step-1" class="bk-preview__step">
+          <div class="bk-preview__step-check checked"></div>
+          <div class="bk-preview__step-text">
+            <p class="bk-preview__step-step">Step 1</p>
+            <p class="bk-preview__step-name">Shane</p>
+          </div>
+          <span class="bk-preview__chevron c-chevron c-chevron--xs c-chevron--bottom" aria-hidden="true"></span>
         </li>
-        <li class="bk-preview__step">
-          <div class="bk-preview_step-check"></div>
-          <p>Step 1</p>
-          <p>Shane</p>
+        <li id="js-preview-step-2" class="bk-preview__step bk-preview__step--active">
+          <div class="bk-preview__step-check"></div>
+          <div class="bk-preview__step-text">
+            <p class="bk-preview__step-step">Step 2</p>
+            <p class="bk-preview__step-name">Storyline</p>
+          </div>
+          <span class="bk-preview__chevron c-chevron c-chevron--xs c-chevron--bottom" aria-hidden="true"></span>
         </li>
-        <li class="bk-preview__step">
-          <div class="bk-preview_step-check"></div>
-          <p>Step 1</p>
-          <p>Shane</p>
+        <li id="js-preview-step-3" class="bk-preview__step">
+          <div class="bk-preview__step-check"></div>
+          <div class="bk-preview__step-text">
+            <p class="bk-preview__step-step">Step 3</p>
+            <p class="bk-preview__step-name">Dedication</p>
+          </div>
+          <span class="bk-preview__chevron c-chevron c-chevron--xs c-chevron--bottom" aria-hidden="true"></span>
         </li>
       </ul>
     </div>  

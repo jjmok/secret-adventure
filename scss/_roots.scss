@@ -11,7 +11,7 @@
   --section-desc: calc((16 / var(--font-base)) * 1rem);
   --header-height: 70px;
   --footer-height: 315px;
-  --preview-step-height: 90px;
+  --preview-step-height: 75px;
   --preview-frame-height: 425px;
 
   @include for-tablet-portrait-up {
