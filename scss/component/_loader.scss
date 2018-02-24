@@ -1,0 +1,14 @@
+@keyframes ani-rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.c-loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid $froly;
+  border-top-color: transparent;
+  animation: ani-rotate 1s infinite linear;
+  display: inline-block;
+}

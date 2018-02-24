@@ -9,6 +9,10 @@
   --story-title-font: calc((20 / var(--font-base)) * 1rem);
   --section-title: calc((18 / var(--font-base)) * 1rem);
   --section-desc: calc((16 / var(--font-base)) * 1rem);
+  --header-height: 70px;
+  --footer-height: 315px;
+  --preview-step-height: 90px;
+  --preview-frame-height: 425px;
 
   @include for-tablet-portrait-up {
     --base-font: calc((14 / var(--font-base)) * 1rem);
@@ -16,6 +20,7 @@
     --carousel-title-font: calc((30 / var(--font-base)) * 1rem);
     --carousel-desc-font: calc((16 / var(--font-base)) * 1rem);
     --section-title: calc((25 / var(--font-base)) * 1rem);
+    --footer-height: 215px;
   }
 
   @include for-tablet-landscape-up {
