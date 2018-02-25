@@ -1,23 +1,24 @@
+.bk-preview-container {
+  background-color: #FFF5DA;
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  position: relative;
+  min-height: 800px;
+
+  //100px is the buffer space
+  @include for-tablet-portrait-up {
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+  }
+}
+
 .bk-preview__inner-cont {
   @include flexcenter;
   flex-direction: column;
   height: calc(100% - var(--preview-step-height));
 }
 
-.bk-preview-container {
-  background-color: #FFF5DA;
-  height: calc(100vh - var(--header-height));
-  position: relative;
-  //100px is the buffer space
-  @include for-tablet-portrait-up {
-    height: calc(100vh - var(--footer-height) - var(--header-height) + 120px);
-  }
-}
-
 .bk-preview__title,
 .bk-preview__name {
   text-align: center;
-  font-size: 2.5rem;
 }
 
 .bk-preview__loader-cont {
@@ -68,6 +69,10 @@
   }
 }
 
+.bk-step--active {
+  background-color: #FFF5DA;
+}
+
 .bk-preview__step-set {
   background-color: white;
   display: flex;
@@ -104,14 +109,6 @@
   line-height: 19px;
 }
 
-.bk-preview__step--active {
-  background-color: #FFF5DA;
-
-  .bk-preview__chevron {
-    transform: rotate(180deg)
-  }
-}
-
 .bk-preview__chevron {
   display: inline-block;
   height: 10px;
@@ -125,6 +122,10 @@
   &::before {
     top: -1px;
     position: relative;
+  }
+
+  .bk-step--active & {
+    transform: rotate(180deg)
   }
 }
 
@@ -149,6 +150,8 @@
   margin-right: 35px;
   text-align: center;
   position: relative;
+  cursor: pointer;
+
   &:first-of-type,
   &:last-of-type  {
 
@@ -158,7 +161,7 @@
       height: 10px;
       position: absolute;
       background-color: #D9B146;
-      top: 10px;
+      top: 15px;
       border-radius: 50%;
     }
   }
@@ -179,9 +182,21 @@
 }
 
 .bk-preview__letter {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: $sub-font;
   font-size: 25px;
   margin-bottom: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+
+  .bk-letter-cont--active & {
+    color: white;
+    background-color: $froly;
+  }
 }
 
 .bk-preview__letter-icons {
@@ -190,6 +205,10 @@
   border: 2px solid #D9B146;
   width: 40px;
   height: 40px;
+
+  .bk-letter-cont--active & {
+    border: 3px solid $froly;
+  }
 }
 
 .bk-preview__tap-cont {
@@ -215,10 +234,10 @@
   position: absolute;
   transition: bottom 0.5s ease-in;
   bottom: -200px;
+}
 
-  &.bk-preview__change-name--active {
-    bottom: var(--preview-step-height);
-  }
+.bk-change-name--active {
+  bottom: var(--preview-step-height);
 }
 
 .bk-preview__name-label {
@@ -262,15 +281,55 @@
   left: 0;
   background-color: rgba(59,59,59,0.78);
   opacity: 0;
-  pointer-event: none;
+  pointer-events: none;
   transition: opacity 0.2s ease;
+}
 
-  &.bk-preview__overlay--active {
-    opacity: 1;
-  }
+.bk-overlay--active {
+  opacity: 1;
 }
 
 .bk-preview__done-btn {
   position: relative;
   bottom: 6px;
+}
+
+.bk-preview__letter-dropdown {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  
+  &:active {
+    color: red;
+  }
+}
+
+.bk-letter-dropdown--active {
+  opacity: 1;
+  pointer-events: initial;
+  cursor: pointer;
+  transform: translate(-50%, 0);
+}
+
+.bk-preview__letter-switch {
+  position: absolute;
+  min-width: 150px;
+  bottom: -190px;
+  left: 50%;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translate(-50%, -20px);
+  z-index: 4;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bk-letter-switch--active {
+  transform: translate(-50%, 0px);
+  opacity: 1;
+  pointer-events: initial;
 }

@@ -1,7 +1,7 @@
 //Resets
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /* Sets up the Base 10 stuff */
+  font-size: var(--base-font-size);
   line-height: normal;
 }
 
@@ -43,4 +43,9 @@ button, input {
   &:focus {
     outline: none;
   }
+}
+
+button, input, optgroup,
+select, textarea {
+  font-size: 1.0rem;
 }

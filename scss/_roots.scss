@@ -1,34 +1,55 @@
 :root {
-  font-size: calc(var(--font-base) * 1px);
-
-  --font-base: 16;
-  --base-font: calc((12 / var(--font-base)) * 1rem);
+  --font: 16;
+  --base-font-size: calc(var(--font) * 1px);
   --carousel-height: 300px;
-  --carousel-title-font: calc((18 / var(--font-base)) * 1rem);
-  --carousel-desc-font: calc((16 / var(--font-base)) * 1rem);
-  --story-title-font: calc((20 / var(--font-base)) * 1rem);
-  --section-title: calc((18 / var(--font-base)) * 1rem);
-  --section-desc: calc((16 / var(--font-base)) * 1rem);
-  --header-height: 70px;
   --footer-height: 315px;
+  --header-height: 70px;
+  --preview-frame-height: 325px;
   --preview-step-height: 75px;
-  --preview-frame-height: 425px;
+  --section-title-font: 18px;
+  --story-title-font: 20px;
 
   @include for-tablet-portrait-up {
-    --base-font: calc((14 / var(--font-base)) * 1rem);
     --carousel-height: 350px;
-    --carousel-title-font: calc((30 / var(--font-base)) * 1rem);
-    --carousel-desc-font: calc((16 / var(--font-base)) * 1rem);
-    --section-title: calc((25 / var(--font-base)) * 1rem);
     --footer-height: 215px;
+    --preview-frame-height: 425px;
   }
 
   @include for-tablet-landscape-up {
-    --base-font: calc((16 / var(--font-base)) * 1rem);
     --carousel-height: 535px;
-    --carousel-title-font: calc((45 / var(--font-base)) * 1rem);
-    --carousel-desc-font: calc((28 / var(--font-base)) * 1rem);
-    --section-title: calc((38 / var(--font-base)) * 1rem);
-    --section-desc: calc((18 / var(--font-base)) * 1rem);
+  }
+}
+
+:root {
+  --c-title-font: 20px;
+  @include for-tablet-portrait-up {
+    --c-title-font: 25px;
+  }
+  @include for-tablet-landscape-up {
+    --c-title-font: 38px;
+  }
+}
+
+:root {
+  --carousel-desc-font: 16px;
+  @include for-tablet-landscape-up {
+    --carousel-desc-font: 28px;
+  }
+}
+
+:root {
+  --section-desc: 16px;
+  @include for-tablet-landscape-up {
+    --section-desc: 18px;
+  }
+}
+
+:root {
+  --carousel-title-font: 18px;
+  @include for-tablet-portrait-up {
+    --carousel-title-font: 30px;
+  }
+  @include for-tablet-landscape-up {
+    --carousel-title-font: 45px;
   }
 }

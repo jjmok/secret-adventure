@@ -160,8 +160,7 @@
 
 .bk-video-section__title {
   margin-bottom: 20px;
-  font-size: var(--section-title);
-
+  
   @include for-tablet-landscape-up {
     margin-bottom: 50px;
   }
@@ -423,7 +422,12 @@
 }
 
 .bk-hiw__title {
+  text-align: left;
   margin: 30px 0px 25px;
+
+  @include for-tablet-portrait-up {
+    text-align: center;
+  }
 }
 
 .bk-hiw__content {

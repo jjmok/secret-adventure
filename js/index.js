@@ -3,11 +3,15 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const previewBtn = document.querySelector('#js-preview-btn')
   const blankNameError = document.querySelector('#js-name-blank-error')
   const invalidNameError = document.querySelector('#js-name-invalid-error')
-  const previewSteps = document.querySelectorAll('.bk-preview__step')
+  const previewSteps = document.querySelectorAll('.js-preview-step')
+  const previewLetters = document.querySelectorAll('.js-preview-letter-cont')
   const previewStep_1 = document.querySelector('#js-preview-step-1')
+  const previewStep_2 = document.querySelector('#js-preview-step-2')
+  const previewStep_3 = document.querySelector('#js-preview-step-3')
   const previewChangeName = document.querySelector('#js-preview-change-name')
   const previewOverlay = document.querySelector('#js-preview-overlay')
-
+  const previewLetterDropdown = document.querySelectorAll('.js-preview-letter-dropdown')
+  const previewLetterSwitchIcon = document.querySelectorAll('.js-letter-switch-icon')
 
   function addError (elem) {
     elem.classList.add('c-input--error')
@@ -21,13 +25,22 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   function resetPreviewSteps () {
     [...previewSteps].forEach(function(elem){
-      elem.classList.remove('bk-preview__step--active');
+      elem.classList.remove('bk-step--active');
+    });
+  }
+
+  function resetPreviewLetters () {
+    [...previewLetters].forEach(function(elem){
+      elem.classList.remove('bk-letter-cont--active');
+    });
+    [...previewLetterDropdown].forEach(function(elem){
+      elem.classList.remove('bk-letter-dropdown--active');
     });
   }
 
   function closeChangeName () {
-    previewChangeName.classList.remove('bk-preview__change-name--active');
-    previewOverlay.classList.remove('bk-preview__overlay--active');
+    previewChangeName.classList.remove('bk-change-name--active');
+    previewOverlay.classList.remove('bk-overlay--active');
   }
 
   previewBtn.addEventListener('mousedown', function (e) {
@@ -63,16 +76,60 @@ document.addEventListener('DOMContentLoaded', function (event) {
   })
 
   previewStep_1.addEventListener('mousedown', function (e){
-    previewChangeName.classList.add('bk-preview__change-name--active');
-    previewOverlay.classList.add('bk-preview__overlay--active');
+    previewChangeName.classList.add('bk-change-name--active');
+    previewOverlay.classList.add('bk-overlay--active');
+  });
+
+  previewStep_2.addEventListener('mousedown', function (e){
+    previewChangeName.classList.remove('bk-change-name--active');
+    previewOverlay.classList.remove('bk-overlay--active');
+  });
+
+  previewStep_3.addEventListener('mousedown', function (e){
+    previewChangeName.classList.remove('bk-change-name--active');
+    previewOverlay.classList.remove('bk-overlay--active');
   });
 
   [...previewSteps].forEach(function(elem){
     elem.addEventListener('mousedown', function (e){
-      resetPreviewSteps()
-      e.currentTarget.classList.add('bk-preview__step--active')
+
+      if (e.currentTarget.classList.contains('bk-step--active')) {
+        return
+      } else {
+        resetPreviewSteps()
+        e.currentTarget.classList.add('bk-step--active')
+      }
     });
   });
 
+  [...previewLetters].forEach(function(elem){
+    elem.addEventListener('mousedown', function (e){
 
+      let target_dropdown = e.currentTarget.querySelector('.js-preview-letter-dropdown');
+
+      if (e.currentTarget.classList.contains('bk-letter-cont--active')) {
+        return
+      } else {
+        resetPreviewLetters()
+        e.currentTarget.classList.add('bk-letter-cont--active')
+        target_dropdown.classList.add('bk-letter-dropdown--active')
+      }
+    });
+  });
+
+  [...previewLetterDropdown].forEach(function(elem){
+    elem.addEventListener('mousedown', function (e){
+      let target_dropdown = e.currentTarget.parentNode.querySelector('.js-preview-letter-switch');
+      e.currentTarget.classList.remove('bk-letter-dropdown--active')
+      target_dropdown.classList.add('bk-letter-switch--active')
+    });
+  });
+
+  [...previewLetterSwitchIcon].forEach(function(elem){
+    elem.addEventListener('mousedown', function (e){
+      let target_parent = e.currentTarget.closest('.js-preview-letter-cont');
+      target_parent.querySelector('.js-preview-letter-switch ').classList.remove('bk-letter-switch--active')
+      target_parent.querySelector('.js-preview-letter-dropdown ').classList.add('bk-letter-dropdown--active')
+    });
+  });
 })
