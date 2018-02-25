@@ -139,6 +139,15 @@
   max-width: 590px;
 }
 
+.bk-dummy-cover-2 {
+  @include image("../assets/img/fake-cover-full", "png", 100%, 425px, contain);
+  height: var(--preview-frame-height);
+  color: white;
+  display: inline-block;
+  margin-bottom: 30px;
+  background-position: center;
+}
+
 .bk-preview__letter-set {
   display: flex;
   flex-direction: row;
@@ -333,3 +342,34 @@
   opacity: 1;
   pointer-events: initial;
 }
+
+.bk-preview__dedication {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -390px;
+  width: 100%;
+  background-color: #FFF5DA;
+  height: 465px;
+  transition: bottom 0.5s ease;
+}
+
+.bk-dedication--active {
+  bottom: var(--preview-step-height);
+}
+
+.bk-preview__dedication-almost-there {
+  opacity: 0.6;
+  color: #2C2A37;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  }
+
+.bk-preview__dedication-step-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

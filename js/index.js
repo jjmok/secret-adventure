@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const previewOverlay = document.querySelector('#js-preview-overlay')
   const previewLetterDropdown = document.querySelectorAll('.js-preview-letter-dropdown')
   const previewLetterSwitchIcon = document.querySelectorAll('.js-letter-switch-icon')
+  const previewLetterLetterSwitch = document.querySelectorAll('.js-preview-letter-switch')
+  const previewLetterDedication = document.querySelector('#js-preview-dedication')
 
   function addError (elem) {
     elem.classList.add('c-input--error')
@@ -35,6 +37,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
     });
     [...previewLetterDropdown].forEach(function(elem){
       elem.classList.remove('bk-letter-dropdown--active');
+    });
+  }
+
+  function restPreviewSwitcher () {
+    [...previewLetterLetterSwitch].forEach(function(elem){
+      elem.classList.remove('bk-letter-switch--active');
     });
   }
 
@@ -75,19 +83,25 @@ document.addEventListener('DOMContentLoaded', function (event) {
     // console.log(targetValue)
   })
 
+  function previewReset() {
+    previewChangeName.classList.remove('bk-change-name--active');
+    previewOverlay.classList.remove('bk-overlay--active');
+    previewLetterDedication.classList.remove('bk-dedication--active');
+  }
+
   previewStep_1.addEventListener('mousedown', function (e){
+    previewReset()
     previewChangeName.classList.add('bk-change-name--active');
     previewOverlay.classList.add('bk-overlay--active');
   });
 
   previewStep_2.addEventListener('mousedown', function (e){
-    previewChangeName.classList.remove('bk-change-name--active');
-    previewOverlay.classList.remove('bk-overlay--active');
+    previewReset()
   });
 
   previewStep_3.addEventListener('mousedown', function (e){
-    previewChangeName.classList.remove('bk-change-name--active');
-    previewOverlay.classList.remove('bk-overlay--active');
+    previewOverlay.classList.add('bk-overlay--active');
+    previewLetterDedication.classList.add('bk-dedication--active');
   });
 
   [...previewSteps].forEach(function(elem){
@@ -110,6 +124,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       if (e.currentTarget.classList.contains('bk-letter-cont--active')) {
         return
       } else {
+        restPreviewSwitcher()
         resetPreviewLetters()
         e.currentTarget.classList.add('bk-letter-cont--active')
         target_dropdown.classList.add('bk-letter-dropdown--active')
