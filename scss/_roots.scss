@@ -5,9 +5,13 @@
   --footer-height: 315px;
   --header-height: 70px;
   --preview-frame-height: 325px;
-  --preview-step-height: 75px;
+  --preview-step-height: 55px;
   --section-title-font: 18px;
   --story-title-font: 20px;
+
+  @include for-tablet-mid-range {
+    --preview-step-height: 75px;
+  }
 
   @include for-tablet-portrait-up {
     --carousel-height: 350px;
@@ -45,11 +49,11 @@
 }
 
 :root {
-  --carousel-title-font: 18px;
+  --big-title-font: 18px;
   @include for-tablet-portrait-up {
-    --carousel-title-font: 30px;
+    --big-title-font: 30px;
   }
   @include for-tablet-landscape-up {
-    --carousel-title-font: 45px;
+    --big-title-font: 45px;
   }
 }

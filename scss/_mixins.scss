@@ -42,11 +42,17 @@
 @mixin for-tablet-portait-only {
   @media (min-width: 600px) and (max-width: 899px) { @content; }
 }
+@mixin for-tablet-mid-range {
+  @media (min-width: 750px) { @content; }
+}
 @mixin for-tablet-landscape-up {
   @media (min-width: 900px) { @content; }
 }
 @mixin for-tablet-landscape-only {
   @media (min-width: 900px) and (max-width: 1199px) { @content; }
+}
+@mixin for-tablet-high-range {
+  @media (min-width: 1050px) { @content; }
 }
 @mixin for-desktop-up {
   @media (min-width: 1200px) { @content; }

@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   });
 
   previewStep_3.addEventListener('mousedown', function (e){
+    previewReset()
     previewOverlay.classList.add('bk-overlay--active');
     previewLetterDedication.classList.add('bk-dedication--active');
   });

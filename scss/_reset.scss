@@ -39,7 +39,7 @@ button {
   padding: 0px;
 }
 
-button, input {
+button, input, textarea {
   &:focus {
     outline: none;
   }

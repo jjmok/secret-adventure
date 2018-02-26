@@ -1,0 +1,143 @@
+.bk-cart__title {
+  @include flexcenter;
+  text-align: center;
+  font-size: var(--big-title-font);
+  margin-bottom: 30px;
+}
+
+.bk-cart__cart-icon {
+  @include image("../assets/img/cart", "png", 87px, 64px, cover);
+}
+
+.bk-cart__wonderful-text {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 50px;
+}
+
+.bk-cart__sub-title {
+  color: #666470;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.bk-cart__pending-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 95px;
+  background-color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.bk-cart__pending-item-img {
+  background-color: red;
+  min-width: 65px;
+  width: 65px;
+  height: 45px;
+  margin: 0 10px;
+  @include for-tablet-mid-range {
+    font-size: 18px;
+    margin: 0 15px;
+  }
+}
+
+.bk-cart__pending-item-name {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 23px;
+  width: 100%;
+  margin-right: 5px;
+
+  @include for-tablet-mid-range {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+}
+
+.bk-cart__pending-edit {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding-right: 10px;
+
+  &::before {
+    content: "";
+    display: none;
+    position: absolute;
+    right: 0px;
+    height: 60px;
+    width: 1px;
+    background-color: #E8E8E8;
+  }
+
+  @include for-tablet-mid-range {
+    padding-right: 45px;
+
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.bk-cart__pending-edit-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.bk-cart__pending-edit-icon {
+  display: inline-block;
+  margin-right: 15px;
+  @include image("../assets/img/edit-book", "png", 27px, 28px, contain);
+}
+
+.bk-cart__pending-edit-text {
+  color: #0FB1A3;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.bk-cart__pending-item-price {
+  color: #F16078;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+
+  @include for-tablet-mid-range {
+    right: initial;
+    bottom: initial;
+    position: relative;
+    margin: 0px 45px;
+    font-size: 25px;
+  }
+}
+
+.bk-cart__close {
+  font-size: 25px;
+  position: absolute;
+  right: -12.25px;
+  top: -6.25px
+}
+
+.bk-cart__addon-desc {
+  margin-bottom: 30px;
+}
+
+.bk-cart__addon-inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+  border-top: 1px dashed #D1B770;
+  border-bottom: 1px dashed #D1B770;
+}

@@ -1,19 +1,18 @@
 .bk-preview-container {
-  background-color: #FFF5DA;
-  height: calc(100vh - var(--header-height) - var(--footer-height));
+  height: calc(100vh - var(--header-height) - var(--preview-step-height) - var(--footer-height) + 100px);
   position: relative;
-  min-height: 800px;
+  // min-height: 800px;
 
   //100px is the buffer space
   @include for-tablet-portrait-up {
-    height: calc(100vh - var(--header-height) - var(--footer-height));
+    height: calc(100vh - var(--header-height) - var(--preview-step-height) - var(--footer-height) + 100px);
   }
 }
 
 .bk-preview__inner-cont {
   @include flexcenter;
   flex-direction: column;
-  height: calc(100% - var(--preview-step-height));
+  height: 100%;
 }
 
 .bk-preview__title,
@@ -54,18 +53,32 @@
 }
 
 .bk-preview__step {
-  width: 200px;
+  width: 100%;
   height: var(--preview-step-height);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row;
   background-color: white;
-  border-right: 1px dashed #979797;
   cursor: pointer;
+  border-bottom: 1px dashed #979797; 
+  padding-left: 20px;
 
   &:first-of-type {
-    border-left: 1px dashed #979797;
+    border-top: 1px dashed #979797;
+  }
+
+  
+  @include for-tablet-mid-range {
+    width: 200px;
+    border: 0px;
+    border-right: 1px dashed #979797;
+    justify-content: center;
+    padding: 0;
+    &:first-of-type {
+      border-top: 0px;
+      border-left: 1px dashed #979797;
+    }
   }
 }
 
@@ -76,11 +89,17 @@
 .bk-preview__step-set {
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   z-index: 2;
+
+  @include for-tablet-mid-range {
+    flex-direction: row;
+  }
 }
+
+
 
 .bk-preview__step-check {
   margin: 0px 20px 0px 0px;
@@ -118,14 +137,31 @@
   align-items: center;
   transform: rotate(0deg);
   transition: transform 0.5s ease;
+  position: absolute;
+  right: 30px;
 
   &::before {
-    top: -1px;
-    position: relative;
+    width: 6px;
+    height: 6px;
+    border-width: 4px 4px 0 0;
   }
 
   .bk-step--active & {
     transform: rotate(180deg)
+  }
+
+  @include for-tablet-mid-range {
+    position: relative;
+    right: initial;
+    flex-direction: row;
+
+    &::before {
+      top: -1px;
+      position: relative;
+      width: 4px;
+      height: 4px;
+      border-width: 2px 2px 0 0;
+    }
   }
 }
 
@@ -156,7 +192,7 @@
 .bk-preview__letter-cont {
   display: inline-flex;
   flex-direction: column;
-  margin-right: 35px;
+  margin-right: 15px;
   text-align: center;
   position: relative;
   cursor: pointer;
@@ -187,6 +223,10 @@
     &::before {
       right: -20px;
     }
+  }
+
+  @include for-tablet-portrait-up {
+    margin-right: 35px;
   }
 }
 
@@ -222,16 +262,30 @@
 
 .bk-preview__tap-cont {
   position: absolute;
-  left: 0;
-  top: 30%;
   pointer-events: none;
+  top: initial;
+  bottom: 10px;
+  font-size: 12px;
+  font-style: italic;
+
+  @include for-desktop-up {
+    left: 0px;
+    top: 30%;
+    bottom: initial;
+    font-size: 16px;
+  }
 }
 
 .bk-preview__tap-to-open {
   position: absolute;
   bottom: -25px;
   right: -100px;
+  display: none;
   @include image("../assets/img/tap-open-arrow", "png", 142px, 40px, contain);
+
+  @include for-desktop-up {
+    display: block;
+  }
 }
 
 .bk-preview__change-name {
@@ -239,14 +293,20 @@
   flex-direction: column;
   background-color: #FFF5DA;
   width: 100%;
-  height: 200px;
+  height: 250px;
   position: absolute;
   transition: bottom 0.5s ease-in;
-  bottom: -200px;
+  bottom: -250px;
+  padding: 0px 20px;
+
+  @include for-tablet-mid-range {
+    height: 200px;
+    bottom: -200px;
+  }
 }
 
 .bk-change-name--active {
-  bottom: var(--preview-step-height);
+  bottom: 0px;
 }
 
 .bk-preview__name-label {
@@ -261,17 +321,25 @@
 .bk-preview__change-name-cont {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row;
   width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  top: 10px;
+  
+  @include for-tablet-high-range {
+    justify-content: center;
+  }
+
 }
 
 .bk-preview__name-input-container {
   width: 100%;
   position: relative;
   margin-bottom: 15px;
-
-  @include for-tablet-landscape-up {
+  
+  @include for-tablet-high-range {
     max-width: 500px;
     margin-right: 30px;
     margin-bottom: 0;
@@ -298,7 +366,7 @@
   opacity: 1;
 }
 
-.bk-preview__done-btn {
+.bk-preview__done-btn-cont {
   position: relative;
   bottom: 6px;
 }
@@ -348,15 +416,16 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: -390px;
+  bottom: -465px;
   width: 100%;
   background-color: #FFF5DA;
   height: 465px;
   transition: bottom 0.5s ease;
+
 }
 
 .bk-dedication--active {
-  bottom: var(--preview-step-height);
+  bottom: 0px;
 }
 
 .bk-preview__dedication-almost-there {
@@ -367,9 +436,91 @@
   line-height: 18px;
   }
 
-.bk-preview__dedication-step-1 {
+.bk-preview__dedication-centered {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.bk-preview__dedication-book {
+  @include image("../assets/img/dedication-page", "png", 50%, 100%, cover);
+  display: none;
+
+  @include for-tablet-landscape-up {
+    display: block;
+  }
+}
+
+.bk-preview__dedication-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 50px;
+  border-left: 3px solid #EBD9AA;
+
+  @include for-tablet-landscape-up {
+    width: 50%;
+    align-items: flex-start;
+  }
+}
+
+.bk-preview__dedication-message {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.bk-preview__dedication-title {
+  font-size: var(--section-desc)
+}
+
+.bk-preview__dedication-title, 
+.bk-preview__dedication-desc {
+  margin-bottom: 20px;
+}
+
+.bk-preview__dedication-textarea {
+  height: 275px;
+  width: 100%;
+  max-width: 470px;
+  border: 2px solid #D3D3D3;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  padding: 30px;
+}
+
+.bk-preview__done-step {
+  margin: 20px 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  @include for-tablet-mid-range{
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+.bk-preview__done-btn {
+  padding: 0px 45px;
+}
+
+.bk-preview__change-name-done-btn-cont {
+  position: relative;
+  bottom: 6px;
+  width: 100%;
+
+  @include for-tablet-portrait-up{
+    width: auto;
+  }
+}
+
+.bk-preview__change-name-done-btn {
+  width: 100%;
+  justify-content: center;
+
+  @include for-tablet-portrait-up{
+    width: auto;
+  }
+}
