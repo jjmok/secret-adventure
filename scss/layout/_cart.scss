@@ -276,8 +276,14 @@
 
 .bk-cart__checkout-section{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  @include for-tablet-portrait-up {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+  }
 }
 
 .bk-cart__accepted-cards {
@@ -295,4 +301,14 @@
       margin: 0;
     }
   }
+}
+
+.bk-cart__visa {
+  @include image("../assets/img/visa", "png", 60px, 33px, contain);  
+}
+.bk-cart__master {
+  @include image("../assets/img/master", "png", 60px, 33px, contain);  
+}
+.bk-cart__paypal {
+  @include image("../assets/img/paypal", "png", 60px, 33px, contain);  
 }

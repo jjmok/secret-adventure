@@ -3748,12 +3748,28 @@ select, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .bk-cart__checkout-section {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .bk-cart__accepted-cards {
@@ -3776,6 +3792,48 @@ select, textarea {
 
 .bk-cart__accepted-cards > li:last-of-type {
   margin: 0;
+}
+
+.bk-cart__visa {
+  background-image: url("../assets/img/visa.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 33px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .bk-cart__visa {
+    background-image: url("../assets/img/visa@2x.png");
+  }
+}
+
+.bk-cart__master {
+  background-image: url("../assets/img/master.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 33px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .bk-cart__master {
+    background-image: url("../assets/img/master@2x.png");
+  }
+}
+
+.bk-cart__paypal {
+  background-image: url("../assets/img/paypal.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 33px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .bk-cart__paypal {
+    background-image: url("../assets/img/paypal@2x.png");
+  }
 }
 
 /*# sourceMappingURL=booker.css.map */
