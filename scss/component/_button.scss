@@ -1,3 +1,14 @@
+@mixin button-maker($color) {
+  background-color: $color;
+
+  &:hover {
+    background-color: darken($color, 10%);
+  }
+  &:active {
+    background-color: darken($color, 20%);
+  }
+}
+
 .c-btn {
   display: inline-flex;
   white-space: nowrap;
@@ -17,20 +28,37 @@
 }
 
 .c-btn--teal {
-  background-color: $teal;
-
-  &:active {
-    background-color: darken($teal, 2%);
-  }
+  @include button-maker($teal);
 }
 
 .c-btn--froly {
-  background-color: $froly;
+  @include button-maker($froly);
+}
 
+.c-btn--fb {
+  @include button-maker(#3B5998);
+}
+
+.c-btn--twit {
+  @include button-maker(#55ACEE);
+}
+
+.c-btn--red {
+  background-color: #CE2828;
+}
+
+.c-btn--black {
+  background-color: #000000;
+
+  &:hover {
+    background-color: lighten(#000000, 20%);
+  }
   &:active {
-    background-color: darken($froly, 2%);
+    background-color: lighten(#000000, 30%);
   }
 }
+
+
 
 .c-btn--pink {
   background-color: $rad-red;
@@ -52,15 +80,19 @@
   align-items: flex-end;
 }
 
+.c-btn--tall {
+  height: 46px;
+}
+
 .c-btn--widepress {
   border-radius: 0px;
-  height: 46px;
   padding: 0px 65px;
   font-size: 16px;
   border-bottom: 2px solid $brick-red;
   position: relative;
   bottom: 0px;
   transition: bottom 0.2s ease, height 0.2s ease, border-width 0.2s ease;
+  height: 46px;
 
   &:hover {
     height: 52px;
