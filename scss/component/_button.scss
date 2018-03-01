@@ -16,6 +16,14 @@
   }
 }
 
+.c-btn--teal {
+  background-color: $teal;
+
+  &:active {
+    background-color: darken($teal, 2%);
+  }
+}
+
 .c-btn--froly {
   background-color: $froly;
 

@@ -34,53 +34,83 @@
         </div>
       </div>
     </header>
+    <div class="bk-cart">
+      <h1 class="bk-cart__title">
+        <div class="bk-cart__cart-icon"></div>
+        <p class="bk-cart__title-text">Your Cart</p>
+      </h1>
 
-    <h1 class="bk-cart__title">
-      <div class="bk-cart__cart-icon"></div>
-      Your Cart
-    </h1>
+      <p class="bk-cart__wonderful-text">Wonderful! You’re about to make someone’s day! </p>
 
-    <p class="bk-cart__wonderful-text">Wonderful! You’re about to make someone’s day! </p>
+      <section class="bk-cart__pending bk-width-cont">
+        <h1 class="bk-cart__sub-title">Pending Adventures</h1>
+        <ul class="bk-cart__pending-item-set">
+          <li class="bk-cart__pending-item">
+            <div class="bk-cart__pending-item-img"></div>
+            <p class="bk-cart__pending-item-name">Aria's Adventure</p>
+            <div class="bk-cart__pending-edit">
+              <div class="bk-cart__pending-edit-icon"></div>
+              <div class="bk-cart__pending-edit-text">Edit Book</div>
+            </div>
+            <div class="bk-cart__pending-item-price">RM99</div>
+            <div class="c-close bk-cart__close">&times;</div>
+          </li>
+          <li class="bk-cart__pending-item">
+            <div class="bk-cart__pending-item-img"></div>
+            <p class="bk-cart__pending-item-name">Romeo's Adventure</p>
+            <div class="bk-cart__pending-edit">
+              <div class="bk-cart__pending-edit-icon"></div>
+              <div class="bk-cart__pending-edit-text">Edit Book</div>
+            </div>
+            <div class="bk-cart__pending-item-price">RM99</div>
+            <div class="c-close bk-cart__close">&times;</div>
+          </li>
+        </ul>
+      </section>      
 
-    <section class="bk-cart__pending bk-width-cont">
-      <h1 class="bk-cart__sub-title">Pending Adventures</h1>
-      <ul class="bk-cart__pending-item-set">
-        <li class="bk-cart__pending-item">
-          <div class="bk-cart__pending-item-img"></div>
-          <p class="bk-cart__pending-item-name">Aria's Adventure</p>
-          <div class="bk-cart__pending-edit">
-            <div class="bk-cart__pending-edit-icon"></div>
-            <div class="bk-cart__pending-edit-text">Edit Book</div>
+      <section class="bk-cart__addon bk-width-cont">
+        <div class="bk-cart__addon-inner">
+          <p class="bk-cart__addon-desc">Would you like to add another happy child to the list?</p>
+          <div class="c-btn--widepress-cont">
+            <button class="c-btn c-btn--froly c-btn--widepress bk-story__preview">Add Another Adventure</button>
           </div>
-          <div class="bk-cart__pending-item-price">RM99</div>
-          <div class="c-close bk-cart__close">&times;</div>
-        </li>
-        <li class="bk-cart__pending-item">
-          <div class="bk-cart__pending-item-img"></div>
-          <p class="bk-cart__pending-item-name">Romeo's Adventure</p>
-          <div class="bk-cart__pending-edit">
-            <div class="bk-cart__pending-edit-icon"></div>
-            <div class="bk-cart__pending-edit-text">Edit Book</div>
-          </div>
-          <div class="bk-cart__pending-item-price">RM99</div>
-          <div class="c-close bk-cart__close">&times;</div>
-        </li>
-      </ul>
-    </section>      
-
-    <section class="bk-cart__addon bk-width-cont">
-      <div class="bk-cart__addon-inner">
-        <p class="bk-cart__addon-desc">Would you like to add another happy child to the list?</p>
-        <div class="bk-story__preview-cont c-btn--widepress-cont">
-          <button class="c-btn c-btn--froly c-btn--widepress bk-story__preview">Add Another Adventure</button>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="bk-cart__summary">
-      <h1 class="bk-cart__sub-title">Adventure Summary</h1>
+      <section class="bk-cart__summary bk-width-cont">
+        <h1 class="bk-cart__sub-title">Adventure Summary</h1>
+        <div class="bk-cart__summary-cont">
+          <div class="bk-cart__summary-discount">
+            <p class="bk-cart__summary-discount-text">Add a discount code:</p>
+            <input class="c-input bk-cart__username-input" type="text" placeholder="Username">
+            <button class="c-btn c-btn--teal">Apply Code</button>
+          </div>
+          <div class="bk-cart__summary-calc">
+            <div class="bk-cart__summary-calc-detail">
+              <p class="bk-cart__payment-detail bk-detail--row-1">Item Total</p>
+              <p class="bk-cart__payment-detail bk-detail--row-2">Shipping Charges</p>
+              <p class="bk-cart__payment-detail bk-detail--row-3">Sub Total</p>
+            </div>
+            <div class="bk-cart__summary-calc-value">
+              <p class="bk-cart__payment-value bk-detail--row-1">RM198</p>
+              <p class="bk-cart__payment-value bk-detail--row-2">FREE</p>
+              <p class="bk-cart__payment-value bk-detail--row-3 bk-cart__payment-final">RM198</p>
+            </div>
+          </div>
+        </div>
+        <div class="bk-cart__checkout-section">
+          <ul class="bk-cart__accepted-cards">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="c-btn--widepress-cont">
+            <button class="c-btn c-btn--froly c-btn--widepress bk-story__preview">Checkout</button>
+          </div>
+        </div>
+      </section>
+    </div>
 
-    </section>
 
     <footer class="bk-footer">
       <div class="c-logo--white bk-footer__logo"></div>
