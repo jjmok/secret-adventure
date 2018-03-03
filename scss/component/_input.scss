@@ -1,17 +1,56 @@
+.c-input-form {
+  background-color: white;
+}
+
 .c-input {
   padding-left: 20px;
-  border: 2px solid #D3D3D3;
+  border: 1px solid #D3D3D3;
   background-color: #F8F8F8;
   height: 46px;
   
   &:active,
   &:focus {
-    border: 2px solid $teal;
+    border: 1px solid $teal;
     box-shadow: 0 0 4px 0 rgba($teal, 0.5);
   }
 }
 
-.c-input--error {
+.c-input-label {
+  color: #666470;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+}
+
+.c-input--error-orange {
   border: 2px solid #F5A623;
   box-shadow: 0 0 4px 0 rgba(#F5A623, 0.5);
 }
+
+.c-input--error-red {
+  border: 2px solid #F16078;
+  box-shadow: 0 0 4px 0 rgba(#F16078, 0.5);
+}
+
+.c-input__error-red-msg {
+  color: #F16078;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.c-input__error-msg {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 15px;
+  display: none;
+
+  &.c-input__error-msg--active {
+    display: block;
+  }
+}
+
+.c-input-set {
+  position: relative;
+} 

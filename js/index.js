@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const previewLetterDedication = document.querySelector('#js-preview-dedication')
 
   function addError (elem) {
-    elem.classList.add('c-input--error')
+    elem.classList.add('c-input--error-orange')
   }
 
   function resetError () {
     blankNameError.classList.add('u-hide')
     invalidNameError.classList.add('u-hide')
-    enterName.classList.remove('c-input--error')
+    enterName.classList.remove('c-input--error-orange')
   }
 
   function resetPreviewSteps () {

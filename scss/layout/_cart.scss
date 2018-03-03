@@ -303,6 +303,84 @@
   }
 }
 
+
+.bk-chkout--width-cont {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bk-cart__chkout-summary-calc  {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  @include for-tablet-portrait-up {
+    padding: 30px;
+  }
+}
+
+.bk-cart__chkout-personal-title-cont {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  @include for-tablet-mid-range {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.bk-cart__chkout-personal-title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0px 0px 5px 0px;
+
+  @include for-tablet-mid-range {
+    margin: 0;
+  }
+}
+
+.bk-cart__chkout-shipping-form,
+.bk-cart__chkout-personal-form {
+  padding: 35px;
+  margin-bottom: 60px;
+}
+
+.bk-chkout__label,
+.bk-chkout__input {
+  display: block;
+  width: 100%;
+}
+
+.bk-chkout__label {
+  margin: 5px 0px;
+}
+
+.bk-cart__chkout-input-set {
+  margin-bottom: 20px;
+}
+
+.bk-cart__chkout-personal-form {
+  margin-bottom: 60px;
+}
+
+.bk-cart__chkout-login {
+  color: #0FB1A3;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.bk-cart__chkout-btn-cont {
+  margin-bottom: 20px;
+}
+
+.bk-cart__chkout-btn {
+  width: 100%;
+  justify-content: center;
+}
+
 .bk-cart__visa {
   @include image("../assets/img/visa", "png", 60px, 33px, contain);  
 }
@@ -312,3 +390,13 @@
 .bk-cart__paypal {
   @include image("../assets/img/paypal", "png", 60px, 33px, contain);  
 }
+
+.bk-cart__chkout-goback {
+  color: #9B9B9B;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  display: block;
+  text-align: center;
+}
+
