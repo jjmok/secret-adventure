@@ -1,0 +1,28 @@
+.c-title-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include for-tablet-portrait-up {
+    @include flexcenter;
+    flex-direction: row;
+  }
+}
+
+.c-title-icon__text {
+  order: 1;
+
+  @include for-tablet-portrait-up {
+    order: 2;
+  }
+}
+
+.c-title-icon__icon {
+  order: 2;
+  
+  @include for-tablet-portrait-up {
+    order: 1;
+  }
+}

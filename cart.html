@@ -11,7 +11,7 @@
 <body>
   <div class="bk-container">
     <header class="bk-header bk-width-cont">
-      <div class="c-logo--black bk-header__logo bk-header__logo--2"></div>
+      <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--2"></a>
       <div class="bk-hover-container">
         <button class="bk-header__navbtn">
           <span class="u-noevents">Menu</span>
@@ -19,8 +19,8 @@
         </button>
         <div class="bk-header__container">
           <nav class="bk-header__section">
-            <div class="c-logo--black bk-header__logo bk-header__logo--1"></div>
-            <a class="c-link bk-header__link" href="">About the Book</a>
+            <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--1"></a>
+            <a class="c-link bk-header__link" href="about-us.html">About the Book</a>
             <a class="c-link bk-header__link" href="">How It Works</a>
             <a class="c-link bk-header__link" href="">Help</a>
           </nav>
@@ -33,21 +33,28 @@
           </nav>
         </div>
       </div>
+      <ul class="c-yellow-nav bk-width-cont">
+        <li><a class="c-yellow-nav-link" href="adventures.html">Adventure</a></li>
+        <li><a class="c-yellow-nav-link" href="account.html">Account</a></li>
+        <li><a class="c-yellow-nav-link" href="#/">Sign Out</a></li>
+      </ul>
     </header>
 
-    <div class="bk-cart">
-      <h1 class="bk-cart__title">
-        <div class="bk-cart__cart-icon"></div>
-        <p class="bk-cart__title-text">Your Cart</p>
-      </h1>
+    <div class="bk-cart bk-body-cont bk-width-cont">
 
-      <p class="bk-cart__wonderful-text">Wonderful! You’re about to make someone’s day! </p>
-
+      <!--PAYMENT SECTION START-->
 <!--       <div class="bk-cart__payment-section">
-        <section class="bk-cart__pending bk-width-cont">
+        <section class="bk-cart__pending">
+          <h1 class="c-title-icon">
+            <div class="c-title-icon__icon bk-cart__cart-icon"></div>
+            <p class="c-title-icon__text">Your Cart</p>
+          </h1>
+
+          <p class="bk-cart__wonderful-text">Wonderful! You’re about to make someone’s day! </p>
+
           <h1 class="bk-cart__sub-title">Pending Adventures</h1>
           <ul class="bk-cart__pending-item-set">
-            <li class="bk-cart__pending-item">
+            <li class="c-white-block bk-cart__pending-item">
               <div class="bk-cart__pending-item-img"></div>
               <p class="bk-cart__pending-item-name">Aria's Adventure</p>
               <div class="bk-cart__pending-edit">
@@ -57,7 +64,7 @@
               <div class="bk-cart__pending-item-price">RM99</div>
               <div class="c-close bk-cart__close">&times;</div>
             </li>
-            <li class="bk-cart__pending-item">
+            <li class="c-white-block bk-cart__pending-item">
               <div class="bk-cart__pending-item-img"></div>
               <p class="bk-cart__pending-item-name">Romeo's Adventure</p>
               <div class="bk-cart__pending-edit">
@@ -70,7 +77,7 @@
           </ul>
         </section>      
 
-        <section class="bk-cart__addon bk-width-cont">
+        <section class="bk-cart__addon">
           <div class="bk-cart__addon-inner">
             <p class="bk-cart__addon-desc">Would you like to add another happy child to the list?</p>
             <div class="c-btn--widepress-cont">
@@ -79,9 +86,9 @@
           </div>
         </section>
 
-        <section class="bk-cart__summary bk-width-cont">
+        <section class="bk-cart__summary">
           <h1 class="bk-cart__sub-title">Adventure Summary</h1>
-          <div class="bk-cart__summary-cont">
+          <div class="c-white-block bk-cart__summary-cont">
             <div class="bk-cart__summary-discount">
               <p class="bk-cart__summary-discount-text">Add a discount code:</p>
               <input class="c-input bk-cart__username-input" type="text" placeholder="Username">
@@ -112,8 +119,17 @@
           </div>
         </section>
       </div> -->
+      <!--PAYMENT SECTION END-->
 
+      <!--CHECKOUT SECTION START-->
       <div class="bk-cart__chkout-section bk-width-cont">
+        <h1 class="c-title-icon">
+          <div class="c-title-icon__icon bk-cart__cart-icon"></div>
+          <p class="c-title-icon__text">Your Cart</p>
+        </h1>
+
+        <p class="bk-cart__wonderful-text">Wonderful! You’re about to make someone’s day! </p>
+
         <div class="bk-cart__chkout-personal bk-chkout--width-cont">
 
           <div class="bk-cart__chkout-personal-title-cont">
@@ -121,20 +137,20 @@
             <a class="bk-cart__chkout-login" href="">Have an account? Log In</a>
           </div>
 
-          <div class="c-input-form bk-cart__chkout-personal-form">
-            <label class="c-input-label bk-chkout__label" for="bk-chkout-name">Name</label>
+          <div class="c-white-block c-input-form bk-cart__chkout-personal-form">
+            <label class="c-input-label" for="bk-chkout-name">Name</label>
             <div class="c-input-set bk-cart__chkout-input-set">
-              <input class="c-input bk-chkout__input c-input--error-red" type="text" id="bk-chkout-name" name="name" placeholder="">
+              <input class="c-input c-input--error-red" type="text" id="bk-chkout-name" name="name" placeholder="">
               <span class="c-input__error-red-msg c-input__error-msg c-input__error-msg--active">Invalid Name</span>
             </div>
-            <label class="c-input-label bk-chkout__label" for="bk-chkout-email">Email</label>
+            <label class="c-input-label" for="bk-chkout-email">Email</label>
             <div class="c-input-set bk-cart__chkout-input-set">
-              <input class="c-input bk-chkout__input" type="text" id="bk-chkout-email" name="email" placeholder="">
+              <input class="c-input" type="text" id="bk-chkout-email" name="email" placeholder="">
               <span class="c-input__error-red-msg c-input__error-msg">Invalid Email</span>
             </div>
-            <label class="c-input-label bk-chkout__label" for="bk-chkout-pw">Password</label>
+            <label class="c-input-label" for="bk-chkout-pw">Password</label>
             <div class="c-input-set bk-cart__chkout-input-set">
-              <input class="c-input bk-chkout__input" type="text" id="bk-chkout-pw" name="password" placeholder="">
+              <input class="c-input" type="text" id="bk-chkout-pw" name="password" placeholder="">
               <span class="c-input__error-red-msg c-input__error-msg">Password Incorrect</span>
             </div>
           </div>
@@ -143,35 +159,35 @@
             <h1 class="bk-cart__chkout-personal-title">Shipping Details</h1>
           </div>
 
-          <div class="c-input-form bk-cart__chkout-shipping-form">
-            <label class="c-input-label bk-chkout__label" for="bk-ship-name">Name</label>
+          <div class="c-white-block c-input-form bk-cart__chkout-shipping-form">
+            <label class="c-input-label" for="bk-ship-name">Name</label>
             <div class="c-input-set bk-cart__chkout-input-set">
-              <input class="c-input bk-chkout__input" type="text" id="bk-ship-name" name="name" placeholder="">
+              <input class="c-input" type="text" id="bk-ship-name" name="name" placeholder="">
             </div>
-            <label class="c-input-label bk-chkout__label" for="bk-ship-address">Street Address</label>
+            <label class="c-input-label" for="bk-ship-address">Street Address</label>
             <div class="c-input-set bk-cart__chkout-input-set">
-              <input class="c-input bk-chkout__input" type="text" id="bk-ship-address" name="address" placeholder="">
+              <input class="c-input" type="text" id="bk-ship-address" name="address" placeholder="">
             </div>
-            <label class="c-input-label bk-chkout__label" for="bk-ship-city">City</label>
+            <label class="c-input-label" for="bk-ship-city">City</label>
             <div class="c-input-set bk-cart__chkout-input-set">
-              <input class="c-input bk-chkout__input" type="text" id="bk-ship-city" name="city" placeholder="">
+              <input class="c-input" type="text" id="bk-ship-city" name="city" placeholder="">
             </div>
-            <label class="c-input-label bk-chkout__label" for="bk-ship-postcode">Postcode</label>
+            <label class="c-input-label" for="bk-ship-postcode">Postcode</label>
             <div class="c-input-set bk-cart__chkout-input-set">
-              <input class="c-input bk-chkout__input" type="text" id="bk-ship-postcode" name="postocde" placeholder="">
+              <input class="c-input" type="text" id="bk-ship-postcode" name="postocde" placeholder="">
             </div>
-            <label class="c-input-label bk-chkout__label" for="bk-ship-country">Country</label>
+            <label class="c-input-label" for="bk-ship-country">Country</label>
             <div class="c-input-set bk-cart__chkout-input-set">
-              <select class="c-input bk-chkout__input" id="bk-ship-country">
+              <select class="c-input" id="bk-ship-country">
                 <option value="volvo">1</option>
                 <option value="saab">2</option>
                 <option value="mercedes">3</option>
                 <option value="audi">4</option>
               </select>
             </div>
-            <label class="c-input-label bk-chkout__label" for="bk-ship-state">State</label>
+            <label class="c-input-label" for="bk-ship-state">State</label>
             <div class="c-input-set bk-cart__chkout-input-set">
-              <select class="c-input bk-chkout__input" id="bk-ship-state">
+              <select class="c-input" id="bk-ship-state">
                 <option value="volvo">1</option>
                 <option value="saab">2</option>
                 <option value="mercedes">3</option>
@@ -184,7 +200,7 @@
             <h1 class="bk-cart__chkout-personal-title">Order Summary</h1>
           </div>
 
-          <div class="bk-cart__summary-calc bk-cart__chkout-summary-calc">
+          <div class="c-white-block bk-cart__summary-calc bk-cart__chkout-summary-calc">
             <div class="bk-cart__summary-calc-detail">
               <p class="bk-cart__payment-detail bk-detail--row-1">Item Total</p>
               <p class="bk-cart__payment-detail bk-detail--row-2">Shipping Charges</p>
@@ -198,24 +214,42 @@
           </div>
 
           <div class="c-btn--widepress-cont bk-cart__chkout-btn-cont">
-            <button id="js-preview-btn" class="c-btn c-btn--froly c-btn--widepress bk-cart__chkout-btn">Checkout</button>
+            <button class="c-btn c-btn--froly c-btn--widepress c-btn--full">Checkout</button>
           </div>
           
           <a class="bk-cart__chkout-goback" href="#">Go Back</a>
 
         </div>
       </div>
+      <!--CHECKOUT SECTION END-->
 
+      <!--PAYMENT SUCCESS START-->
+<!--       <div class="bk-cart__payment-success bk-width-cont">
+        <h1 class="bk-cart__payment-success-title">Payment Success</h1>
+        <div class="bk-cart__payment-success-balloon"></div>
+        <h2 class="bk-cart__payment-success-subtitle">Success! Your adventure is in the making.</h2>
+        <p class="bk-cart__payment-success-desc">
+          Thank you for supporting us in this little project to light up little lives everywhere. 
+        </p>
+        <p class="bk-cart__payment-success-desc">
+          To check the status of your order, do check the <a class="bk-cart__payment-success-link" href="#/">Adventures </a> page in your account.
+        </p>
+      </div>
+      <div class="bk-cart__payment-success-notebook"></div>
+      <div class="bk-cart__payment-success-eraser"></div>
+      <div class="bk-cart__payment-success-ruler-1"></div>
+      <div class="bk-cart__payment-success-ruler-2"></div> -->
+      <!--PAYMENT SUCCESS END-->
     </div>
 
     <footer class="bk-footer">
       <div class="c-logo--white bk-footer__logo"></div>
       <nav class="bk-footer__nav-links">
-        <a class="bk-footer__link href="">About Us</a>
-        <a class="bk-footer__link href="">Refer A friend</a>
-        <a class="bk-footer__link href="">Terms and Conditions</a>
-        <a class="bk-footer__link href="">Privacy Policy</a>
-        <a class="bk-footer__link href="">Contact Us</a>
+        <a class="bk-footer__link" href="about-us.html">About Us</a>
+        <a class="bk-footer__link" href="refer.html">Refer A friend</a>
+        <a class="bk-footer__link" href="">Terms and Conditions</a>
+        <a class="bk-footer__link" href="">Privacy Policy</a>
+        <a class="bk-footer__link" href="">Contact Us</a>
       </nav>
       <p class="bk-footer__copyright">© 2017 My Secret Adventure. All Rights Reserved. </p>
       <nav class="bk-footer__social-links-set">
@@ -237,6 +271,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <!-- <script type="text/javascript" src="js/lib/retina.min.js"></script> -->
 

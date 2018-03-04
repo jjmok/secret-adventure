@@ -1,0 +1,46 @@
+.bk-account__title {
+  color: #4A4A4A;
+  font-size: 58px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bk-account__subtitle {
+  color: #666470;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.bk-account__desc-cont {
+  @include flexcenter;
+  max-width: 565px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  height: 60px;
+}
+
+.bk-account__desc {
+  color: #666470;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  width: 100%;
+}
+
+.bk-account-width-cont {
+  max-width: 565px;
+  margin: 0 auto;
+}
+
+.bk-account__input-form {
+  margin-bottom: 20px;
+}
+
+.bk-account__account-updated {
+  height: 49px;
+  width: 360px;
+  margin: 0 auto;
+  @include flexcenter;
+}

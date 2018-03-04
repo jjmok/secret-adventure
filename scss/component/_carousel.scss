@@ -3,6 +3,10 @@
   background-color: $white;
 }
 
+.bk-carousel--main {
+  margin-top: 60px;
+}
+
 .bk-carousel-item {
   height: var(--carousel-height);
   background-position: center;
@@ -73,7 +77,8 @@
 
 .bk-carousel-control-prev--banner,
 .bk-carousel-control-next--banner {
-  display: none;
+  // display: none;
+  color: black;
 }
 
 .bk-carousel-control-prev--review,

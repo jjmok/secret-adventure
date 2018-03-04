@@ -1,0 +1,41 @@
+.bk-feedback {
+  padding: 0;
+}
+
+.bk-feedback__banner {
+  padding-top: 40px;
+  @include flexcenter();
+  flex-direction: column;
+  justify-content: flex-start;
+  @include image("../assets/img/banner_1", "png", 100%, 330px, cover);
+}
+
+.bk-feedback__title {
+  margin-bottom: 10px;
+}
+
+.bk-feedback__form-cont {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.bk-feedback__form {
+  width: 100%;
+  padding: 40px 0px 160px;
+}
+
+.bk-feedback__tell-us-textarea {
+  width: 100%;
+  height: 235px;
+  border: 1px solid #D3D3D3;
+  background-color: #F8F8F8;
+}
+
+.bk-feedback__input-set {
+  margin-bottom: 10px;
+}
+
+.bk-feedback__success {
+  margin: 20px 0px;
+}

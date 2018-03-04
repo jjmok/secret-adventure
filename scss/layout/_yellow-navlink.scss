@@ -1,0 +1,23 @@
+.c-yellow-nav {
+  height: 38px;
+  background-color: #FFDD82;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0px;
+  z-index: 2;
+  @include for-desktop-up {
+    justify-content: flex-end;
+  }
+}
+
+.c-yellow-nav-link {
+  color: #4F4C6D;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+  margin-right: 20px;
+}

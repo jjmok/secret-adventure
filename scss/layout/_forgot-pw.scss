@@ -1,0 +1,40 @@
+.bk-forgotpw-puzzled {
+  margin: 0 auto 40px;
+  @include image("../assets/img/puzzled", "png", 156px, 158px, cover);
+}
+
+.bk-forgotpw-title {
+  color: #4A4A4A;
+  font-size: 54px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bk-forgotpw-note {
+  display: block;
+  width: 335px;
+  color: #666470;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.bk-forgotpw-desc {
+  color: #666470;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bk-forgotpw-pw-reset {
+  color: #666470;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  width: 420px;
+}

@@ -12,7 +12,7 @@
   <div class="bk-container">
 
     <header class="bk-header bk-width-cont">
-      <div class="c-logo--black bk-header__logo bk-header__logo--2"></div>
+      <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--2"></a>
 
       <div class="bk-hover-container">
         <button class="bk-header__navbtn">
@@ -21,8 +21,8 @@
         </button>
         <div class="bk-header__container">
           <nav class="bk-header__section">
-            <div class="c-logo--black bk-header__logo bk-header__logo--1"></div>
-            <a class="c-link bk-header__link" href="">About the Book</a>
+            <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--1"></a>
+            <a class="c-link bk-header__link" href="about-us.html">About the Book</a>
             <a class="c-link bk-header__link" href="">How It Works</a>
             <a class="c-link bk-header__link" href="">Help</a>
           </nav>
@@ -37,7 +37,7 @@
       </div>
     </header>
     
-    <div id="js-intro-carousel" class="carousel slide bk-carousel" data-ride="carousel" data-interval="99999">
+    <div id="js-intro-carousel" class="carousel slide bk-carousel bk-carousel--main" data-ride="carousel" data-interval="5000">
       <!--
         <ol class="carousel-indicators">
           <li data-target="#js-intro-carousel" data-slide-to="0" class="active"></li>
@@ -84,10 +84,10 @@
       <div class="bk-story__options">
         <div class="bk-story__name-input-container">
           <input id="js-enter-name" class="c-input bk-story__name-input" type="text" name="user-name"/>
-          <div id="js-name-blank-error" class="c-error bk-story__error u-hide">
+          <div id="js-name-blank-error" class="c-message c-message--error bk-story__error u-hide">
             Name Must not be blank
           </div>
-          <div id="js-name-invalid-error" class="c-error bk-story__error u-hide">
+          <div id="js-name-invalid-error" class="c-message c-message--error bk-story__error u-hide">
             Name must not contain numerical
           </div>
         </div>
@@ -233,11 +233,11 @@
     <footer class="bk-footer">
       <div class="c-logo--white bk-footer__logo"></div>
       <nav class="bk-footer__nav-links">
-        <a class="bk-footer__link href="">About Us</a>
-        <a class="bk-footer__link href="">Refer A friend</a>
-        <a class="bk-footer__link href="">Terms and Conditions</a>
-        <a class="bk-footer__link href="">Privacy Policy</a>
-        <a class="bk-footer__link href="">Contact Us</a>
+        <a class="bk-footer__link" href="about-us.html">About Us</a>
+        <a class="bk-footer__link" href="refer.html">Refer A friend</a>
+        <a class="bk-footer__link" href="">Terms and Conditions</a>
+        <a class="bk-footer__link" href="">Privacy Policy</a>
+        <a class="bk-footer__link" href="">Contact Us</a>
       </nav>
       <p class="bk-footer__copyright">© 2017 My Secret Adventure. All Rights Reserved. </p>
       <nav class="bk-footer__social-links-set">
@@ -257,6 +257,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/index.js"></script>
   <!-- <script type="text/javascript" src="js/lib/retina.min.js"></script> -->
 

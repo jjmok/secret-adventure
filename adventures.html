@@ -12,7 +12,6 @@
   <div class="bk-container">
     <header class="bk-header bk-width-cont">
       <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--2"></a>
-
       <div class="bk-hover-container">
         <button class="bk-header__navbtn">
           <span class="u-noevents">Menu</span>
@@ -34,49 +33,63 @@
           </nav>
         </div>
       </div>
+      <ul class="c-yellow-nav bk-width-cont">
+        <li><a class="c-yellow-nav-link" href="adventures.html">Adventure</a></li>
+        <li><a class="c-yellow-nav-link" href="account.html">Account</a></li>
+        <li><a class="c-yellow-nav-link" href="#/">Sign Out</a></li>
+      </ul>
     </header>
   
-    <div class="bk-login bk-body-cont bk-width-cont">
-      <h1 class="c-title bk-login__title">Log In or Sign Up</h1>
-      <p class="bk-login__login-text">Log In, Create Account or Checkout As Guest to continue.</p>
+    <div class="bk-advent bk-body-cont bk-width-cont">
+      <h1 class="c-title-icon">
+        <div class="c-title-icon__icon bk-advent__order-icon"></div>
+        <p class="c-title-icon__text">My Adventures</p>
+      </h1>
 
-      <div class="bk-login__cont">
-        <div class="bk-login__email-login">
-          <h1 class="bk-login__email-title">Welcome Back!</h1>
-          <input class="c-input bk-login__username-input" type="text" placeholder="Username">
-          <input class="c-input bk-login__password-input" type="text" placeholder="Password">
-          <div class="bk-login__keep-me-signin">
-            <input class="bk-login__keep-me-signin-chkbox" type="checkbox" id="chk-keep-me-sign-in">
-            <label class="bk-login__keep-me-signin-label" for="chk-keep-me-sign-in">Keep me sign in</label>
+      <h2 class="bk-advent__subtitle">Pending Adventure</h2>
+      
+      <ul class="bk-advent__pending-item-set">
+        <li class="c-white-block bk-advent__pending-item">
+          <div class="bk-advent__pending-item-img"></div>
+          <div class="bk-advent__pending-item-detail">
+            <h1 class="bk-advent__pending-item-name">Aria's Adventure</h1>
+            <p class="bk-advent__pending-item-order-no">Order No : xxxxxxxxxxx</p>
+            <p class="bk-advent__pending-item-order-status">Order Status : Shipped on 21/12/2017</p>
           </div>
-
-          <div class="c-btn--widepress-cont">
-            <button class="c-btn c-btn--red c-btn--widepress bk-login__login-btn">Log In</button>
+        </li>
+        <li class="c-white-block bk-advent__pending-item">
+          <div class="bk-advent__pending-item-img"></div>
+          <div class="bk-advent__pending-item-detail">
+            <h1 class="bk-advent__pending-item-name">Aria's Adventure</h1>
+            <p class="bk-advent__pending-item-order-no">Order No : xxxxxxxxxxx</p>
+            <p class="bk-advent__pending-item-order-status">Order Status : Shipped on 21/12/2017</p>
+            <p class="bk-advent__pending-item-tracking-code">Tracking code : 
+              <span>EgeVr463sVh</span>  
+            </p>
           </div>
-
-          <a class="bk-login__forget-pw" href="#/">Forgot Password?</a>
-        </div>
-        <div class="bk-login__signup">
-          <h1 class="bk-login__signup-title">If you're new to us</h1>
-          <p class="bk-login__signup-text">
-            Freebies, discounts and sneak peeks, all you have to do is be adventurous and sign up lah!
-          </p>
-          <button class="bk-signup__btn c-btn c-btn--black c-btn--tall">
-            Sign Up
-          </button>
-          <p class="bk-signup__or-text">Or</p>
-          <button class="bk-signup__btn c-btn c-btn--fb c-btn--tall">
-            Sign in with facebook
-            <i class="bk-signup__btn-icon c-social-fb"></i>
-          </button>
-          <button class="bk-signup__btn c-btn c-btn--twit c-btn--tall">
-            Sign Up
-            <i class="bk-signup__btn-icon c-social-twit"></i>
-          </button>
-          <p class="bk-signup__or-text">Or</p>
-          <a class="bk-signup__checkout" href="#/">Checkout As Guest</a>
-        </div>
-      </div>
+        </li>
+      </ul>
+      
+      <h2 class="bk-advent__subtitle">Accumulated Adventure</h2>
+      
+      <ul class="bk-advent__accumulated-item-set">
+        <li class="c-white-block bk-advent__pending-item bk-advent__pending-item--accum">
+          <div class="bk-advent__pending-item-img"></div>
+          <div class="bk-advent__pending-item-detail">
+            <h1 class="bk-advent__pending-item-name">Aria's Adventure</h1>
+            <p class="bk-advent__pending-item-order-no">Order No : xxxxxxxxxxx</p>
+            <p class="bk-advent__pending-item-order-status">Order Status : Shipped on 21/12/2017</p>
+          </div>
+        </li>
+        <li class="c-white-block bk-advent__pending-item bk-advent__pending-item--accum">
+          <div class="bk-advent__pending-item-img"></div>
+          <div class="bk-advent__pending-item-detail">
+            <h1 class="bk-advent__pending-item-name">Aria's Adventure</h1>
+            <p class="bk-advent__pending-item-order-no">Order No : xxxxxxxxxxx</p>
+            <p class="bk-advent__pending-item-order-status">Order Status : Shipped on 21/12/2017</p>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <footer class="bk-footer">

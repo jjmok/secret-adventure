@@ -1,14 +1,3 @@
-.bk-preview-container {
-  height: 550px;
-  position: relative;
-  // min-height: 800px;
-
-  //100px is the buffer space
-  @include for-tablet-portrait-up {
-    height: 750px;
-  }
-}
-
 .bk-preview__inner-cont {
   @include flexcenter;
   flex-direction: column;
@@ -485,10 +474,6 @@
   height: 275px;
   width: 100%;
   max-width: 470px;
-  border: 2px solid #D3D3D3;
-  border-radius: 3px;
-  background-color: #FFFFFF;
-  padding: 30px;
 }
 
 .bk-preview__done-step {
@@ -497,7 +482,7 @@
   align-items: center;
   justify-content: center;
 
-  @include for-tablet-mid-range{
+  @include for-tablet-mid-range {
     margin: 0px 0px 0px 20px;
   }
 }

@@ -1,0 +1,132 @@
+.bk-refer {
+  padding: 0;
+}
+
+.bk-refer__banner {
+  padding-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  @include image("../assets/img/banner_4", "png", 100%, 385px, cover);
+  overflow: visible;
+  position: relative;
+
+  @include for-tablet-portrait-up {
+    height: 485px;
+  }
+}
+
+.bk-refer__title {
+  margin: 50px 0px 10px;
+  text-align: center;
+}
+.bk-refer__content {
+  margin-bottom: 40px;
+}
+
+.bk-refer__content-cont {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0px;
+
+  @include for-tablet-portrait-up {
+   padding: 150px 0px;
+  }
+}
+
+.bk-refer__content-title {
+  font-size: 27px;
+  margin-bottom: 20px;
+  font-family: $main-font;
+}
+
+.bk-refer__content-text {
+  font-size: 17px;
+  margin-bottom: 20px;
+  text-align: left;
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.bk-refer__social-set {
+  display: flex;
+}
+.bk-refer__social-icon {
+  margin-right: 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+.bk-refer__fullbook {
+  position: absolute;
+  bottom: -160px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  @include image("../assets/img/full-book", "png", 90%, 306px, contain);
+  max-width: 600px;
+
+  @include for-tablet-portrait-up {
+    bottom: -30px;
+  }
+}
+
+.bk-refer__mail {
+  @include image("../assets/img/pink-mail", "png", 36px, 36px, cover);
+}
+.bk-refer__insta {
+  @include image("../assets/img/pink-insta", "png", 36px, 36px, cover);
+}
+.bk-refer__fb {
+  @include image("../assets/img/pink-fb", "png", 36px, 36px, cover);
+}
+
+.bk-refer--emp {
+  color: $froly;
+}
+
+.bk-refer__discount-tag {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include image("../assets/img/discount-tag", "png", 100px, 100px, contain);
+
+  @include for-tablet-portrait-up {
+    width: 122px;
+    height: 122px;
+    top: -30px;
+    right: -30px;
+  }
+}
+
+.bk-refer__discount-tag-percent,
+.bk-refer__discount-tag-off {
+  color: white;
+  display: block;
+}
+
+.bk-refer__discount-tag-percent {
+  font-size: 18px;
+
+  @include for-tablet-portrait-up {
+    font-size: 20px;
+    margin-bottom: -10px;
+  }
+}
+
+.bk-refer__discount-tag-off {
+  font-size: 25px;
+  font-weight: bold;
+
+  @include for-tablet-portrait-up {
+    font-size: 38px;
+  }
+}

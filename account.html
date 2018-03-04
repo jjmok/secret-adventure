@@ -12,7 +12,6 @@
   <div class="bk-container">
     <header class="bk-header bk-width-cont">
       <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--2"></a>
-
       <div class="bk-hover-container">
         <button class="bk-header__navbtn">
           <span class="u-noevents">Menu</span>
@@ -34,49 +33,57 @@
           </nav>
         </div>
       </div>
+      <ul class="c-yellow-nav bk-width-cont">
+        <li><a class="c-yellow-nav-link" href="adventures.html">Adventure</a></li>
+        <li><a class="c-yellow-nav-link" href="account.html">Account</a></li>
+        <li><a class="c-yellow-nav-link" href="#/">Sign Out</a></li>
+      </ul>
     </header>
   
-    <div class="bk-login bk-body-cont bk-width-cont">
-      <h1 class="c-title bk-login__title">Log In or Sign Up</h1>
-      <p class="bk-login__login-text">Log In, Create Account or Checkout As Guest to continue.</p>
+    <div class="bk-account bk-body-cont bk-width-cont">
+      <h1 class="bk-account__title">Account</h1>
 
-      <div class="bk-login__cont">
-        <div class="bk-login__email-login">
-          <h1 class="bk-login__email-title">Welcome Back!</h1>
-          <input class="c-input bk-login__username-input" type="text" placeholder="Username">
-          <input class="c-input bk-login__password-input" type="text" placeholder="Password">
-          <div class="bk-login__keep-me-signin">
-            <input class="bk-login__keep-me-signin-chkbox" type="checkbox" id="chk-keep-me-sign-in">
-            <label class="bk-login__keep-me-signin-label" for="chk-keep-me-sign-in">Keep me sign in</label>
+      <div class="bk-account__desc-cont">
+        <p class="bk-account__desc">Share your secrets with us and we’ll share ours with you! Just kidding, you’re in good hands.</p>
+        <p class="c-message c-message--success bk-account__account-updated">Thank you, your secret is safe and sound.</p>
+      </div>
+
+      <div class="bk-small-width-cont">
+        <h2 class="bk-account__subtitle">Personal Details</h2>
+        <div class="c-white-block c-input-form bk-account__input-form">
+          <p>Review and update your personal info</p>
+          
+          <label class="c-input-label" for="bk-account-name">Name</label>
+          <div class="c-input-set bk-cart__chkout-input-set">
+            <input class="c-input c-input--error-red" type="text" id="bk-account-name" name="name" placeholder="">
+            <span class="c-input__error-red-msg c-input__error-msg c-input__error-msg--active">Name Cannot be empty</span>
           </div>
 
-          <div class="c-btn--widepress-cont">
-            <button class="c-btn c-btn--red c-btn--widepress bk-login__login-btn">Log In</button>
+          <label class="c-input-label" for="bk-account-email">Email</label>
+          <div class="c-input-set bk-cart__chkout-input-set">
+            <input class="c-input" type="text" id="bk-account-email" name="email" placeholder="">
+            <span class="c-input__error-red-msg c-input__error-msg">Invalid Email</span>
           </div>
 
-          <a class="bk-login__forget-pw" href="#/">Forgot Password?</a>
+          <hr class="c-input-divider">
+
+          <label class="c-input-label" for="bk-account-pw">Password</label>
+          <div class="c-input-set bk-cart__chkout-input-set">
+            <input class="c-input" type="text" id="bk-account-pw" name="name" placeholder="">
+            <span class="c-input__error-red-msg c-input__error-msg">Invalid Password</span>
+          </div>
+
+          <label class="c-input-label" for="bk-account-retype-pw">Retype Password</label>
+          <div class="c-input-set bk-cart__chkout-input-set">
+            <input class="c-input" type="text" id="bk-account-retype-pw" name="email" placeholder="">
+            <span class="c-input__error-red-msg c-input__error-msg">Incorrect Password</span>
+          </div>
         </div>
-        <div class="bk-login__signup">
-          <h1 class="bk-login__signup-title">If you're new to us</h1>
-          <p class="bk-login__signup-text">
-            Freebies, discounts and sneak peeks, all you have to do is be adventurous and sign up lah!
-          </p>
-          <button class="bk-signup__btn c-btn c-btn--black c-btn--tall">
-            Sign Up
-          </button>
-          <p class="bk-signup__or-text">Or</p>
-          <button class="bk-signup__btn c-btn c-btn--fb c-btn--tall">
-            Sign in with facebook
-            <i class="bk-signup__btn-icon c-social-fb"></i>
-          </button>
-          <button class="bk-signup__btn c-btn c-btn--twit c-btn--tall">
-            Sign Up
-            <i class="bk-signup__btn-icon c-social-twit"></i>
-          </button>
-          <p class="bk-signup__or-text">Or</p>
-          <a class="bk-signup__checkout" href="#/">Checkout As Guest</a>
+        <div class="c-btn--widepress-cont">
+          <button class="c-btn c-btn--froly c-btn--widepress c-btn--full">Update Profile</button>
         </div>
       </div>
+
     </div>
 
     <footer class="bk-footer">

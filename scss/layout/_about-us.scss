@@ -1,0 +1,47 @@
+.bk-about {
+  padding: 0;
+}
+
+.bk-about__banner {
+  padding-top: 40px;
+  @include flexcenter;
+  flex-direction: column;
+  @include image("../assets/img/banner_4", "png", 100%, 250px, cover);
+  background-position: 0px 50px;
+}
+
+.bk-about__photo {
+  margin-bottom: 20px;
+  max-width: 800px;
+  background-position: center;
+  @include image("../assets/img/about", "png", 100%, 300px, contain);
+
+  @include for-tablet-mid-range {
+    height: 500px;
+  }
+}
+
+.bk-about__title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.bk-about__content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.bk-about__desc {
+  width: 100%;
+  max-width: 750px;
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: justify;
+  margin-bottom: 20px;
+}

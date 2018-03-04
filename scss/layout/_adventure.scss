@@ -1,0 +1,51 @@
+.bk-advent__order-icon {
+  @include image("../assets/img/orders", "png", 113px, 113px, contain);
+}
+
+.bk-advent__pending-item-set {
+  margin-bottom: 65px;
+}
+
+.bk-advent__pending-item {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.bk-advent__pending-item-img {
+  background-color: red;
+  height: 45px;
+  width: 65px;
+  margin-right: 20px;
+}
+
+.bk-advent__subtitle {
+  color: #666470;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.bk-advent__pending-item-name {
+  color: #4A4A4A;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.bk-advent__pending-item-order-no,
+.bk-advent__pending-item-order-status,
+.bk-advent__pending-item-tracking-code {
+  color: #9B9B9B;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.bk-advent__pending-item-tracking-code > span {
+  color: $teal;
+}
+
+.bk-advent__pending-item--accum {
+  opacity: 0.7;
+}

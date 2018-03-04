@@ -1,2 +1,5 @@
-- bng in town area banner
-- pizza with crust for hiw
+TO DO
+- Adjust all text
+- Update side graphics
+- Build Flipper
+- scroll to section (How it works)
