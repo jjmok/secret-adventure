@@ -9,6 +9,9 @@
   --section-title-font: 18px;
   --story-title-font: 20px;
 
+  --book-width: 300px;
+  --book-height: 125px;
+
   @include for-tablet-mid-range {
     --preview-step-height: 75px;
   }

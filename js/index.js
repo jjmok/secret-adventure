@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const previewLetterSwitchIcon = document.querySelectorAll('.js-letter-switch-icon')
   const previewLetterLetterSwitch = document.querySelectorAll('.js-preview-letter-switch')
   const previewLetterDedication = document.querySelector('#js-preview-dedication')
+  const loaderContainer = document.querySelector('#js-loader-container')
 
   function addError (elem) {
     elem.classList.add('c-input--error-orange')
@@ -148,4 +149,19 @@ document.addEventListener('DOMContentLoaded', function (event) {
       target_parent.querySelector('.js-preview-letter-dropdown ').classList.add('bk-letter-dropdown--active')
     });
   });
+
+  $(".flipbook")
+    .ready(function(){
+      loaderContainer.classList.remove('bk-loader-cont--show');
+      console.log("loaded")
+    })
+    .turn({
+      autoCenter: true,
+      elevation: 50,
+      gradients: true
+    })
+    .bind("turned", function(event, page, view) {
+      console.log("turned");
+    });
 })
+

@@ -11,6 +11,16 @@
 
 .bk-preview__loader-cont {
   position: absolute;
+  @include flexcenter;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+}
+
+.bk-loader-cont--show {
+  display: flex;
 }
 
 .bk-preview__loader {
@@ -26,11 +36,11 @@
 
 .bk-preview__frame {
   position: relative;
-  width: 100%;
+  width: var(--book-width);
   height: var(--preview-frame-height);
-  @include flexcenter;
-  flex-direction: column;
-  text-align: center;
+  // @include flexcenter;
+  // flex-direction: column;
+  // text-align: center;
 }
 
 .bk-preview__name {
@@ -154,25 +164,6 @@
   }
 }
 
-.bk-dummy-cover {
-  @include image("../assets/img/fake-cover", "png", 100%, 425px, contain);
-  height: var(--preview-frame-height);
-  color: white;
-  display: inline-block;
-  margin-bottom: 30px;
-  background-position: center;
-  max-width: 590px;
-}
-
-.bk-dummy-cover-2 {
-  @include image("../assets/img/fake-cover-full", "png", 100%, 425px, contain);
-  height: var(--preview-frame-height);
-  color: white;
-  display: inline-block;
-  margin-bottom: 30px;
-  background-position: center;
-}
-
 .bk-preview__letter-set {
   display: flex;
   flex-direction: row;
@@ -256,6 +247,7 @@
   bottom: 10px;
   font-size: 12px;
   font-style: italic;
+  width: 160px;
 
   @include for-desktop-up {
     left: 0px;

@@ -6,7 +6,6 @@
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="dist/booker.css">
-
 </head>
 <body>
   <div class="bk-container">
@@ -42,7 +41,7 @@
         <p class="bk-preview__name c-title">SHANE</p>
         <div class="bk-preview__frame">
           
-          <div class="bk-preview__loader-cont">
+          <div id="js-loader-container" class="bk-preview__loader-cont bk-loader-cont--show">
             <div class="c-loader bk-preview__loader">
             </div>
             <div class="bk-preview__loading-text">
@@ -55,9 +54,20 @@
             <p>Tap to open the book</p>
             <div class="bk-preview__tap-to-open"></div>
           </div>
-          <div class="bk-dummy-cover"></div>
-          <!-- uncomment to see the full page version -->
-          <!-- <div class="bk-dummy-cover-2"></div> -->
+
+          <div class="flipbook bk-flipbook">
+            <div class="hard" style="background-image:url(assets/img/fake-cover.png)"></div> 
+            <div class="bk-flipbook__blank hard" style="background-color: white;"></div> 
+            <div style="background-image:url(assets/img/banner_1.png)"></div> 
+            <div style="background-image:url(assets/img/banner_2.png)"></div>
+            <div style="background-image:url(assets/img/banner_3.png)"></div>
+            <div style="background-image:url(assets/img/banner_4.png)"></div>
+            <div style="background-image:url(assets/img/banner_1.png)"></div>
+            <div style="background-image:url(assets/img/banner_2.png)"></div>
+            <div class="bk-flipbook__blank hard" style="background-color: white;"></div> 
+            <div class="bk-flipbook__blank hard" style="background-color: white;"></div> 
+          </div>
+          
         </div>
         <ul class="bk-preview__letter-set">
           <li class="js-preview-letter-cont bk-preview__letter-cont">
@@ -225,9 +235,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <!-- <script type="text/javascript" src="js/lib/retina.min.js"></script> -->
 
+  <script type="text/javascript" src="js/turn.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

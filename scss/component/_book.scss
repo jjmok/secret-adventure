@@ -1,0 +1,9 @@
+.bk-flipbook {
+  transition: margin-left 0.2s ease;
+  width: var(--book-width);
+  height: var(--book-height);
+}
+
+.bk-flipbook__blank {
+  background-color: white;
+}
