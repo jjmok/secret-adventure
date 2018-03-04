@@ -9,23 +9,43 @@
   --section-title-font: 18px;
   --story-title-font: 20px;
 
-  --book-width: 300px;
-  --book-height: 125px;
-
-  @include for-tablet-mid-range {
-    --preview-step-height: 75px;
-  }
-
   @include for-tablet-portrait-up {
+    --book-width: 350px;
+    --book-height: 107px;
     --carousel-height: 350px;
     --footer-height: 215px;
     --preview-frame-height: 425px;
+  }
+
+  @include for-tablet-mid-range {
+    --preview-step-height: 75px;
   }
 
   @include for-tablet-landscape-up {
     --carousel-height: 535px;
   }
 }
+
+:root {
+  --book-width: 350px;
+  --book-height: 107px;
+
+  @include min-screen(550px) {
+    --book-width: 500px !important;
+    --book-height: 180px !important;
+  }
+  @include min-screen(600px) {
+    --book-width: 550px !important;
+    --book-height: 199px !important;
+  }
+  @include min-screen(700px) {
+    --book-width: 650px !important;
+    --book-height: 235px !important;
+  }
+}
+
+
+
 
 :root {
   --c-title-font: 20px;

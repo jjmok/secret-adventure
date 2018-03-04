@@ -4,6 +4,12 @@
   height: var(--book-height);
 }
 
-.bk-flipbook__blank {
+.bk-flipbook__page {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bk-flipbook--blank {
   background-color: white;
 }

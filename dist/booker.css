@@ -654,8 +654,16 @@ template {
   --preview-step-height: 55px;
   --section-title-font: 18px;
   --story-title-font: 20px;
-  --book-width: 300px;
-  --book-height: 125px;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --book-width: 350px;
+    --book-height: 107px;
+    --carousel-height: 350px;
+    --footer-height: 215px;
+    --preview-frame-height: 425px;
+  }
 }
 
 @media (min-width: 750px) {
@@ -664,17 +672,35 @@ template {
   }
 }
 
-@media (min-width: 600px) {
-  :root {
-    --carousel-height: 350px;
-    --footer-height: 215px;
-    --preview-frame-height: 425px;
-  }
-}
-
 @media (min-width: 900px) {
   :root {
     --carousel-height: 535px;
+  }
+}
+
+:root {
+  --book-width: 350px;
+  --book-height: 107px;
+}
+
+@media screen and (min-width: 550px) {
+  :root {
+    --book-width: 500px !important;
+    --book-height: 180px !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --book-width: 550px !important;
+    --book-height: 199px !important;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  :root {
+    --book-width: 650px !important;
+    --book-height: 235px !important;
   }
 }
 
@@ -1590,7 +1616,13 @@ select, textarea {
   height: var(--book-height);
 }
 
-.bk-flipbook__blank {
+.bk-flipbook__page {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bk-flipbook--blank {
   background-color: white;
 }
 
