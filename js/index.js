@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const previewLetterLetterSwitch = document.querySelectorAll('.js-preview-letter-switch')
   const previewLetterDedication = document.querySelector('#js-preview-dedication')
   const loaderContainer = document.querySelector('#js-loader-container')
+  const bookOnboarding = document.querySelector('#js-book-onboarding')
 
   function addError (elem) {
     elem.classList.add('c-input--error-orange')
@@ -150,10 +151,29 @@ document.addEventListener('DOMContentLoaded', function (event) {
     });
   });
 
-  $(".flipbook")
-    .ready(function(){
+  const flipbookElem = $(".flipbook")
+    flipbookElem.ready(function(){
       loaderContainer.classList.remove('bk-loader-cont--show');
-      console.log("loaded")
+
+      $(`.page-wrapper`).click(e => {
+        console.log("SIMILJ: ", e.currentTarget.attributes.page.value)
+        const currentViewArr = flipbookElem.turn('view')
+        if ( e.currentTarget.attributes.page.value !== 0 ){
+          const pageSide = currentViewArr.indexOf(parseInt(e.currentTarget.attributes.page.value))
+
+          switch(pageSide){
+            case 0:
+              flipbookElem.turn('previous')
+            break;
+            case 1:
+            flipbookElem.turn('next')
+            break;
+            default:
+            break;
+          }
+        }
+        console.log("Fucking turned: ", flipbookElem.turn('view'))
+      })
     })
     .turn({
       autoCenter: true,
@@ -162,6 +182,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
     })
     .bind("turned", function(event, page, view) {
       console.log("turned");
+      bookOnboarding.classList.remove('bk-preview__tap-cont--show');
+    })
+    .bind("turning", function(event, page, view) {
+      if (page==2) {
+        console.log('at page 2')
+      }
     });
 })
 

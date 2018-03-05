@@ -650,7 +650,6 @@ template {
   --carousel-height: 300px;
   --footer-height: 315px;
   --header-height: 70px;
-  --preview-frame-height: 325px;
   --preview-step-height: 55px;
   --section-title-font: 18px;
   --story-title-font: 20px;
@@ -681,26 +680,65 @@ template {
 :root {
   --book-width: 350px;
   --book-height: 107px;
+  --preview-frame-height: 175px;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 500px) {
   :root {
-    --book-width: 500px !important;
-    --book-height: 180px !important;
+    --book-width: 450px;
+    --book-height: 180px;
+    --preview-frame-height: 225px;
   }
 }
 
 @media screen and (min-width: 600px) {
   :root {
-    --book-width: 550px !important;
-    --book-height: 199px !important;
+    --book-width: 550px;
+    --book-height: 199px;
+    --preview-frame-height: 255px;
   }
 }
 
 @media screen and (min-width: 700px) {
   :root {
-    --book-width: 650px !important;
-    --book-height: 235px !important;
+    --book-width: 650px;
+    --book-height: 235px;
+    --preview-frame-height: 275px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --book-width: 750px;
+    --book-height: 289px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  :root {
+    --book-width: 850px;
+    --book-height: 306px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    --book-width: 950px;
+    --book-height: 343px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  :root {
+    --book-width: 1050px;
+    --book-height: 380px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --book-width: 1150px;
+    --book-height: 415px;
   }
 }
 
@@ -2946,7 +2984,9 @@ select, textarea {
 .bk-preview__frame {
   position: relative;
   width: var(--book-width);
-  height: var(--preview-frame-height);
+  height: var(--book-height);
+  margin-bottom: 50px;
+  border: 1px solid red;
 }
 
 .bk-preview__name {
@@ -3218,25 +3258,42 @@ select, textarea {
   position: absolute;
   pointer-events: none;
   top: initial;
-  bottom: 10px;
+  right: 0px;
+  bottom: -20px;
   font-size: 12px;
   font-style: italic;
   width: 160px;
+  text-align: right;
+  z-index: 2;
+  display: none;
 }
 
 @media (min-width: 1200px) {
   .bk-preview__tap-cont {
-    left: 0px;
     top: 30%;
     bottom: initial;
     font-size: 16px;
   }
 }
 
+.bk-preview__tap-cont--show {
+  display: block;
+}
+
+.bk-preview__flip-cont {
+  position: absolute;
+  pointer-events: none;
+  bottom: -30px;
+  right: 0px;
+  z-index: 2;
+}
+
 .bk-preview__tap-to-open {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
   position: absolute;
   bottom: -25px;
-  right: -100px;
+  left: -100px;
   display: none;
   background-image: url("../assets/img/tap-open-arrow.png");
   background-repeat: no-repeat;
@@ -3255,6 +3312,18 @@ select, textarea {
   .bk-preview__tap-to-open {
     display: block;
   }
+}
+
+.bk-preview__onboarding-pointer {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  right: -50px;
+  top: -20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid red;
 }
 
 .bk-preview__change-name {

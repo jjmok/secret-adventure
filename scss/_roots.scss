@@ -4,7 +4,6 @@
   --carousel-height: 300px;
   --footer-height: 315px;
   --header-height: 70px;
-  --preview-frame-height: 325px;
   --preview-step-height: 55px;
   --section-title-font: 18px;
   --story-title-font: 20px;
@@ -29,23 +28,44 @@
 :root {
   --book-width: 350px;
   --book-height: 107px;
+  --preview-frame-height: 175px;
 
-  @include min-screen(550px) {
-    --book-width: 500px !important;
-    --book-height: 180px !important;
+  @include min-screen(500px) {
+    --book-width: 450px;
+    --book-height: 180px;
+    --preview-frame-height: 225px;
   }
   @include min-screen(600px) {
-    --book-width: 550px !important;
-    --book-height: 199px !important;
+    --book-width: 550px;
+    --book-height: 199px;
+    --preview-frame-height: 255px;
   }
   @include min-screen(700px) {
-    --book-width: 650px !important;
-    --book-height: 235px !important;
+    --book-width: 650px;
+    --book-height: 235px;
+    --preview-frame-height: 275px;
+  }
+  @include min-screen(800px) {
+    --book-width: 750px;
+    --book-height: 289px;
+  }
+  @include min-screen(900px) {
+    --book-width: 850px;
+    --book-height: 306px;
+  }
+  @include min-screen(1000px) {
+    --book-width: 950px;
+    --book-height: 343px;
+  }
+  @include min-screen(1100px) {
+    --book-width: 1050px;
+    --book-height: 380px;
+  }
+  @include min-screen(1200px) {
+    --book-width: 1150px;
+    --book-height: 415px;
   }
 }
-
-
-
 
 :root {
   --c-title-font: 20px;
