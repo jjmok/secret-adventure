@@ -1,8 +1,8 @@
-.bk-about {
+.bk-misc {
   padding: 0;
 }
 
-.bk-about__banner {
+.bk-misc__banner {
   padding-top: 40px;
   @include flexcenter;
   flex-direction: column;
@@ -10,7 +10,7 @@
   background-position: 0px 50px;
 }
 
-.bk-about__photo {
+.bk-misc__photo {
   margin-bottom: 20px;
   max-width: 800px;
   background-position: center;
@@ -21,27 +21,36 @@
   }
 }
 
-.bk-about__title {
+.bk-misc__title {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.bk-about__content {
+.bk-misc__content {
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 100px;
+  min-height: calc(100vh - 250px - var(--header-height) - var(--footer-height));
 }
 
-.bk-about__desc {
+.bk-misc__desc,
+.bk-misc__subtitle {
   width: 100%;
   max-width: 750px;
-  color: #4A4A4A;
   font-size: 14px;
+}
+
+.bk-misc__desc {
   font-weight: 500;
   line-height: 26px;
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.bk-misc__subtitle {
+  font-weight: bold;
+  margin-bottom: 4px;
 }

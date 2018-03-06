@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         // console.log('currentTarget: ', e.currentTarget)
         // console.log('target: ', e.target)
         // console.log('currentPage: ', e.currentTarget.attributes.page.value)
-
+        e.stopPropagation()
         const currentViewArr = flipbookElem.turn('view')
 
         if (e.target.attributes.page.value !== 0) {

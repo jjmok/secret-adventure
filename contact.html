@@ -11,6 +11,7 @@
   <div class="bk-container">
     <header class="bk-header bk-width-cont">
       <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--2"></a>
+
       <div class="bk-hover-container">
         <button class="bk-header__navbtn">
           <span class="u-noevents">Menu</span>
@@ -33,15 +34,37 @@
       </div>
     </header>
   
-    <div class="bk-body-cont bk-width-cont bk-misc">
-      <div class="bk-misc__banner bk-width-cont">
-        <h1 class="bk-misc__title">About us</h1>
+    <div class="bk-body-cont bk-width-cont bk-feedback">
+      <div class="bk-feedback__banner bk-width-cont ">
+        <h1 class="bk-feedback__title">Send Us Some Love</h1>
+        <p>Questions, comments, concerns? We’d love to hear from you! Write in and tell us your thoughts.</p>
       </div>
-      <div class="bk-misc__content bk-width-cont">
-        <div class="bk-misc__photo"></div>
-        <p class="bk-misc__desc">Our story began when a group of old friends and new friends banded together to embark on a secret adventure.</p>
-        <p class="bk-misc__desc">Our adventure is constantly evolving and expanding, inspired by our children, our cultures, the country which we live in (Malaysia), and those that we travel to.</p>
-        <p class="bk-misc__desc">The end goal? To make sure that each and every book we create is not only beautiful to look at, but inspires a child (and adult!) to explore, experience, learn new things, and most of all, open the mind to (magical!) possibilities.</p>
+      <div class="bk-feedback__form-cont bk-width-cont">
+        <div class="c-message c-message--success bk-feedback__success">
+          Thank you for taking the time to write to us! We’ll be in touch just as soon as you can say ‘secret adventure’.
+        </div>
+        <div class="bk-feedback__form bk-small-width-cont">
+          <label class="c-input-label" for="bk-feedback-name">Your Name</label>
+          <div class="c-input-set bk-feedback__input-set">
+            <input class="c-input c-input--error-red" type="text" id="bk-feedback-name" name="name" placeholder="">
+            <span class="c-input__error-red-msg c-input__error-msg c-input__error-msg--active">Name Cannot be empty</span>
+          </div>
+
+          <label class="c-input-label" for="bk-feedback-email">Your Email</label>
+          <div class="c-input-set bk-feedback__input-set">
+            <input class="c-input" type="text" id="bk-feedback-email" name="email" placeholder="">
+            <span class="c-input__error-red-msg c-input__error-msg">Invalid Email</span>
+          </div>
+
+          <label class="c-input-label" for="bk-feedback-tell-us">Tell us what's on your mind</label>
+          <div class="c-input-set bk-feedback__input-set">
+            <textarea class="c-textarea bk-feedback__tell-us-textarea"></textarea>
+          </div>
+
+          <div class="c-btn--widepress-cont">
+            <button class="c-btn c-btn--froly c-btn--widepress c-btn--full">Contact us</button>
+          </div>
+        </div>
       </div>
     </div>
 

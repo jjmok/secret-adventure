@@ -6,7 +6,6 @@
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="dist/booker.css">
-
 </head>
 <body>
   <div class="bk-container">
@@ -23,8 +22,8 @@
           <nav class="bk-header__section">
             <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--1"></a>
             <a class="c-link bk-header__link" href="about-us.html">About the Book</a>
-            <a class="c-link bk-header__link" href="">How It Works</a>
-            <a class="c-link bk-header__link" href="">Help</a>
+            <a class="c-link bk-header__link" href="#js-how-it-works">How It Works</a>
+            <a class="c-link bk-header__link" href="contact.html">Help</a>
           </nav>
           <nav class="bk-header__section">
             <button class="bk-header__currency c-btn c-btn--currency">
@@ -68,13 +67,19 @@
           <div class="bk-carousel-item bk-carousel-item--3"></div>
         </div>
       </div>
-      <a class="carousel-control-prev bk-carousel-control-prev--banner" href="#js-intro-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+      <a class="carousel-control-prev bk-carousel__control--banner" href="#js-intro-carousel" role="button" data-slide="prev">
+        <div class="bk-carousel__chevron-cont">
+          <span class="bk-carousel__chevron c-chevron c-chevron--sm c-chevron--left" aria-hidden="true"></span>
+        </div>
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <!-- <span class="sr-only">Previous</span> -->
       </a>
-      <a class="carousel-control-next bk-carousel-control-next--banner" href="#js-intro-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+      <a class="carousel-control-next bk-carousel__control--banner" href="#js-intro-carousel" role="button" data-slide="next">
+        <div class="bk-carousel__chevron-cont">
+          <span class="bk-carousel__chevron c-chevron c-chevron--sm c-chevron--right" aria-hidden="true"></span>
+        </div>
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <!-- <span class="sr-only">Next</span> -->
       </a>
     </div>
 
@@ -123,6 +128,7 @@
     </section>
 
     <section class="bk-hiw bk-hiw--long">
+      <div id="js-how-it-works" class="bk-hiw__marker"></div>
       <h1 class="c-title bk-hiw__title">How it Works</h1>
       <div class="bk-hiw__content bk-hiw__content--left">
         <span class="bk-hiw__step">Step 1</span>
@@ -235,9 +241,9 @@
       <nav class="bk-footer__nav-links">
         <a class="bk-footer__link" href="about-us.html">About Us</a>
         <a class="bk-footer__link" href="refer.html">Refer A friend</a>
-        <a class="bk-footer__link" href="">Terms and Conditions</a>
-        <a class="bk-footer__link" href="">Privacy Policy</a>
-        <a class="bk-footer__link" href="">Contact Us</a>
+        <a class="bk-footer__link" href="terms.html">Terms and Conditions</a>
+        <a class="bk-footer__link" href="policy.html">Privacy Policy</a>
+        <a class="bk-footer__link" href="contact.html">Contact Us</a>
       </nav>
       <p class="bk-footer__copyright">© 2017 My Secret Adventure. All Rights Reserved. </p>
       <nav class="bk-footer__social-links-set">

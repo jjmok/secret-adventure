@@ -17,6 +17,7 @@
   height: 100%;
   text-align: center;
   display: none;
+  z-index: 1;
 }
 
 .bk-loader-cont--show {
@@ -39,6 +40,8 @@
   width: var(--book-width);
   height: var(--book-height);
   margin-bottom: 50px;
+  transform: scale(var(--book-size));
+  transition: transform 0.2s ease;
   border: 1px solid red;
 }
 
@@ -243,11 +246,10 @@
   position: absolute;
   pointer-events: none;
   top: initial;
-  right: 0px;
+  left: 0px;
   bottom: -20px;
   font-size: 12px;
   font-style: italic;
-  width: 160px;
   text-align: right;
   z-index: 2;
   display: none;
@@ -263,19 +265,10 @@
   display: block;
 }
 
-.bk-preview__flip-cont {
-  position: absolute;
-  pointer-events: none;
-  bottom: -30px;
-  right: 0px;
-  z-index: 2;
-}
-
 .bk-preview__tap-to-open {
-  transform: scaleX(-1);
   position: absolute;
   bottom: -25px;
-  left: -100px;
+  right: -75px;
   display: none;
   @include image("../assets/img/tap-open-arrow", "png", 142px, 40px, contain);
 

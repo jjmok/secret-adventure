@@ -2,4 +2,4 @@ TO DO
 - Adjust all text
 - Update side graphics
 - Build Flipper
-- scroll to section (How it works)
+- scroll to section (How it worksss)

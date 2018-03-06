@@ -2,6 +2,7 @@
   transition: margin-left 0.2s ease;
   width: var(--book-width);
   height: var(--book-height);
+  z-index: 2;
 }
 
 .bk-flipbook__page {

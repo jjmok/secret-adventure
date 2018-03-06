@@ -9,11 +9,8 @@
   --story-title-font: 20px;
 
   @include for-tablet-portrait-up {
-    --book-width: 350px;
-    --book-height: 107px;
     --carousel-height: 350px;
     --footer-height: 215px;
-    --preview-frame-height: 425px;
   }
 
   @include for-tablet-mid-range {
@@ -26,45 +23,18 @@
 }
 
 :root {
-  --book-width: 350px;
-  --book-height: 107px;
-  --preview-frame-height: 175px;
+  --book-width: 1150px;
+  --book-height: 415px;
+  --book-size: 0.32;
 
-  @include min-screen(500px) {
-    --book-width: 450px;
-    --book-height: 180px;
-    --preview-frame-height: 225px;
-  }
-  @include min-screen(600px) {
-    --book-width: 550px;
-    --book-height: 199px;
-    --preview-frame-height: 255px;
-  }
-  @include min-screen(700px) {
-    --book-width: 650px;
-    --book-height: 235px;
-    --preview-frame-height: 275px;
-  }
-  @include min-screen(800px) {
-    --book-width: 750px;
-    --book-height: 289px;
-  }
-  @include min-screen(900px) {
-    --book-width: 850px;
-    --book-height: 306px;
-  }
-  @include min-screen(1000px) {
-    --book-width: 950px;
-    --book-height: 343px;
-  }
-  @include min-screen(1100px) {
-    --book-width: 1050px;
-    --book-height: 380px;
-  }
-  @include min-screen(1200px) {
-    --book-width: 1150px;
-    --book-height: 415px;
-  }
+  @include min-screen(500px) {--book-size: 0.40;}
+  @include for-tablet-portrait-up {--book-size: 0.48;}
+  @include min-screen(700px) {--book-size: 0.56;}
+  @include min-screen(800px) {--book-size: 0.64;}
+  @include for-tablet-landscape-up {--book-size: 0.72;}
+  @include min-screen(1000px) {--book-size: 0.80;}
+  @include min-screen(1100px) {--book-size: 0.88;}
+  @include for-desktop-up {--book-size: 1;}
 }
 
 :root {

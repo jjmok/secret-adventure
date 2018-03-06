@@ -657,11 +657,8 @@ template {
 
 @media (min-width: 600px) {
   :root {
-    --book-width: 350px;
-    --book-height: 107px;
     --carousel-height: 350px;
     --footer-height: 215px;
-    --preview-frame-height: 425px;
   }
 }
 
@@ -678,67 +675,56 @@ template {
 }
 
 :root {
-  --book-width: 350px;
-  --book-height: 107px;
-  --preview-frame-height: 175px;
+  --book-width: 1150px;
+  --book-height: 415px;
+  --book-size: 0.32;
 }
 
 @media screen and (min-width: 500px) {
   :root {
-    --book-width: 450px;
-    --book-height: 180px;
-    --preview-frame-height: 225px;
+    --book-size: 0.40;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   :root {
-    --book-width: 550px;
-    --book-height: 199px;
-    --preview-frame-height: 255px;
+    --book-size: 0.48;
   }
 }
 
 @media screen and (min-width: 700px) {
   :root {
-    --book-width: 650px;
-    --book-height: 235px;
-    --preview-frame-height: 275px;
+    --book-size: 0.56;
   }
 }
 
 @media screen and (min-width: 800px) {
   :root {
-    --book-width: 750px;
-    --book-height: 289px;
+    --book-size: 0.64;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
   :root {
-    --book-width: 850px;
-    --book-height: 306px;
+    --book-size: 0.72;
   }
 }
 
 @media screen and (min-width: 1000px) {
   :root {
-    --book-width: 950px;
-    --book-height: 343px;
+    --book-size: 0.80;
   }
 }
 
 @media screen and (min-width: 1100px) {
   :root {
-    --book-width: 1050px;
-    --book-height: 380px;
+    --book-size: 0.88;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   :root {
-    --book-width: 1150px;
-    --book-height: 415px;
+    --book-size: 1;
   }
 }
 
@@ -1541,9 +1527,30 @@ select, textarea {
   }
 }
 
-.bk-carousel-control-prev--banner,
-.bk-carousel-control-next--banner {
-  color: black;
+.bk-carousel__chevron-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.bk-carousel__chevron {
+  top: 5px;
+  right: 3px;
+  position: relative;
+}
+
+.bk-carousel__chevron::before {
+  border-color: black;
 }
 
 .bk-carousel-control-prev--review,
@@ -1652,6 +1659,7 @@ select, textarea {
   transition: margin-left 0.2s ease;
   width: var(--book-width);
   height: var(--book-height);
+  z-index: 2;
 }
 
 .bk-flipbook__page {
@@ -2750,6 +2758,11 @@ overwrite .shadow {
   line-height: 28px;
 }
 
+.bk-hiw__marker {
+  top: -75px;
+  position: absolute;
+}
+
 .bk-review {
   height: 700px;
   padding-top: 60px;
@@ -2972,6 +2985,7 @@ overwrite .shadow {
   height: 100%;
   text-align: center;
   display: none;
+  z-index: 1;
 }
 
 .bk-loader-cont--show {
@@ -2996,6 +3010,12 @@ overwrite .shadow {
   width: var(--book-width);
   height: var(--book-height);
   margin-bottom: 50px;
+  -webkit-transform: scale(var(--book-size));
+          transform: scale(var(--book-size));
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   border: 1px solid red;
 }
 
@@ -3268,11 +3288,10 @@ overwrite .shadow {
   position: absolute;
   pointer-events: none;
   top: initial;
-  right: 0px;
+  left: 0px;
   bottom: -20px;
   font-size: 12px;
   font-style: italic;
-  width: 160px;
   text-align: right;
   z-index: 2;
   display: none;
@@ -3290,20 +3309,10 @@ overwrite .shadow {
   display: block;
 }
 
-.bk-preview__flip-cont {
-  position: absolute;
-  pointer-events: none;
-  bottom: -30px;
-  right: 0px;
-  z-index: 2;
-}
-
 .bk-preview__tap-to-open {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
   position: absolute;
   bottom: -25px;
-  left: -100px;
+  right: -75px;
   display: none;
   background-image: url("../assets/img/tap-open-arrow.png");
   background-repeat: no-repeat;
@@ -4767,11 +4776,11 @@ overwrite .shadow {
   margin: 20px 0px;
 }
 
-.bk-about {
+.bk-misc {
   padding: 0;
 }
 
-.bk-about__banner {
+.bk-misc__banner {
   padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4795,12 +4804,12 @@ overwrite .shadow {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .bk-about__banner {
+  .bk-misc__banner {
     background-image: url("../assets/img/banner_4@2x.png");
   }
 }
 
-.bk-about__photo {
+.bk-misc__photo {
   margin-bottom: 20px;
   max-width: 800px;
   background-position: center;
@@ -4812,23 +4821,23 @@ overwrite .shadow {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .bk-about__photo {
+  .bk-misc__photo {
     background-image: url("../assets/img/about@2x.png");
   }
 }
 
 @media (min-width: 750px) {
-  .bk-about__photo {
+  .bk-misc__photo {
     height: 500px;
   }
 }
 
-.bk-about__title {
+.bk-misc__title {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.bk-about__content {
+.bk-misc__content {
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4842,17 +4851,26 @@ overwrite .shadow {
           align-items: center;
   padding-top: 40px;
   padding-bottom: 100px;
+  min-height: calc(100vh - 250px - var(--header-height) - var(--footer-height));
 }
 
-.bk-about__desc {
+.bk-misc__desc,
+.bk-misc__subtitle {
   width: 100%;
   max-width: 750px;
-  color: #4A4A4A;
   font-size: 14px;
+}
+
+.bk-misc__desc {
   font-weight: 500;
   line-height: 26px;
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.bk-misc__subtitle {
+  font-weight: bold;
+  margin-bottom: 4px;
 }
 
 .bk-refer {
