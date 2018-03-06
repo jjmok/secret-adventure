@@ -1658,10 +1658,20 @@ select, textarea {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .bk-flipbook--blank {
   background-color: white;
+}
+
+overwrite .shadow {
+  pointer-events: none;
+}
+
+.page-wrapper > div,
+.page-wrapper > .bk-flipbook__page {
+  pointer-events: none;
 }
 
 .bk-container {

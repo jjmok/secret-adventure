@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const previewLetterDedication = document.querySelector('#js-preview-dedication')
   const loaderContainer = document.querySelector('#js-loader-container')
   const bookOnboarding = document.querySelector('#js-book-onboarding')
+  const flipbook = document.querySelector('#js-flipbook')
+  const pageWrapper = document.querySelectorAll('.page-wrapper')
 
   function addError (elem) {
     elem.classList.add('c-input--error-orange')
@@ -143,51 +145,74 @@ document.addEventListener('DOMContentLoaded', function (event) {
     });
   });
 
-  [...previewLetterSwitchIcon].forEach(function(elem){
-    elem.addEventListener('mousedown', function (e){
-      let target_parent = e.currentTarget.closest('.js-preview-letter-cont');
+  [...previewLetterSwitchIcon].forEach(function(elem) {
+    elem.addEventListener('mousedown', function (e) {
+      let target_parent = e.currentTarget.closest('.js-preview-letter-cont')
       target_parent.querySelector('.js-preview-letter-switch ').classList.remove('bk-letter-switch--active')
       target_parent.querySelector('.js-preview-letter-dropdown ').classList.add('bk-letter-dropdown--active')
-    });
+    })
   });
 
-  const flipbookElem = $(".flipbook")
-    flipbookElem.ready(function(){
-      loaderContainer.classList.remove('bk-loader-cont--show');
+  const flipbookElem = $('#js-flipbook')
+  flipbookElem.ready(function () {
+    loaderContainer.classList.remove('bk-loader-cont--show')
 
-      $(`.page-wrapper`).click(e => {
-        console.log("SIMILJ: ", e.currentTarget.attributes.page.value)
+    flipbook.addEventListener('click', function(e){
+      console.log(e.target);
+      if ( e.target.className === 'page-wrapper') {
+        // console.log('currentTarget: ', e.currentTarget)
+        // console.log('target: ', e.target)
+        // console.log('currentPage: ', e.currentTarget.attributes.page.value)
+
         const currentViewArr = flipbookElem.turn('view')
-        if ( e.currentTarget.attributes.page.value !== 0 ){
-          const pageSide = currentViewArr.indexOf(parseInt(e.currentTarget.attributes.page.value))
 
-          switch(pageSide){
+        if (e.target.attributes.page.value !== 0) {
+          const pageSide = currentViewArr.indexOf(parseInt(e.target.attributes.page.value))
+          switch (pageSide) {
             case 0:
               flipbookElem.turn('previous')
-            break;
+              break;
             case 1:
-            flipbookElem.turn('next')
-            break;
+              flipbookElem.turn('next')
+              break;
             default:
-            break;
+              break;
           }
         }
-        console.log("Fucking turned: ", flipbookElem.turn('view'))
-      })
-    })
-    .turn({
-      autoCenter: true,
-      elevation: 50,
-      gradients: true
-    })
-    .bind("turned", function(event, page, view) {
-      console.log("turned");
-      bookOnboarding.classList.remove('bk-preview__tap-cont--show');
-    })
-    .bind("turning", function(event, page, view) {
-      if (page==2) {
-        console.log('at page 2')
+        console.log('turned: ', flipbookElem.turn('view'))
       }
-    });
+    })
+
+    $(`.page-wrapper`).click(e => {
+      // console.log('currentTarget: ', e.currentTarget)
+      // console.log('target: ', e.target)
+      // console.log('currentPage: ', e.currentTarget.attributes.page.value)
+
+      // const currentViewArr = flipbookElem.turn('view')
+
+      // if (e.currentTarget.attributes.page.value !== 0) {
+      //   const pageSide = currentViewArr.indexOf(parseInt(e.currentTarget.attributes.page.value))
+      //   // console.log(pageSide)
+      //   switch (pageSide) {
+      //     case 0:
+      //       flipbookElem.turn('previous')
+      //       break;
+      //     case 1:
+      //       flipbookElem.turn('next')
+      //       break;
+      //     default:
+      //       break;
+      //   }
+      // }
+      // console.log('turned: ', flipbookElem.turn('view'))
+    })
+  })
+  .turn({
+    autoCenter: true,
+    gradients: true
+  })
+  .bind('turned', function(event, page, view) {
+    bookOnboarding.classList.remove('bk-preview__tap-cont--show')
+  })
 })
 
