@@ -4,7 +4,7 @@
 }
 
 .bk-carousel--main {
-  margin-top: 60px;
+  margin-top: var(--header-height);
 }
 
 .bk-carousel-item {
@@ -36,9 +36,9 @@
 }
 
 .bk-carousel-item__title {
-  font-size: var(--big-title-font);
-  font-weight: bold;
+  font-size: 30px;
   margin-bottom: 10px;
+  @include for-tablet-landscape-up { font-size: 56px; }
 }
 
 .bk-carousel-item__desc {

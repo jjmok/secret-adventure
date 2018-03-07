@@ -1,0 +1,33 @@
+.bk-leaf {
+  position: absolute;
+  opacity: 0.3;
+  @include for-tablet-portrait-up {
+    opacity: 1;
+  }
+}
+
+.bk-leaf--left-1 { left: 50px; }
+.bk-leaf--left-2 { left: -40px }
+.bk-leaf--left-3 { left: 0px }
+
+.bk-leaf--right-1 { right: 20px; }
+.bk-leaf--right-2 { right: -40px }
+.bk-leaf--right-3 { right: 0px }
+
+.bk-leaf--top-15 { top: 15% }
+.bk-leaf--top-35 { top: 35% }
+.bk-leaf--top-50 { top: 50% }
+.bk-leaf--top-75 { top: 75% }
+.bk-leaf--top-100 { top: 100% }
+
+.bk-cart__leaf--s-1 {
+  transform: scale(0.8);
+}
+
+.bk-cart__leaf--s-2 {
+  transform: scale(-0.7, 0.7);
+}
+
+.bk-cart__leaf--s-3 {
+  transform: scale(-1, 1);
+}

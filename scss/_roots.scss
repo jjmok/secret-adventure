@@ -1,6 +1,5 @@
 :root {
-  --font: 16;
-  --base-font-size: calc(var(--font) * 1px);
+  --base-font-size: 14px;
   --carousel-height: 300px;
   --footer-height: 315px;
   --header-height: 70px;
@@ -38,12 +37,14 @@
 }
 
 :root {
-  --c-title-font: 20px;
-  @include for-tablet-portrait-up {
-    --c-title-font: 25px;
-  }
-  @include for-tablet-landscape-up {
-    --c-title-font: 38px;
+  --h1-font-size: 48px;
+  --h2-font-size: 30px;
+  --h3-font-size: 24px;
+  --h4-font-size: 18px;
+
+  @include for-tablet-portrait-up { 
+    --h1-font-size: 56px;
+    --h2-font-size: 36px;
   }
 }
 

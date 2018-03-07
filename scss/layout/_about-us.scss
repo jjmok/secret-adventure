@@ -3,7 +3,6 @@
 }
 
 .bk-misc__banner {
-  padding-top: 40px;
   @include flexcenter;
   flex-direction: column;
   @include image("../assets/img/banner_4", "png", 100%, 250px, cover);
@@ -22,11 +21,12 @@
 }
 
 .bk-misc__title {
-  margin-bottom: 10px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .bk-misc__content {
+  position: relative;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,6 @@
 .bk-misc__subtitle {
   width: 100%;
   max-width: 750px;
-  font-size: 14px;
 }
 
 .bk-misc__desc {
@@ -53,4 +52,5 @@
 .bk-misc__subtitle {
   font-weight: bold;
   margin-bottom: 4px;
+  font-family: $main-font;
 }

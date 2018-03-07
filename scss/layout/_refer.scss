@@ -22,22 +22,26 @@
 }
 .bk-refer__content {
   margin-bottom: 40px;
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
 }
 
 .bk-refer__content-cont {
+  position: relative;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 0px;
-
+  padding-top: 120px;
+  padding-bottom: 120px;
   @include for-tablet-portrait-up {
-   padding: 150px 0px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 
 .bk-refer__content-title {
-  font-size: 27px;
   margin-bottom: 20px;
   font-family: $main-font;
 }
@@ -46,6 +50,7 @@
   font-size: 17px;
   margin-bottom: 20px;
   text-align: left;
+  
   &:last-of-type {
     margin: 0;
   }
@@ -68,7 +73,7 @@
   transform: translate(-50%, 0%);
   @include image("../assets/img/full-book", "png", 90%, 306px, contain);
   max-width: 600px;
-
+  z-index: 3;
   @include for-tablet-portrait-up {
     bottom: -30px;
   }
@@ -129,4 +134,29 @@
   @include for-tablet-portrait-up {
     font-size: 38px;
   }
+}
+
+.bk-refer__bg {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.1;
+  @include for-tablet-high-range {
+    opacity: 1;
+  }
+}
+
+.bk-refer__pangolin {
+  top: 30px;
+  right: -80px;
+  transform: scale(0.8);
+}
+.bk-refer__gasing {
+  left: -40px;
+  top: 0px;
+  transform: scale(0.8);
+}
+.bk-refer__pizza {
+  left: -80px;
+  bottom: 30px;
+  transform: scale(0.8) rotate(-70deg);
 }

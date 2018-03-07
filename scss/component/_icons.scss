@@ -1,30 +1,22 @@
-.c-logo--black {
-  @include image("../assets/img/main_logo", "png", 164px, 43px, contain);
-}
-
-.c-logo--white {
-  @include image("../assets/img/main_logo_white", "png", 164px, 43px, contain);
-}
-
-.c-social-fb {
-  @include image("../assets/img/social-facebook", "png", 24px, 24px, contain);
-}
-
-.c-social-twit {
-  @include image("../assets/img/social-twitter", "png", 24px, 24px, contain);
-}
-
-.c-social-insta {
-  @include image("../assets/img/social-instagram", "png", 24px, 24px, contain);
-}
-
-.c-icon-fb {
-
-}
-
-.c-icon-twit {
-  
-}
+.c-logo--black  { @include image("../assets/img/main_logo", "png", 164px, 43px, contain);}
+.c-logo--white  { @include image("../assets/img/main_logo_white", "png", 164px, 43px, contain);}
+.c-social-fb    { @include image("../assets/img/social-facebook", "png", 24px, 24px, contain);}
+.c-social-twit  { @include image("../assets/img/social-twitter", "png", 24px, 24px, contain);}
+.c-social-insta { @include image("../assets/img/social-instagram", "png", 24px, 24px, contain);}
+.c-icon-fb      { @include image("../assets/img/facebook", "png", 19px, 17px, contain);}
+.c-icon-twit    { @include image("../assets/img/twitter", "png", 18px, 15px, contain);}
+.c-leaf         { @include image("../assets/img/leaf", "png", 86px, 91px, contain); }
+.c-notebook     { @include image("../assets/img/notebook", "png", 87px, 194px, contain); }
+.c-eraser       { @include image("../assets/img/eraser", "png", 52px, 114px, contain); }
+.c-ruler-1      { @include image("../assets/img/ruler-1", "png", 54px, 193px, contain); }
+.c-ruler-2      { @include image("../assets/img/ruler-2", "png", 95px, 120px, contain); }
+.c-cent         { @include image("../assets/img/cent", "png", 89px, 89px, contain); }
+.c-sticky       { @include image("../assets/img/sticky_note", "png", 386px, 258px, contain); }
+.c-compass      { @include image("../assets/img/compass", "png", 106px, 109px, contain); }
+.c-pencil       { @include image("../assets/img/pencil", "png", 150px, 150px, contain); }
+.c-pangolin     { @include image("../assets/img/pangolin_mascot", "png", 363px, 387px, contain); }
+.c-gasing       { @include image("../assets/img/gasing", "png", 244px, 191px, contain); }
+.c-pizza        { @include image("../assets/img/pizza", "png", 156px, 147px, contain); }
 
 .c-hamburger {
   display: inline-flex;

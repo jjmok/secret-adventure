@@ -1,8 +1,5 @@
 .bk-login__title {
-  font-family: Montserrat;
-  font-weight: bold;
   text-align: center;
-  font-size: 60px;
   margin-bottom: 20px;
 }
 
@@ -22,7 +19,8 @@
   margin: 0 auto;
   background-color: white;
   flex-direction: column;
-
+  position: relative;
+  z-index: 2;
   @include for-tablet-landscape-up {
     flex-direction: row;
   }
@@ -78,9 +76,6 @@
 }
 
 .bk-login__email-title {
-  color: #000000;
-  font-size: 24px;
-  line-height: 29px;
   margin-bottom: 20px;
 }
 
@@ -104,9 +99,6 @@
 }
 
 .bk-login__signup-title {
-  color: #000000;
-  font-size: 20px;
-  line-height: 25px;
   margin-bottom: 10px;
 }
 

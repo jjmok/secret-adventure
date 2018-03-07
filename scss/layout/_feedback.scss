@@ -3,11 +3,12 @@
 }
 
 .bk-feedback__banner {
+  text-align: center;
   padding-top: 40px;
   @include flexcenter();
   flex-direction: column;
   justify-content: flex-start;
-  @include image("../assets/img/banner_1", "png", 100%, 330px, cover);
+  @include image("../assets/img/banner_4", "png", 100%, 330px, cover);
 }
 
 .bk-feedback__title {
@@ -15,6 +16,7 @@
 }
 
 .bk-feedback__form-cont {
+  position: relative;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -38,4 +40,26 @@
 
 .bk-feedback__success {
   margin: 20px 0px;
+}
+
+.bk-feedback__bg {
+  position: absolute;
+}
+
+.bk-feedback__sticky{
+  top: 50px;
+  left: -170px;
+}
+.bk-feedback__compass{
+  bottom: -50px;
+  left: -20px;
+}
+.bk-feedback__pencil{
+  right: -20px;
+  top: 100px;
+  transform: scale(-0.8, 0.8) rotate(10deg);
+}
+.bk-feedback__cent{
+  right: -40px;
+  bottom: 50px;
 }
