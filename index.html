@@ -83,32 +83,35 @@
       </a>
     </div>
 
-    <div class="bk-story">
-      <h1 class="bk-story__title">Create the perfect story</h1>
-      <p class="bk-story__desc">Begin by entering a name</p>
-      <div class="bk-story__options">
-        <div class="bk-story__name-input-container">
-          <input id="js-enter-name" class="c-input bk-story__name-input" type="text" name="user-name"/>
-          <div id="js-name-blank-error" class="c-message c-message--error bk-story__error u-hide">
-            Name Must not be blank
+    <div class="bk-story-cont">
+      <div class="bk-story">
+        <h1 class="bk-story__title">Create the perfect story</h1>
+        <p class="bk-story__desc">Begin by entering a name</p>
+        <div class="bk-story__options">
+          <div class="bk-story__name-input-container">
+            <input id="js-enter-name" class="c-input bk-story__name-input" type="text" name="user-name"/>
+            <div id="js-name-blank-error" class="c-message c-message--error bk-story__error u-hide">
+              Name Must not be blank
+            </div>
+            <div id="js-name-invalid-error" class="c-message c-message--error bk-story__error u-hide">
+              Name must not contain numerical
+            </div>
           </div>
-          <div id="js-name-invalid-error" class="c-message c-message--error bk-story__error u-hide">
-            Name must not contain numerical
+          <div class="bk-gender">
+            <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_boy" value="boy"> 
+            <label class="bk-gender-btn" for="gender_boy">Boy</label>
           </div>
-        </div>
-        <div class="bk-gender">
-          <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_boy" value="boy"> 
-          <label class="bk-gender-btn" for="gender_boy">Boy</label>
-        </div>
-        <div class="bk-gender">
-          <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
-          <label class="bk-gender-btn" for="gender_girl">Girl</label>
-        </div>
-        <div class="bk-story__preview-cont c-btn--widepress-cont">
-          <button id="js-preview-btn" class="c-btn c-btn--froly c-btn--widepress bk-story__preview">Done</button>
+          <div class="bk-gender">
+            <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
+            <label class="bk-gender-btn" for="gender_girl">Girl</label>
+          </div>
+          <div class="bk-story__preview-cont c-btn--widepress-cont">
+            <button id="js-preview-btn" class="c-btn c-btn--froly c-btn--widepress bk-story__preview">Done</button>
+          </div>
         </div>
       </div>
     </div>
+
 
     <section class="bk-video-section">
       <div class="bk-width-cont bk-video-section__content">

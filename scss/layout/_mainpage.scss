@@ -1,6 +1,6 @@
-.bk-story {
+.bk-story-cont {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: left;
@@ -33,7 +33,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
   
   @include for-tablet-portrait-up {
     justify-content: flex-start;
@@ -46,7 +45,6 @@
 
 .bk-story__title {
   text-align: left;
-  width: 100%;
   font-family: $main-font;
   font-weight: 600;
   font-size: var(--story-title-font);

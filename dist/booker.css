@@ -1926,12 +1926,12 @@ overwrite .shadow {
   overflow: hidden;
 }
 
-.bk-width-cont, .bk-story {
+.bk-width-cont, .bk-story-cont {
   padding: 0px 20px;
 }
 
 @media screen and (min-width: 500px) {
-  .bk-width-cont, .bk-story {
+  .bk-width-cont, .bk-story-cont {
     padding: 0px 12%;
   }
 }
@@ -2301,13 +2301,13 @@ overwrite .shadow {
   margin-right: 0;
 }
 
-.bk-story {
+.bk-story-cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2325,7 +2325,7 @@ overwrite .shadow {
 }
 
 @media (min-width: 900px) {
-  .bk-story {
+  .bk-story-cont {
     width: 80%;
     min-width: 800px;
     padding: 0px 50px;
@@ -2341,7 +2341,7 @@ overwrite .shadow {
 }
 
 @media (min-width: 900px) {
-  .bk-story {
+  .bk-story-cont {
     height: 200px;
   }
 }
@@ -2355,7 +2355,6 @@ overwrite .shadow {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -2376,7 +2375,6 @@ overwrite .shadow {
 
 .bk-story__title {
   text-align: left;
-  width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: var(--story-title-font);
