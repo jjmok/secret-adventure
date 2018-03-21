@@ -5024,6 +5024,7 @@ overwrite .shadow {
   margin-bottom: 20px;
   max-width: 800px;
   background-position: center;
+  z-index: 1;
   background-image: url("../assets/img/about.png");
   background-repeat: no-repeat;
   background-size: contain;
