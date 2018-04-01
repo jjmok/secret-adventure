@@ -16,10 +16,14 @@
   flex-wrap: wrap;
 }
 
-.bk-carousel-item--white {
+.bk-carousel-item--dark {
+  background-color: rgba(0, 0, 0, 0.8);
   color: $white;
 }
-
+.bk-carousel-item--bright{
+  background-color: rgba(255 ,255 ,255 ,0.8);
+  color: $black;
+}
 .bk-carousel-item__text {
   text-align: center;
   position: absolute;
@@ -28,15 +32,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
-
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  padding: 0px 70px;
+  
   @include for-tablet-landscape-up {
-    margin-top: 40px;
+    height: initial;
+    top: 40px;
+    transform: translateY(0%);
+    background-color: transparent;
   }
 }
 
 .bk-carousel-item__title {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 10px;
   @include for-tablet-landscape-up { font-size: 56px; }
 }

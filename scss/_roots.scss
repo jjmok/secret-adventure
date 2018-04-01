@@ -49,7 +49,7 @@
 }
 
 :root {
-  --carousel-desc-font: 16px;
+  --carousel-desc-font: 14px;
   @include for-tablet-landscape-up {
     --carousel-desc-font: 28px;
   }
