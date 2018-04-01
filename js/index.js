@@ -91,6 +91,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
     previewChangeName.classList.remove('bk-change-name--active');
     previewOverlay.classList.remove('bk-overlay--active');
     previewLetterDedication.classList.remove('bk-dedication--active');
+    [...previewLetterDropdown].forEach(function(elem){
+      elem.classList.remove('bk-letter-dropdown--active');
+    });
+    [...previewLetterLetterSwitch].forEach(function(elem){
+      elem.classList.remove('bk-letter-switch--active');
+    });
   }
 
   previewStep_1.addEventListener('mousedown', function (e){
