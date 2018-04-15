@@ -21,8 +21,9 @@
 
 .c-title-icon__icon {
   order: 2;
-  
+  display: none;
   @include for-tablet-portrait-up {
     order: 1;
+    display: block;
   }
 }

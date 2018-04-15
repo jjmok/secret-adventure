@@ -1,0 +1,13 @@
+.c-whitebg {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+}

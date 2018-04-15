@@ -7,6 +7,7 @@
   flex-direction: column;
   @include image("../assets/img/banner_4", "png", 100%, 250px, cover);
   background-position: 0px 50px;
+  position: relative;
 }
 
 .bk-misc__photo {
@@ -24,6 +25,8 @@
 .bk-misc__title {
   text-align: center;
   text-transform: capitalize;
+  position: relative;
+  z-index: 2;
 }
 
 .bk-misc__content {
@@ -41,6 +44,8 @@
 .bk-misc__subtitle {
   width: 100%;
   max-width: 750px;
+  position: relative;
+  z-index: 2;
 }
 
 .bk-misc__desc {
@@ -48,6 +53,8 @@
   line-height: 26px;
   text-align: justify;
   margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .bk-misc__subtitle {

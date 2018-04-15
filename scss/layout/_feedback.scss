@@ -4,15 +4,25 @@
 
 .bk-feedback__banner {
   text-align: center;
-  padding-top: 40px;
-  @include flexcenter();
   flex-direction: column;
-  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
+  @include flexcenter();
   @include image("../assets/img/banner_4", "png", 100%, 330px, cover);
 }
 
+.bk-feedback__desc {
+  font-size: 15px;
+
+  @include for-tablet-landscape-up { 
+    font-size: 20px; 
+  }
+}
+
+.bk-feedback__desc,
 .bk-feedback__title {
-  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .bk-feedback__form-cont {
@@ -25,6 +35,8 @@
 .bk-feedback__form {
   width: 100%;
   padding: 40px 0px 160px;
+  position: relative;
+  z-index: 2;
 }
 
 .bk-feedback__tell-us-textarea {
@@ -40,6 +52,8 @@
 
 .bk-feedback__success {
   margin: 20px 0px;
+  position: relative;
+  z-index: 2;
 }
 
 .bk-feedback__bg {
@@ -63,3 +77,4 @@
   right: -40px;
   bottom: 50px;
 }
+

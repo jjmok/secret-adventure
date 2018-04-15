@@ -14,7 +14,15 @@
   font-size: var(--h4-font-size);
 }
 
-
 .c-title-icon__text {
   font-size: 42px;
+}
+
+.c-header-title {
+  margin-bottom: 10px;
+  font-size: 25px;
+
+  @include for-tablet-landscape-up { 
+    font-size: 56px; 
+  }
 }
