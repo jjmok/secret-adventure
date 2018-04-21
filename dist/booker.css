@@ -1989,7 +1989,7 @@ overwrite .shadow {
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.17);
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.17);
   position: relative;
-  z-index: 4;
+  z-index: 5;
   height: var(--header-height);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4735,6 +4735,8 @@ overwrite .shadow {
 .bk-advent__subtitle {
   color: #666470;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 4;
 }
 
 .bk-advent__pending-item-name {
@@ -4780,6 +4782,11 @@ overwrite .shadow {
   z-index: 1;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
+}
+
+.bk-advent__accumulated-item-set {
+  position: relative;
+  z-index: 4;
 }
 
 .c-yellow-nav {
@@ -5127,6 +5134,8 @@ overwrite .shadow {
 .bk-misc__subtitle {
   width: 100%;
   max-width: 750px;
+  position: relative;
+  z-index: 2;
 }
 
 .bk-misc__desc {
@@ -5134,8 +5143,6 @@ overwrite .shadow {
   line-height: 26px;
   text-align: justify;
   margin-bottom: 40px;
-  position: relative;
-  z-index: 2;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
 }

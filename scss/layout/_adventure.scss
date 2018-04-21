@@ -25,6 +25,8 @@
 .bk-advent__subtitle {
   color: #666470;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 4;
 }
 
 .bk-advent__pending-item-name {
@@ -69,4 +71,9 @@
   right: 0px;
   z-index: 1;
   transform: rotate(-15deg)
+}
+
+.bk-advent__accumulated-item-set {
+  position: relative;
+  z-index: 4;
 }
