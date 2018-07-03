@@ -97,17 +97,20 @@
             <div id="js-name-invalid-error" class="c-message c-message--error bk-story__error u-hide">
               Name must not contain numerical
             </div>
-            <div id="js-name-no-gender" class="c-message c-message--error bk-story__error u-hide">
+
+          </div>
+          <div class="bk-story__gender-container">
+            <div class="bk-gender">
+              <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_boy" value="boy"> 
+              <label class="bk-gender-btn" for="gender_boy">Boy</label>
+            </div>
+            <div class="bk-gender">
+              <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
+              <label class="bk-gender-btn" for="gender_girl">Girl</label>
+            </div>
+            <div id="js-name-no-gender" class="c-message c-message--error bk-story__error">
               Please select your gender
             </div>
-          </div>
-          <div class="bk-gender">
-            <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_boy" value="boy"> 
-            <label class="bk-gender-btn" for="gender_boy">Boy</label>
-          </div>
-          <div class="bk-gender">
-            <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
-            <label class="bk-gender-btn" for="gender_girl">Girl</label>
           </div>
           <div class="bk-story__preview-cont c-btn--widepress-cont">
             <button id="js-preview-btn" class="c-btn c-btn--froly c-btn--widepress bk-story__preview">Done</button>

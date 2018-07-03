@@ -445,7 +445,6 @@
   background-color: #FFF5DA;
   height: 465px;
   transition: bottom 0.5s ease;
-
 }
 
 .bk-dedication--active {
@@ -541,6 +540,16 @@
   justify-content: center;
 
   @include for-tablet-portrait-up{
+    width: auto;
+  }
+}
+
+.bk-preview__gender-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  @include for-tablet-portrait-up {
     width: auto;
   }
 }

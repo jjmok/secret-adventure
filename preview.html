@@ -128,23 +128,26 @@
           <div class="bk-preview__name-input-container">
             <label class="bk-preview__name-label" for="js-enter-name">Name</label>
             <input id="js-enter-name" class="c-input bk-preview__name-input" type="text" name="user-name"/>
-            <div id="js-name-blank-error" class="c-error bk-story__error u-hide">
+            <div id="js-name-blank-error" class="c-error bk-story__error c-message c-message--error u-hide">
               Name Must not be blank
             </div>
-            <div id="js-name-invalid-error" class="c-error bk-story__error u-hide">
+            <div id="js-name-invalid-error" class="c-error bk-story__error c-message c-message--error u-hide">
               Name must not contain numerical
             </div>
-            <div id="js-name-no-gender" class="c-error bk-story__error u-hide">
+
+          </div>
+          <div class="bk-preview__gender-container">
+            <div class="bk-gender">
+              <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_boy" value="boy"> 
+              <label class="bk-gender-btn" for="gender_boy">Boy</label>
+            </div>
+            <div class="bk-gender">
+              <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
+              <label class="bk-gender-btn" for="gender_girl">Girl</label>
+            </div>
+            <div id="js-name-no-gender" class="c-error bk-story__error c-message c-message--error">
               Please select your gender
             </div>
-          </div>
-          <div class="bk-gender">
-            <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_boy" value="boy"> 
-            <label class="bk-gender-btn" for="gender_boy">Boy</label>
-          </div>
-          <div class="bk-gender">
-            <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
-            <label class="bk-gender-btn" for="gender_girl">Girl</label>
           </div>
           <div class="bk-preview__change-name-done-btn-cont c-btn--widepress-cont">
             <button class="bk-preview__change-name-done-btn c-btn c-btn--froly c-btn--widepress">Preview</button>
