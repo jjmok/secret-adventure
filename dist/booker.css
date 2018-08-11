@@ -2070,7 +2070,7 @@ overwrite .shadow {
   background-color: #3E3E58;
   height: var(--footer-height);
   position: relative;
-  z-index: 3;
+  z-index: 2;
 }
 
 .bk-footer__link {
