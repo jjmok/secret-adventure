@@ -12,7 +12,6 @@
 
 .bk-cart__sub-title {
   color: #666470;
-  margin-bottom: 20px;
 }
 
 .bk-cart__pending-item-set {
@@ -62,7 +61,8 @@
   align-items: center;
   position: relative;
   padding-right: 10px;
-
+  cursor: pointer;
+  
   &::before {
     content: "";
     display: none;
@@ -80,11 +80,17 @@
       display: block;
     }
   }
-}
 
-.bk-cart__pending-edit-text {
-  display: inline-block;
-  white-space: nowrap;
+  &:hover {
+    .bk-cart__pending-edit-text {
+      color: darken(#0FB1A3, 10%);
+    }
+  }
+  &:active {
+    .bk-cart__pending-edit-text {
+      color: darken(#0FB1A3, 15%);
+    }
+  }
 }
 
 .bk-cart__pending-edit-icon {
@@ -94,6 +100,8 @@
 }
 
 .bk-cart__pending-edit-text {
+  display: inline-block;
+  white-space: nowrap;
   color: #0FB1A3;
   font-size: 15px;
   font-weight: 500;
@@ -425,4 +433,38 @@
 .bk-cart__payment-section {
   position: relative;
   z-index: 2;
+}
+
+.bk-cart__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.bk-cart__remove-all {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+   .bk-cart__remove-all-close { background-color: darken(#ea6665, 10%) } 
+   .bk-cart__remove-all-text { color: darken(#ea6665, 10%) } 
+  }
+
+  &:active {
+   .bk-cart__remove-all-close { background-color: darken(#ea6665, 20%) } 
+   .bk-cart__remove-all-text { color: darken(#ea6665, 20%) } 
+  }
+}
+
+.bk-cart__remove-all-close {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.bk-cart__remove-all-text {
+  font-weight: bold;
+  color: #ea6665;
 }

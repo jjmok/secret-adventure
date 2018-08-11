@@ -46,6 +46,13 @@
 
 .c-btn--red {
   background-color: #CE2828;
+  &:hover {
+    background-color: darken(#CE2828, 10%);
+  }
+
+  &:active {
+    background-color: darken(#CE2828, 20%);
+  }
 }
 
 .c-btn--black {
