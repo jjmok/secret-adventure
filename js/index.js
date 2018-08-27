@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   const flipbookElem = $('#js-flipbook')
   flipbookElem.ready(function () {
-    loaderContainer.classList.remove('bk-loader-cont--show')
+    loaderContainer.classList.remove('u-flex')
 
     flipbook.addEventListener('click', function(e){
       console.log(e.target);
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     gradients: true
   })
   .bind('turned', function(event, page, view) {
-    bookOnboarding.classList.remove('bk-preview__tap-cont--show')
+    bookOnboarding.classList.remove('u-block')
   })
 })
 

@@ -1,7 +1,16 @@
-.u-hide {
-  display: none !important;
-}
+.u-block {  display: block !important;}
+.u-hide {  display: none !important;}
+.u-noevents {  pointer-events: none;}
 
-.u-noevents {
-  pointer-events: none;
+.u-flex-column {
+  display: flex !important;
+  flex-direction: column !important;
 }
+.u-flex-row {
+  display: flex !important;
+  flex-direction: row !important;
+}
+.u-align-center { align-items: center !important;}
+.u-justify-center { justify-content: center !important;}
+
+.w-100 { width: 100% !important;}

@@ -811,12 +811,38 @@ textarea {
   font-size: 1.0rem;
 }
 
+.u-block {
+  display: block !important;
+}
+
 .u-hide {
   display: none !important;
 }
 
 .u-noevents {
   pointer-events: none;
+}
+
+.u-flex-column {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.u-flex-row {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.u-align-center {
+  align-items: center !important;
+}
+
+.u-justify-center {
+  justify-content: center !important;
+}
+
+.w-100 {
+  width: 100% !important;
 }
 
 .c-h1 {
@@ -2162,7 +2188,7 @@ overwrite .shadow {
   background-color: #3E3E58;
   height: var(--footer-height);
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .bk-footer__link {
@@ -3317,7 +3343,7 @@ overwrite .shadow {
   font-size: 12px;
   font-style: italic;
   text-align: right;
-  z-index: 2;
+  z-index: 0;
   display: none;
 }
 
@@ -3327,10 +3353,6 @@ overwrite .shadow {
     bottom: initial;
     font-size: 16px;
   }
-}
-
-.bk-preview__tap-cont--show {
-  display: block;
 }
 
 .bk-preview__tap-to-open {
@@ -3372,7 +3394,7 @@ overwrite .shadow {
 .bk-preview__change-name {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   background-color: #FFF5DA;
   width: 100%;
@@ -3385,8 +3407,8 @@ overwrite .shadow {
 
 @media (min-width: 750px) {
   .bk-preview__change-name {
-    height: 200px;
-    bottom: -200px;
+    height: 250px;
+    bottom: -250px;
   }
 }
 
@@ -3411,7 +3433,7 @@ overwrite .shadow {
   width: 100%;
   flex-wrap: wrap;
   position: relative;
-  top: 10px;
+  top: 40px;
 }
 
 @media (min-width: 1050px) {
@@ -3518,10 +3540,10 @@ overwrite .shadow {
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: -465px;
+  bottom: -500px;
   width: 100%;
   background-color: #FFF5DA;
-  height: 465px;
+  height: 500px;
   transition: bottom 0.5s ease;
 }
 
@@ -3593,13 +3615,20 @@ overwrite .shadow {
 
 .bk-preview__dedication-title,
 .bk-preview__dedication-desc {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.bk-preview__dedication-textarea-container {
+  position: relative;
+  text-align: center;
+  height: 275px;
+  max-width: 470px;
+  width: 100%;
 }
 
 .bk-preview__dedication-textarea {
-  height: 275px;
+  height: 100%;
   width: 100%;
-  max-width: 470px;
 }
 
 .bk-preview__done-step {

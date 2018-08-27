@@ -41,7 +41,7 @@
         <p class="c-h2 bk-preview__name">SHANE</p>
         <div class="bk-preview__frame">
           
-          <div id="js-loader-container" class="bk-preview__loader-cont bk-loader-cont--show">
+          <div id="js-loader-container" class="bk-preview__loader-cont u-flex">
             <div class="c-loader bk-preview__loader">
             </div>
             <div class="bk-preview__loading-text">
@@ -49,7 +49,7 @@
             </div>
           </div>
 
-          <div id="js-book-onboarding" class="bk-preview__tap-cont bk-preview__tap-cont--show">
+          <div id="js-book-onboarding" class="bk-preview__tap-cont u-block">
             <p>Tap here to open the book</p>
             <div class="bk-preview__tap-to-open">
             </div>
@@ -128,10 +128,10 @@
           <div class="bk-preview__name-input-container">
             <label class="bk-preview__name-label" for="js-enter-name">Name</label>
             <input id="js-enter-name" class="c-input bk-preview__name-input" type="text" name="user-name"/>
-            <div id="js-name-blank-error" class="c-error bk-story__error c-message c-message--error u-hide">
+            <div id="js-name-blank-error" class="bk-story__error c-message c-message--error u-hide">
               Name Must not be blank
             </div>
-            <div id="js-name-invalid-error" class="c-error bk-story__error c-message c-message--error u-hide">
+            <div id="js-name-invalid-error" class="bk-story__error c-message c-message--error u-hide">
               Name must not contain numerical
             </div>
 
@@ -145,13 +145,14 @@
               <input class="bk-story__radio u-hide" type="radio" name="bk_gender" id="gender_girl" value="girl"> 
               <label class="bk-gender-btn" for="gender_girl">Girl</label>
             </div>
-            <div id="js-name-no-gender" class="c-error bk-story__error c-message c-message--error">
+            <div id="js-name-no-gender" class="bk-story__error c-message c-message--error">
               Please select your gender
             </div>
+            <div class="bk-preview__change-name-done-btn-cont c-btn--widepress-cont">
+              <button class="bk-preview__change-name-done-btn c-btn c-btn--froly c-btn--widepress">Preview</button>
+            </div>
           </div>
-          <div class="bk-preview__change-name-done-btn-cont c-btn--widepress-cont">
-            <button class="bk-preview__change-name-done-btn c-btn c-btn--froly c-btn--widepress">Preview</button>
-          </div>
+
         </div>
       </div>
 
@@ -171,8 +172,16 @@
         <div class="bk-preview__dedication-section">
           <h1 class="bk-preview__dedication-title">Write a special message for shane</h1>
           <p class="bk-preview__dedication-desc">We will print this on the first page of the book, so you can share your wishes in creating this adventure for them. </p>
-          <textarea class="c-textarea bk-preview__dedication-textarea"></textarea>
-        </p>
+          
+          <div class="w-100 u-flex-column u-align-center">
+            <div class="bk-preview__dedication-textarea-container">
+              <textarea class="c-textarea bk-preview__dedication-textarea w-100"></textarea>
+              <div class="bk-preview__error c-message c-message--error w-100">
+                Don't leave a blank message
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
