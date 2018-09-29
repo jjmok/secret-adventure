@@ -1,0 +1,19 @@
+.c-select {
+  position: absolute;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.17);
+}
+
+.c-select__item {
+  border-bottom: 1px solid #D3D3D3;
+  padding: 5px 10px;
+  
+  &:hover {
+    background-color: darken(#ECECEC, 10%);   
+  }
+
+  &:last-child {
+    border-bottom: 0px;
+  }
+}

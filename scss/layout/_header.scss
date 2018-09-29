@@ -104,6 +104,15 @@
   }
 }
 
+.bk-header__currency-section {
+  position: relative;
+}
+
+.bk-header__currency-select {
+  position: absolute;
+  top: calc(100% + 10px);
+}
+
 .bk-header__login,
 .bk-header__currency {
   width: 100%;
