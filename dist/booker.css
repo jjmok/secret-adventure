@@ -2461,7 +2461,14 @@ textarea {
   background-color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 0px 0px 4px 4px;
+}
+
+@media (min-width: 900px) {
+  .c-dropdown--big-froly__set {
+    flex-direction: row;
+  }
 }
 
 .c-dropdown--big-froly__set-icon {
@@ -2470,18 +2477,13 @@ textarea {
   border: 2px dashed #979797;
   border-radius: 2px;
   position: relative;
-  margin-bottom: 5px;
-}
-
-.c-dropdown--big-froly__set-icon:last-child {
-  margin: 0;
+  margin: 5px;
 }
 
 @media (min-width: 900px) {
   .c-dropdown--big-froly__set-icon {
     width: 86px;
     height: 86px;
-    margin-right: 20px;
   }
 }
 
@@ -2489,19 +2491,6 @@ textarea {
   background-color: #0FB4BB;
   border-color: transparent;
   position: relative;
-}
-
-.big-froly-set-icon--active::before {
-  content: "in use";
-  color: #9B9B9B;
-  text-transform: uppercase;
-  position: absolute;
-  font-size: 12px;
-  right: calc(-100% - 10px);
-  top: 50%;
-  width: 100%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .c-close {
@@ -4472,8 +4461,8 @@ overwrite .shadow {
 
 .bk-preview__letter-switch {
   position: absolute;
-  min-width: 150px;
-  bottom: -155px;
+  min-width: 100px;
+  top: 45px;
   left: 50%;
   transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -4483,12 +4472,6 @@ overwrite .shadow {
   z-index: 4;
   opacity: 0;
   pointer-events: none;
-}
-
-@media (min-width: 900px) {
-  .bk-preview__letter-switch {
-    bottom: -190px;
-  }
 }
 
 .bk-letter-switch--active {

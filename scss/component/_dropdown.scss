@@ -49,7 +49,12 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 0px 0px 4px 4px;
+
+  @include for-tablet-landscape-up {
+    flex-direction: row;
+  }
 }
 
 .c-dropdown--big-froly__set-icon {
@@ -58,16 +63,11 @@
   border: 2px dashed #979797;
   border-radius: 2px;
   position: relative;
-  margin-bottom: 5px;
-
-  &:last-child {
-    margin: 0;
-  }
+  margin: 5px;
 
   @include for-tablet-landscape-up {
     width: 86px;
     height: 86px;
-    margin-right: 20px;
   }
 }
 
@@ -76,15 +76,15 @@
   border-color: transparent;
   position: relative;
 
-  &::before {
-    content:"in use";
-    color: #9B9B9B;
-    text-transform: uppercase;
-    position: absolute;
-    font-size: 12px;
-    right: calc(-100% - 10px);
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
-  }
+  // &::before {
+  //   content:"in use";
+  //   color: #9B9B9B;
+  //   text-transform: uppercase;
+  //   position: absolute;
+  //   font-size: 12px;
+  //   right: calc(-100% - 10px);
+  //   top: 50%;
+  //   width: 100%;
+  //   transform: translateY(-50%);
+  // }
 }
