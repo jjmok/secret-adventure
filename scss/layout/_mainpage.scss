@@ -7,7 +7,7 @@
   border: 1px solid #DEDEDE;
   background-color: #FFFFFF;
   position: relative;
-  height: 300px;
+  height: 350px;
   width: 100%;
   @extend .bk-width-cont;
   max-width: 945px;
@@ -86,11 +86,17 @@
 .bk-story__gender-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 100%;
 
   @include for-tablet-portrait-up {
     width: auto;
+    flex-direction: row;
   }
+}
+
+.bk-gender-container {
+  display: flex;
 }
 
 .bk-gender {
@@ -609,12 +615,17 @@
 }
 
 .bk-story__error {
-  position: absolute;
-  top: 100%;
-  left: 0%;
+  position: relative;
   display: inline-flex;
   width: 100%;
   height: 46px;
+  margin-bottom: 10px;
+
+  @include for-tablet-portrait-up {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
 }
 
 .bk-story__preview-cont {
