@@ -34,10 +34,14 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 40px;
   padding-bottom: 100px;
   min-height: calc(100vh - 250px - var(--header-height) - var(--footer-height));
+
+  @include for-tablet-portrait-up {
+    align-items: center;
+  }
 }
 
 .bk-misc__desc,
@@ -52,8 +56,7 @@
   font-weight: 500;
   line-height: 26px;
   text-align: justify;
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-bottom: 25px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
