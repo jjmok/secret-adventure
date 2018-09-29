@@ -2434,26 +2434,18 @@ textarea {
 .c-dropdown--big-froly__text {
   background-color: #F16078;
   color: white;
-  height: 35px;
-  line-height: 35px;
   border-radius: 4px 4px 0px 0px;
+  padding: 10px 5px;
+  font-size: 12px;
 }
 
 .c-dropdown--big-froly__set {
-  height: 85px;
-  padding: 0px 15px;
+  min-height: 85px;
+  padding: 10px;
   background-color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   border-radius: 0px 0px 4px 4px;
-}
-
-@media (min-width: 900px) {
-  .c-dropdown--big-froly__set {
-    height: 135px;
-    padding: 0px 25px;
-  }
 }
 
 .c-dropdown--big-froly__set-icon {
@@ -2461,9 +2453,8 @@ textarea {
   height: 45px;
   border: 2px dashed #979797;
   border-radius: 2px;
-  margin-right: 10px;
   position: relative;
-  top: -4px;
+  margin-bottom: 5px;
 }
 
 .c-dropdown--big-froly__set-icon:last-child {
@@ -2490,11 +2481,11 @@ textarea {
   text-transform: uppercase;
   position: absolute;
   font-size: 12px;
-  bottom: -22px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  right: calc(-100% - 10px);
+  top: 50%;
   width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .c-close {
@@ -4472,7 +4463,7 @@ overwrite .shadow {
 .bk-preview__letter-switch {
   position: absolute;
   min-width: 150px;
-  bottom: -145px;
+  bottom: -155px;
   left: 50%;
   transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
   transition: opacity 0.4s ease, transform 0.4s ease;
