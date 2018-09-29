@@ -1536,8 +1536,6 @@ template {
   --footer-height: 315px;
   --header-height: 70px;
   --preview-step-height: 55px;
-  --section-title-font: 18px;
-  --story-title-font: 20px;
 }
 
 @media (min-width: 600px) {
@@ -1617,7 +1615,9 @@ template {
   --h1-font-size: 48px;
   --h2-font-size: 30px;
   --h3-font-size: 24px;
-  --h4-font-size: 18px;
+  --h4-font-size: 20px;
+  --h5-font-size: 18px;
+  --h6-font-size: 16px;
 }
 
 @media (min-width: 600px) {
@@ -1773,19 +1773,32 @@ textarea {
   font-size: var(--h4-font-size);
 }
 
+.c-h5 {
+  font-size: var(--h5-font-size);
+}
+
+.c-h6 {
+  font-size: var(--h6-font-size);
+}
+
 .c-title-icon__text {
   font-size: 42px;
 }
 
-.c-header-title {
+.c-banner-title {
   margin-bottom: 10px;
   font-size: 25px;
 }
 
 @media (min-width: 900px) {
-  .c-header-title {
+  .c-banner-title {
     font-size: 56px;
   }
+}
+
+.header-2 {
+  font-weight: 600;
+  line-height: 26px;
 }
 
 .c-link {
@@ -3258,9 +3271,6 @@ overwrite .shadow {
 .bk-story__title {
   text-align: left;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: var(--story-title-font);
-  line-height: 26px;
   margin-bottom: 10px;
 }
 
@@ -3271,7 +3281,6 @@ overwrite .shadow {
 }
 
 .bk-story__desc {
-  font-size: 14px;
   font-weight: 500;
   margin-bottom: 7px;
 }
@@ -3409,7 +3418,6 @@ overwrite .shadow {
 .bk-video-section--desc {
   color: #423817;
   margin: 0 auto 50px;
-  font-size: var(--section-desc);
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 30px;
   position: relative;
@@ -3893,7 +3901,6 @@ overwrite .shadow {
 
 .bk-review__desc {
   color: #FFFFFF;
-  font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
@@ -3928,7 +3935,7 @@ overwrite .shadow {
 
 .bk-review__quoteText {
   font-size: 14px;
-  line-height: 26spx;
+  line-height: 26px;
 }
 
 @media (min-width: 900px) {
@@ -3959,9 +3966,6 @@ overwrite .shadow {
 
 .bk-jom__title {
   color: #FFFFFF;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 46px;
   padding: 0px 25px;
   margin-bottom: 15px;
 }
@@ -5831,7 +5835,6 @@ overwrite .shadow {
 }
 
 .bk-refer__content-text {
-  font-size: 17px;
   margin-bottom: 20px;
   text-align: left;
 }

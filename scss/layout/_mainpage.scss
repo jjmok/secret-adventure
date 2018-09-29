@@ -46,9 +46,6 @@
 .bk-story__title {
   text-align: left;
   font-family: $main-font;
-  font-weight: 600;
-  font-size: var(--story-title-font);
-  line-height: 26px;
   margin-bottom: 10px;
 
   @include for-tablet-landscape-up {
@@ -57,7 +54,6 @@
 }
 
 .bk-story__desc {
-  font-size: 14px;
   font-weight: 500;
   margin-bottom: 7px;
 }
@@ -183,7 +179,6 @@
 .bk-video-section--desc {
   color: #423817;
   margin: 0 auto 50px;
-  font-size: var(--section-desc);
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 30px;
   position: relative;
@@ -547,7 +542,6 @@
 
 .bk-review__desc {
   color: $white;
-  font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
@@ -578,7 +572,7 @@
 
 .bk-review__quoteText {
   font-size: 14px;
-  line-height: 26spx;
+  line-height: 26px;
   @include for-tablet-landscape-up { 
     line-height: 28px;
   }
@@ -602,9 +596,6 @@
 
 .bk-jom__title {
   color: #FFFFFF;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 46px;
   padding: 0px 25px;
   margin-bottom: 15px;
 
