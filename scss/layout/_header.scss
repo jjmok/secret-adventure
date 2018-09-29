@@ -109,6 +109,7 @@
 }
 
 .bk-header__currency-select {
+  display: none;
   position: absolute;
   top: calc(100% + 10px);
 }
@@ -165,12 +166,6 @@
     top: 60px;
     left: -105px;
     position: absolute;
-  }
-
-  &:hover {
-    .bk-header__container {
-      display: inline-flex;
-    }
   }
 
   @include for-desktop-up {

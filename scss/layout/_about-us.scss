@@ -56,8 +56,16 @@
   font-weight: 500;
   line-height: 26px;
   text-align: justify;
-  margin-bottom: 25px;
   background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  > p {
+    margin-bottom: 25px;
+  }
 }
 
 .bk-misc__subtitle {
