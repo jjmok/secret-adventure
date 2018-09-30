@@ -313,6 +313,34 @@
   }
 }
 
+.bk-hiw__marketing1 {
+  position: absolute;
+  @include image("../assets/img/marketing1", "png", initial, initial, cover);
+}
+
+.bk-hiw__marketing1--first {
+  width: 310px;
+  height: 207px;
+  top: 58%;
+  right: 0px;
+
+  @include for-tablet-portrait-up {
+    top: 50%;
+    width: 365px;
+    height: 260px;
+  }
+
+  @include for-tablet-landscape-up {
+    transform: translateY(-60%);
+    top: 60%;
+  }
+
+  @include for-desktop-up {
+    width: 500px;
+    height: 332px;
+  }
+}
+
 .bk-hiw__book {
   position: absolute;
   @include image("../assets/img/book", "png", initial, initial, cover);
@@ -360,6 +388,38 @@
   }
 }
 
+.bk-hiw__marketing2 {
+  position: absolute;
+  left: 0px;
+  top: 60%;
+  @include image("../assets/img/marketing2", "png", initial, initial, contain);
+  width: 260px;
+  height: 204px;
+
+  @include for-tablet-portrait-up {
+    top: 90%;
+    transform: translateY(-90%);
+    width: 420px;
+    height: 300px;
+  }
+
+  @include for-tablet-landscape-up {
+    transform: translateY(-50%);
+    top: 50%;
+    left: 50px;
+    width: 320px;
+    height: 245px;
+  }
+
+  @include for-desktop-up {
+    max-width: 744px;
+    max-height: 500px;
+    width: 45%;
+    height: 90%;
+    left: 0px;
+  }
+}
+
 .bk-hiw__standingbook {
   position: absolute;
   left: 0px;
@@ -397,6 +457,23 @@
   right: 0px;
   bottom: 50px;
   transform: translateX(6px) scaleX(-1) rotate(12deg);
+}
+
+.bk-hiw__marketing3 {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  @include image("../assets/img/marketing3", "png", 300px, 190px, contain);
+
+  @include for-tablet-portrait-up {
+    width: 380px;
+    height: 240px;
+  }
+
+  @include for-desktop-up {
+    width: 490px;
+    height: 310px;
+  }
 }
 
 .bk-hiw__bng {
