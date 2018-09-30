@@ -2739,6 +2739,7 @@ textarea {
   height: var(--book-height);
   z-index: 2;
   transition: margin-left 0.2s ease;
+  position: relative;
 }
 
 .bk-flipbook-cont {
@@ -4217,42 +4218,28 @@ overwrite .shadow {
 .bk-preview__letter-set {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .bk-preview__letter-cont {
   display: inline-flex;
   flex-direction: column;
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   text-align: center;
   position: relative;
   cursor: pointer;
-}
-
-.bk-preview__letter-cont:first-of-type::before, .bk-preview__letter-cont:last-of-type::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  background-color: #D9B146;
-  top: 15px;
-  border-radius: 50%;
-}
-
-.bk-preview__letter-cont:first-of-type::before {
-  left: -20px;
 }
 
 .bk-preview__letter-cont:last-of-type {
   margin: 0;
 }
 
-.bk-preview__letter-cont:last-of-type::before {
-  right: -20px;
-}
-
 @media (min-width: 600px) {
   .bk-preview__letter-cont {
-    margin-right: 35px;
+    margin-right: 25px;
+    margin-bottom: 25px;
   }
 }
 
@@ -4301,6 +4288,7 @@ overwrite .shadow {
 
 @media (min-width: 1200px) {
   .bk-preview__tap-cont {
+    display: block;
     top: 30%;
     bottom: initial;
     font-size: 16px;
@@ -4628,6 +4616,17 @@ overwrite .shadow {
 @media (min-width: 600px) {
   .bk-preview__gender-container {
     width: auto;
+  }
+}
+
+.bk-preview__tap-message {
+  display: block;
+  font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+  .bk-preview__tap-message {
+    display: none;
   }
 }
 
