@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booker App</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="dist/booker.css">
+  <meta name="viewport" content="width=device-width,initialc-h1 c-banner-titlescale=1.0">
+</head>
+<body>
+  <div class="bk-container">
+
+    <header class="bk-header bk-width-cont">
+      <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--2"></a>
+
+      <div class="bk-hover-container">
+        <button class="bk-header__navbtn">
+          <span class="u-noevents">Menu</span>
+          <span class="bk-header__nav-chevron c-chevron c-chevron--sm c-chevron--bottom" aria-hidden="true"></span>
+        </button>
+        <div class="bk-header__container u-inline-flex">
+          <nav class="bk-header__section">
+            <a href="index.html" class="c-logo--black bk-header__logo bk-header__logo--1"></a>
+            <a class="c-link bk-header__link" href="about-us.html">About the Book</a>
+            <a class="c-link bk-header__link" href="#js-how-it-works">How It Works</a>
+            <a class="c-link bk-header__link" href="feedback.html">Help</a>
+          </nav>
+          <nav class="bk-header__section">
+            <div class="bk-header__currency-section">
+              <button class="bk-header__currency c-btn c-btn--currency">
+                <img src="assets/img/US.png" alt="">
+                <span>USD</span>
+                <span class="c-triangle"></span>
+              </button>
+
+              <ul class="c-select bk-header__currency-select u-block">
+                <li class="c-select__item">
+                  <img class="mr-2" src="assets/img/US.png" alt="">
+                  <strong>USD</strong>
+                </li>
+                <li class="c-select__item">
+                  <img class="mr-2" src="assets/img/US.png" alt="">
+                  <strong>USD</strong>
+                </li>
+                <li class="c-select__item">
+                  <img class="mr-2" src="assets/img/US.png" alt="">
+                  <strong>USD</strong>
+                </li>
+              </ul>
+            </div>
+
+            <a href="login.html" class="bk-header__login c-btn c-btn--pink"> Log In</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <div id="js-intro-carousel" class="carousel slide bk-carousel bk-carousel--main" data-ride="carousel" data-interval="5000">
+      <!--
+        <ol class="carousel-indicators">
+          <li data-target="#js-intro-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#js-intro-carousel" data-slide-to="1"></li>
+          <li data-target="#js-intro-carousel" data-slide-to="2"></li>
+        </ol>
+      -->
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <div class="bk-width-cont bk-carousel-item__text bk-carousel-item--bright">
+          </div>
+          <div class="bk-carousel-item bk-carousel-item--4"></div>
+        </div>
+      </div>
+      <a class="carousel-control-prev bk-carousel__control--banner" href="#js-intro-carousel" role="button" data-slide="prev">
+        <div class="bk-carousel__chevron-cont">
+          <span class="bk-carousel__chevron c-chevron c-chevron--sm c-chevron--left" aria-hidden="true"></span>
+        </div>
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+        <!-- <span class="sr-only">Previous</span> -->
+      </a>
+      <a class="carousel-control-next bk-carousel__control--banner" href="#js-intro-carousel" role="button" data-slide="next">
+        <div class="bk-carousel__chevron-cont">
+          <span class="bk-carousel__chevron c-chevron c-chevron--sm c-chevron--right" aria-hidden="true"></span>
+        </div>
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <!-- <span class="sr-only">Next</span> -->
+      </a>
+    </div>
+
+    <section class="bk-hiw bk-hiw--long">
+      <div id="js-how-it-works" class="bk-hiw__marker"></div>
+      <div class="bk-hiw__content bk-hiw__content--left">
+        <span class="bk-hiw__step">Step 1</span>
+        <h2 class="c-h3 bk-hiw__step-title">My Secret Adventure</h2>
+        <p class="bk-hiw__desc">For the child, the delight begins when they see the magical book cover. Wow, a story about my secret adventure? Wah! The excitement builds.</p>
+      </div>
+      <div class="bk-hiw__marketing1 bk-hiw__marketing1--first"></div>
+    </section>
+
+    <section class="bk-hiw bk-hiw--bordertop">
+      <div class="bk-hiw__content bk-hiw__content--right bk-hiw__content--long">
+        <span class="bk-hiw__step">Step 2</span>
+        <h2 class="c-h3 bk-hiw__step-title">Each name spells a different adventure</h2>
+        <p class="bk-hiw__desc">The letters of every child’s unique name will determine how their adventure is shaped - will they meet some squabbling elephants in the woods, an old lady selling kuih in a clearing or apple-pie making kangaroo? No two stories are the same, and only the child’s name will determine their special journey.</p>
+      </div>
+      <div class="bk-hiw__marketing2"></div>
+    </section>
+    
+    <section class="bk-hiw bk-hiw--short bk-hiw--bordertop">
+      <div class="bk-hiw__content bk-hiw__content--left">
+        <span class="bk-hiw__step">Step 3</span>
+        <h2 class="c-h3 bk-hiw__step-title">Make the child a part of the story</h2>
+        <p class="bk-hiw__desc">Choose from boy or girl - perfectly customising the book for its intended recipient..</p>
+      </div>
+      <div class="bk-hiw__marketing3"></div>
+    </section>
+
+    <section class="bk-jom">
+      <p class="c-h3 bk-jom__title">
+        <em>Jom</em> Adventure
+      </p>
+      <div class="bk-jom__create c-btn--widepress-cont">
+        <a href="preview.html" class="c-btn c-btn--froly c-btn--widepress">Create Yours Now!</a>
+      </div>
+    </section>
+    
+    <footer class="bk-footer">
+      <div class="c-logo--white bk-footer__logo"></div>
+      <nav class="bk-footer__nav-links">
+        <a class="bk-footer__link" href="about-us.html">About Us</a>
+        <a class="bk-footer__link" href="refer.html">Refer A friend</a>
+        <a class="bk-footer__link" href="terms.html">Terms and Conditions</a>
+        <a class="bk-footer__link" href="policy.html">Privacy Policy</a>
+        <a class="bk-footer__link" href="feedback.html">Contact Us</a>
+      </nav>
+      <p class="bk-footer__copyright">© 2017 My Secret Adventure. All Rights Reserved. </p>
+      <nav class="bk-footer__social-links-set">
+        <a class="bk-footer__social-link" href="">
+          <div class="c-social-fb"></div>
+        </a>
+        <a class="bk-footer__social-link" href="">
+          <div class="c-social-twit"></div>
+        </a>
+        <a class="bk-footer__social-link" href="">
+          <div class="c-social-insta"></div>
+        </a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <!-- <script type="text/javascript" src="js/lib/retina.min.js"></script> -->
+
+</body>
+</html>

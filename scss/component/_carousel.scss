@@ -66,6 +66,11 @@
   @include image("../assets/img/banner_3", "png", 100%, var(--carousel-height), cover);
 }
 
+.bk-carousel-item--4 {
+  @include image("../assets/img/banner_marketing", "png", 100%, var(--carousel-height), cover);
+}
+
+
 .bk-carousel--review {
   position: relative;
   max-width: 900px;

@@ -2624,6 +2624,20 @@ textarea {
   }
 }
 
+.bk-carousel-item--4 {
+  background-image: url("../assets/img/banner_marketing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: var(--carousel-height);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .bk-carousel-item--4 {
+    background-image: url("../assets/img/banner_marketing@2x.png");
+  }
+}
+
 .bk-carousel--review {
   position: relative;
   max-width: 900px;
@@ -3574,6 +3588,51 @@ overwrite .shadow {
   }
 }
 
+.bk-hiw__marketing1 {
+  position: absolute;
+  background-image: url("../assets/img/marketing1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: initial;
+  height: initial;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .bk-hiw__marketing1 {
+    background-image: url("../assets/img/marketing1@2x.png");
+  }
+}
+
+.bk-hiw__marketing1--first {
+  width: 310px;
+  height: 207px;
+  top: 58%;
+  right: 0px;
+}
+
+@media (min-width: 600px) {
+  .bk-hiw__marketing1--first {
+    top: 50%;
+    width: 365px;
+    height: 260px;
+  }
+}
+
+@media (min-width: 900px) {
+  .bk-hiw__marketing1--first {
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+    top: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bk-hiw__marketing1--first {
+    width: 500px;
+    height: 332px;
+  }
+}
+
 .bk-hiw__book {
   position: absolute;
   background-image: url("../assets/img/book.png");
@@ -3643,6 +3702,56 @@ overwrite .shadow {
   }
 }
 
+.bk-hiw__marketing2 {
+  position: absolute;
+  left: 0px;
+  top: 60%;
+  background-image: url("../assets/img/marketing2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: initial;
+  height: initial;
+  width: 260px;
+  height: 204px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .bk-hiw__marketing2 {
+    background-image: url("../assets/img/marketing2@2x.png");
+  }
+}
+
+@media (min-width: 600px) {
+  .bk-hiw__marketing2 {
+    top: 90%;
+    -webkit-transform: translateY(-90%);
+            transform: translateY(-90%);
+    width: 420px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 900px) {
+  .bk-hiw__marketing2 {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: 50%;
+    left: 50px;
+    width: 320px;
+    height: 245px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bk-hiw__marketing2 {
+    max-width: 744px;
+    max-height: 500px;
+    width: 45%;
+    height: 90%;
+    left: 0px;
+  }
+}
+
 .bk-hiw__standingbook {
   position: absolute;
   left: 0px;
@@ -3699,6 +3808,37 @@ overwrite .shadow {
   bottom: 50px;
   -webkit-transform: translateX(6px) scaleX(-1) rotate(12deg);
           transform: translateX(6px) scaleX(-1) rotate(12deg);
+}
+
+.bk-hiw__marketing3 {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  background-image: url("../assets/img/marketing3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 190px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .bk-hiw__marketing3 {
+    background-image: url("../assets/img/marketing3@2x.png");
+  }
+}
+
+@media (min-width: 600px) {
+  .bk-hiw__marketing3 {
+    width: 380px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bk-hiw__marketing3 {
+    width: 490px;
+    height: 310px;
+  }
 }
 
 .bk-hiw__bng {
