@@ -31,7 +31,7 @@
 }
 
 .c-dropdown--big-froly {
-  --dropdown-arrow-color: $froly;
+  --dropdown-arrow-color: #ECECEC;
   --dropdown-arrow-width: 15px;
 }
 
@@ -46,7 +46,7 @@
 .c-dropdown--big-froly__set {
   min-height: 85px;
   padding: 10px;
-  background-color: white;
+  background-color: $gallery;
   display: flex;
   flex-direction: column;
   align-items: center;

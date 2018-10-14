@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 95px;
+  height: 105px;
   margin-bottom: 20px;
   position: relative;
   
@@ -117,6 +117,7 @@
   position: absolute;
   right: 10px;
   bottom: 5px;
+  white-space: no-wrap;
 
   @include for-tablet-mid-range {
     right: initial;
@@ -441,6 +442,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  text-align: right;
+  white-space: no-wrap;
 }
 
 .bk-cart__remove-all {

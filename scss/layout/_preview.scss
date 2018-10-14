@@ -420,7 +420,7 @@
 .bk-preview__letter-switch {
   position: absolute;
   min-width: 100px;
-  top: 45px;
+  top: 110px;
   left: 50%;
   transition: opacity 0.4s ease, transform 0.4s ease;
   transform: translate(-50%, -20px);
@@ -470,6 +470,8 @@ $dedication-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 30px;
+  text-align: center;
 }
 
 .bk-preview__dedication-book {
