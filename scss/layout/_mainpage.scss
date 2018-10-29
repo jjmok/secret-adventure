@@ -25,7 +25,7 @@
     left: 50%;
   }
   @include for-tablet-landscape-up {
-    height: 200px;
+    height: 250px;
   }
 }
 
@@ -75,7 +75,6 @@
   @include for-tablet-landscape-up {
     margin-right: 30px;
     width: initial;
-    margin-bottom: 0;
   }
 }
 

@@ -1696,6 +1696,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button {
@@ -1712,6 +1713,7 @@ input,
 optgroup,
 select,
 textarea {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.0rem;
 }
 
@@ -2472,19 +2474,20 @@ textarea {
 }
 
 .c-dropdown--big-froly__set-icon {
-  width: 45px;
-  height: 45px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
   border: 2px dashed #979797;
   border-radius: 2px;
   position: relative;
   margin: 5px;
 }
 
-@media (min-width: 900px) {
-  .c-dropdown--big-froly__set-icon {
-    width: 86px;
-    height: 86px;
-  }
+.c-dropdown--big-froly__set-icon > img {
+  width: 100%;
+  height: 100%;
 }
 
 .big-froly-set-icon--active {
@@ -2933,9 +2936,38 @@ overwrite .shadow {
   margin: 0 auto;
 }
 
-.bk-terms-accordion {
+.accordion {
   z-index: 1;
-  width: 450px;
+  max-width: 650px;
+  width: 100%;
+}
+
+.accordion .card-header {
+  padding: 0;
+}
+
+.accordion .card-body {
+  font-size: 16px;
+}
+
+.accordion button {
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  padding: 1.25rem;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.accordion ul > li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.accordion ul > li:last-child {
+  margin-bottom: 0;
 }
 
 .bk-header {
@@ -3055,6 +3087,7 @@ overwrite .shadow {
 
 .bk-header__currency-section {
   position: relative;
+  width: 100%;
 }
 
 .bk-header__currency-select {
@@ -3250,7 +3283,7 @@ overwrite .shadow {
 
 @media (min-width: 900px) {
   .bk-story-cont {
-    height: 200px;
+    height: 250px;
   }
 }
 
@@ -3310,7 +3343,6 @@ overwrite .shadow {
   .bk-story__name-input-container {
     margin-right: 30px;
     width: initial;
-    margin-bottom: 0;
   }
 }
 
@@ -4403,10 +4435,17 @@ overwrite .shadow {
 
 .bk-preview__letter-icons {
   background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 4px;
   border: 2px solid #D9B146;
   width: 40px;
   height: 40px;
+}
+
+.bk-preview__letter-icons > img {
+  width: 100%;
+  height: 100%;
 }
 
 .bk-letter-cont--active .bk-preview__letter-icons {
@@ -4414,24 +4453,27 @@ overwrite .shadow {
 }
 
 .bk-preview__tap-cont {
-  position: absolute;
   pointer-events: none;
   top: initial;
-  left: 0px;
-  bottom: -20px;
   font-size: 12px;
   font-style: italic;
-  text-align: right;
+  text-align: center;
   z-index: 0;
   display: none;
+  margin-bottom: -20px;
+  display: none !important;
 }
 
 @media (min-width: 1200px) {
   .bk-preview__tap-cont {
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
     display: block;
     top: 30%;
     bottom: initial;
     font-size: 16px;
+    text-align: right;
   }
 }
 
@@ -5855,12 +5897,6 @@ overwrite .shadow {
   }
 }
 
-@media (min-width: 750px) {
-  .bk-misc__photo {
-    height: 500px;
-  }
-}
-
 .bk-misc__title {
   text-align: center;
   text-transform: capitalize;
@@ -5873,7 +5909,7 @@ overwrite .shadow {
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 100px;
   min-height: calc(100vh - 250px - var(--header-height) - var(--footer-height));
@@ -5895,10 +5931,10 @@ overwrite .shadow {
 
 .bk-misc__desc {
   font-weight: 500;
-  line-height: 26px;
   text-align: justify;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
+  font-size: 16px;
 }
 
 .bk-misc__desc:last-child {
@@ -5913,6 +5949,11 @@ overwrite .shadow {
   font-weight: bold;
   margin-bottom: 4px;
   font-family: "Open Sans", sans-serif;
+}
+
+.bk-about-book__photo {
+  background-size: cover;
+  background-position: left;
 }
 
 .bk-refer {
@@ -6240,6 +6281,8 @@ overwrite .shadow {
   margin-top: 20px;
   margin-bottom: 50px;
   flex-direction: column;
+  background-color: #FFFFFF;
+  z-index: 1;
 }
 
 @media (min-width: 900px) {
@@ -6277,8 +6320,14 @@ overwrite .shadow {
   margin-right: 0px;
 }
 
-.bk-help__card > img {
-  margin-bottom: 10px;
+.bk-help__card-icon {
+  width: 40px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.bk-help__card-icon > img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=booker.css.map */

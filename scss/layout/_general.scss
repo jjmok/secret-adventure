@@ -27,7 +27,36 @@
   margin: 0 auto;
 }
 
-.bk-terms-accordion {
+.accordion {
   z-index: 1;
-  width: 450px;
+  max-width: 650px;
+  width: 100%;
+  
+  .card-header{
+    padding: 0;
+  }
+
+  .card-body {
+    font-size: 16px;
+  }
+
+  button {
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    padding: 1.25rem;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  ul > li {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

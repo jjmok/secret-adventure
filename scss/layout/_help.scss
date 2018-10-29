@@ -3,7 +3,8 @@
   margin-top: 20px;
   margin-bottom: 50px;
   flex-direction: column;
-
+  background-color: $white;
+  z-index: 1;
   @include for-tablet-landscape-up {
     margin-top: 50px;
     margin-bottom: 120px;
@@ -32,8 +33,14 @@
   &:last-child {
     margin-right: 0px;
   }
+}
+
+.bk-help__card-icon {
+  width: 40px;
+  height: 35px;
+  margin-bottom: 5px;
 
   > img {
-    margin-bottom: 10px;
+    width: 100%;
   }
 }
